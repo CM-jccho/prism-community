@@ -1,0 +1,34 @@
+name: Daily AI feed update
+on:
+  schedule:
+    - cron: '10 0 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daily-feed
+  cancel-in-progress: false
+jobs:
+  update-feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect public AI items
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/update_feed.py
+      - name: Commit when the feed changed
+        run: |
+          if git diff --quiet -- data/community-feed.json; then
+            echo "변경 없음"
+            exit 0
+          fi
+          git config user.name "prism-feed-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/community-feed.json
+          git commit -m "chore(feed): daily AI feed update $(date -u +%Y-%m-%d)"
+          git push
