@@ -1,8 +1,8 @@
 {
   "version": 1,
   "generatedBy": "scripts/update_feed.py",
-  "updatedAt": "2026-11-20T04:34:23.122853Z",
-  "updatedAtKst": "2026-11-20 13:34 KST",
+  "updatedAt": "2026-11-20T04:57:09.447698Z",
+  "updatedAtKst": "2026-11-20 13:57 KST",
   "sources": [
     "Hugging Face models (12)",
     "Hugging Face papers (10)",
@@ -11,7 +11,7 @@
     "Hacker News (10)"
   ],
   "failedSources": [],
-  "count": 60,
+  "count": 64,
   "items": [
     {
       "id": "gh-repo:Imbad0202/academic-research-skills",
@@ -27,9 +27,9 @@
         "claude",
         "claude-code"
       ],
-      "publishedAt": "2026-11-20T04:31:11Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "publishedAt": "2026-11-20T04:50:03Z",
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:headroomlabs-ai/headroom",
@@ -45,9 +45,9 @@
         "claude-code",
         "compression"
       ],
-      "publishedAt": "2026-11-20T03:14:47Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "publishedAt": "2026-11-20T04:39:00Z",
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:f/prompts.chat",
@@ -64,8 +64,8 @@
         "chatgpt-prompts"
       ],
       "publishedAt": "2026-11-20T03:13:08Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:FurkanGozukara/Stable-Diffusion",
@@ -82,8 +82,8 @@
         "education"
       ],
       "publishedAt": "2026-11-20T02:32:06Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:JuliusBrussee/caveman",
@@ -100,8 +100,8 @@
         "claude-code"
       ],
       "publishedAt": "2026-11-20T00:03:53Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:blader/humanizer",
@@ -118,36 +118,36 @@
         "claude"
       ],
       "publishedAt": "2026-11-19T18:53:14Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hn:50564282",
       "kind": "news",
       "title": "No Bailout for the AI Bubble, Anthropic IPO Protesters Say",
-      "desc": "Hacker News · 포인트 42 · 댓글 23",
+      "desc": "Hacker News · 43 points · 24 comments",
       "url": "https://www.techpolicy.press/no-bailout-for-the-ai-bubble-anthropic-ipo-protesters-say/",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-19T18:42:13Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hn:50562320",
       "kind": "news",
       "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
-      "desc": "Hacker News · 포인트 96 · 댓글 69",
+      "desc": "Hacker News · 97 points · 71 comments",
       "url": "https://github.com/onlook-dev/onlook/",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-19T16:34:04Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:promptslab/Awesome-Prompt-Engineering",
@@ -164,8 +164,8 @@
         "gpt"
       ],
       "publishedAt": "2026-11-19T15:35:29Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:HBAI-Ltd/Toonflow-app",
@@ -182,8 +182,8 @@
         "ai-short-drama"
       ],
       "publishedAt": "2026-11-19T13:10:15Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:asgeirtj/system_prompts_leaks",
@@ -200,8 +200,8 @@
         "chatbot"
       ],
       "publishedAt": "2026-11-19T09:43:47Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:microsoft/generative-ai-for-beginners",
@@ -218,50 +218,65 @@
         "generative-ai"
       ],
       "publishedAt": "2026-11-19T03:43:07Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hn:50555093",
       "kind": "news",
       "title": "AI will not make you rich (2025)",
-      "desc": "Hacker News · 포인트 106 · 댓글 68",
+      "desc": "Hacker News · 106 points · 68 comments",
       "url": "https://colossus.com/article/ai-will-not-make-you-rich/",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-19T01:51:28Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hn:50554908",
       "kind": "news",
       "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
-      "desc": "Hacker News · 포인트 47 · 댓글 10",
+      "desc": "Hacker News · 47 points · 10 comments",
       "url": "https://arxiv.org/abs/2607.29378",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-19T01:27:02Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hn:50554641",
       "kind": "news",
       "title": "Black high school students sue after AI mistakes Doritos bag for gun",
-      "desc": "Hacker News · 포인트 117 · 댓글 88",
+      "desc": "Hacker News · 117 points · 88 comments",
       "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-19T00:57:20Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+    },
+    {
+      "id": "hf-paper:2611.26603",
+      "kind": "news",
+      "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
+      "desc": "We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they co…",
+      "url": "https://huggingface.co/papers/2611.26603",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-18T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-paper:2611.26595",
@@ -275,8 +290,23 @@
         "research"
       ],
       "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+    },
+    {
+      "id": "hf-paper:2611.26409",
+      "kind": "news",
+      "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
+      "desc": "Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce WeMM-Video, a family of Chinese-English bilin…",
+      "url": "https://huggingface.co/papers/2611.26409",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-18T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-paper:2611.26380",
@@ -290,8 +320,23 @@
         "research"
       ],
       "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+    },
+    {
+      "id": "hf-paper:2611.25387",
+      "kind": "news",
+      "title": "TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs",
+      "desc": "Humans act in the visual world by inferring the 3D layout behind a 2D view, predicting how an action changes it, and correcting themselves after seeing the result. Can multimodal large lang…",
+      "url": "https://huggingface.co/papers/2611.25387",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-18T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:Anil-matcha/Open-Generative-AI",
@@ -308,36 +353,36 @@
         "image-to-video"
       ],
       "publishedAt": "2026-11-18T09:10:01Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hn:50540836",
       "kind": "news",
       "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
-      "desc": "Hacker News · 포인트 98 · 댓글 58",
+      "desc": "Hacker News · 98 points · 58 comments",
       "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-18T01:45:11Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hn:50536468",
       "kind": "news",
       "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
-      "desc": "Hacker News · 포인트 87 · 댓글 52",
+      "desc": "Hacker News · 87 points · 52 comments",
       "url": "https://news.ycombinator.com/item?id=50536468",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-17T19:01:43Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-paper:2611.24809",
@@ -366,8 +411,8 @@
         "research"
       ],
       "publishedAt": "2026-11-17T19:00:00Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-paper:2611.23835",
@@ -388,49 +433,49 @@
       "id": "hn:50533270",
       "kind": "news",
       "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
-      "desc": "Hacker News · 포인트 54 · 댓글 8",
+      "desc": "Hacker News · 54 points · 8 comments",
       "url": "https://github.com/RunanywhereAI/trnrt",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-17T16:01:04Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hn:50531751",
       "kind": "news",
       "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
-      "desc": "Hacker News · 포인트 191 · 댓글 259",
+      "desc": "Hacker News · 191 points · 259 comments",
       "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-17T14:19:59Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hn:50531484",
       "kind": "news",
       "title": "S. Korea to send nationwide emergency alerts over college entrance exam cheating",
-      "desc": "Hacker News · 포인트 72 · 댓글 86",
+      "desc": "Hacker News · 72 points · 86 comments",
       "url": "https://apnews.com/article/south-korea-exam-cheating-ai-college-e25b5612dbf4bd09fdf9197254c4547e",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-17T14:00:47Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:sensenova/SenseNova-Loop-9B",
       "kind": "model",
       "title": "sensenova/SenseNova-Loop-9B",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 391 · 다운로드 1,447 · image-text-to-text",
+      "desc": "Hugging Face · likes 391 · downloads 1,447 · image-text-to-text",
       "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
       "source": "Hugging Face",
       "tags": [
@@ -442,14 +487,14 @@
         "image-text-to-text"
       ],
       "publishedAt": "2026-11-17T10:16:41Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:tencent/Hy4-flash",
       "kind": "model",
       "title": "tencent/Hy4-flash",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 359 · 다운로드 2,053 · image-text-to-text",
+      "desc": "Hugging Face · likes 360 · downloads 2,053 · image-text-to-text",
       "url": "https://huggingface.co/tencent/Hy4-flash",
       "source": "Hugging Face",
       "tags": [
@@ -462,8 +507,8 @@
         "hy4-flash"
       ],
       "publishedAt": "2026-11-17T03:44:46Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-paper:2611.22666",
@@ -477,14 +522,14 @@
         "research"
       ],
       "publishedAt": "2026-11-16T19:00:00Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:apple/FastFrames-L",
       "kind": "model",
       "title": "apple/FastFrames-L",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 347 · 다운로드 0 · text-to-video",
+      "desc": "Hugging Face · likes 348 · downloads 0 · text-to-video",
       "url": "https://huggingface.co/apple/FastFrames-L",
       "source": "Hugging Face",
       "tags": [
@@ -496,14 +541,14 @@
         "license:apple-amlr"
       ],
       "publishedAt": "2026-11-16T17:21:04Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:cfahlgren1/slack-moji",
       "kind": "art",
       "title": "cfahlgren1/slack-moji",
-      "desc": "Hugging Face Space · static 데모 · 좋아요 61 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · static demo · likes 61",
       "url": "https://huggingface.co/spaces/cfahlgren1/slack-moji",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -511,14 +556,14 @@
         "static"
       ],
       "publishedAt": "2026-11-16T16:52:00Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:harness-hub/Qwen3.8-27B-pi-adapted",
       "kind": "model",
       "title": "harness-hub/Qwen3.8-27B-pi-adapted",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 750 · 다운로드 1,320 · image-text-to-text",
+      "desc": "Hugging Face · likes 750 · downloads 1,320 · image-text-to-text",
       "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
       "source": "Hugging Face",
       "tags": [
@@ -531,8 +576,23 @@
         "lora"
       ],
       "publishedAt": "2026-11-16T06:52:31Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+    },
+    {
+      "id": "hf-paper:2611.21383",
+      "kind": "news",
+      "title": "The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation",
+      "desc": "3D Gaussian Splatting enables object-level operations on Gaussian primitives, yet existing segmentation methods are largely trained and evaluated through rendered views. This mismatch can p…",
+      "url": "https://huggingface.co/papers/2611.21383",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-15T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-paper:2611.21373",
@@ -546,14 +606,14 @@
         "research"
       ],
       "publishedAt": "2026-11-15T19:00:00Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:inworld/voice-isolator",
       "kind": "model",
       "title": "inworld/voice-isolator",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 282 · 다운로드 0 · audio-to-audio",
+      "desc": "Hugging Face · likes 282 · downloads 0 · audio-to-audio",
       "url": "https://huggingface.co/inworld/voice-isolator",
       "source": "Hugging Face",
       "tags": [
@@ -566,8 +626,8 @@
         "noise-suppression"
       ],
       "publishedAt": "2026-11-14T02:14:35Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-paper:2611.19230",
@@ -581,8 +641,8 @@
         "research"
       ],
       "publishedAt": "2026-11-13T19:00:00Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:Lightricks/ComfyUI-LTXVideo",
@@ -599,14 +659,14 @@
         "image-to-video-generation"
       ],
       "publishedAt": "2026-11-12T14:15:27Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:higurashi-ai/Haru-4B",
       "kind": "model",
       "title": "higurashi-ai/Haru-4B",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 3,657 · 다운로드 6,266 · audio-to-audio",
+      "desc": "Hugging Face · likes 3,659 · downloads 6,266 · audio-to-audio",
       "url": "https://huggingface.co/higurashi-ai/Haru-4B",
       "source": "Hugging Face",
       "tags": [
@@ -618,8 +678,8 @@
         "audio-to-audio"
       ],
       "publishedAt": "2026-11-12T11:05:59Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-paper:2611.17460",
@@ -651,8 +711,8 @@
         "mcp-tools"
       ],
       "publishedAt": "2026-11-10T09:49:32Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:elder-plinius/CL4R1T4S",
@@ -669,14 +729,14 @@
         "google"
       ],
       "publishedAt": "2026-11-09T23:48:58Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:MiniMaxAI/minimax-h3-image",
       "kind": "art",
       "title": "MiniMaxAI/minimax-h3-image",
-      "desc": "Hugging Face Space · gradio 데모 · 좋아요 204 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · gradio demo · likes 204",
       "url": "https://huggingface.co/spaces/MiniMaxAI/minimax-h3-image",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -684,8 +744,8 @@
         "gradio"
       ],
       "publishedAt": "2026-11-09T13:26:35Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "gh-repo:wuyoscar/GPT-Image2-Skill",
@@ -702,8 +762,8 @@
         "codex-skill"
       ],
       "publishedAt": "2026-11-08T22:34:08Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-paper:2611.08136",
@@ -735,14 +795,14 @@
         "text-to-image"
       ],
       "publishedAt": "2026-11-08T13:04:50Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
       "kind": "model",
       "title": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 694 · 다운로드 268,540 · text-to-image",
+      "desc": "Hugging Face · likes 694 · downloads 268,540 · text-to-image",
       "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
       "source": "Hugging Face",
       "tags": [
@@ -754,14 +814,14 @@
         "text-to-image"
       ],
       "publishedAt": "2026-11-03T16:13:25Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:PrunaAI/P-Image-OSS",
       "kind": "art",
       "title": "PrunaAI/P-Image-OSS",
-      "desc": "Hugging Face Space · gradio 데모 · 좋아요 188 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · gradio demo · likes 188",
       "url": "https://huggingface.co/spaces/PrunaAI/P-Image-OSS",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -769,14 +829,14 @@
         "gradio"
       ],
       "publishedAt": "2026-11-03T15:16:32Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:MiniMaxAI/MiniMax-H3-Image",
       "kind": "model",
       "title": "MiniMaxAI/MiniMax-H3-Image",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 1,652 · 다운로드 821,710 · text-to-image",
+      "desc": "Hugging Face · likes 1,653 · downloads 821,710 · text-to-image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "source": "Hugging Face",
       "tags": [
@@ -788,14 +848,14 @@
         "image-editing"
       ],
       "publishedAt": "2026-11-03T06:34:36Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:waitinghere/Krea2T-Revamped",
       "kind": "art",
       "title": "waitinghere/Krea2T-Revamped",
-      "desc": "Hugging Face Space · gradio 데모 · 좋아요 84 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · gradio demo · likes 85",
       "url": "https://huggingface.co/spaces/waitinghere/Krea2T-Revamped",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -803,14 +863,14 @@
         "gradio"
       ],
       "publishedAt": "2026-10-19T03:38:31Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:rdata92/LTX-2.3-10Eros",
       "kind": "art",
       "title": "rdata92/LTX-2.3-10Eros",
-      "desc": "Hugging Face Space · gradio 데모 · 좋아요 212 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · gradio demo · likes 212",
       "url": "https://huggingface.co/spaces/rdata92/LTX-2.3-10Eros",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -818,14 +878,14 @@
         "gradio"
       ],
       "publishedAt": "2026-10-15T12:54:41Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:joelniklaus/harness-leaderboard",
       "kind": "art",
       "title": "joelniklaus/harness-leaderboard",
-      "desc": "Hugging Face Space · docker 데모 · 좋아요 465 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · docker demo · likes 465",
       "url": "https://huggingface.co/spaces/joelniklaus/harness-leaderboard",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -833,14 +893,14 @@
         "docker"
       ],
       "publishedAt": "2026-10-15T06:00:13Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:maxwell-model/Maxwell-V1-Flash",
       "kind": "model",
       "title": "maxwell-model/Maxwell-V1-Flash",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 288 · 다운로드 1,703 · text-generation",
+      "desc": "Hugging Face · likes 288 · downloads 1,703 · text-generation",
       "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
       "source": "Hugging Face",
       "tags": [
@@ -852,14 +912,14 @@
         "custom_code"
       ],
       "publishedAt": "2026-10-13T07:53:39Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:huggingface/moe-blogpost",
       "kind": "art",
       "title": "huggingface/moe-blogpost",
-      "desc": "Hugging Face Space · docker 데모 · 좋아요 754 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · docker demo · likes 754",
       "url": "https://huggingface.co/spaces/huggingface/moe-blogpost",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -867,14 +927,14 @@
         "docker"
       ],
       "publishedAt": "2026-10-09T15:24:25Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
       "kind": "model",
       "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 622 · 다운로드 172,088 · text-generation",
+      "desc": "Hugging Face · likes 622 · downloads 172,088 · text-generation",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
       "source": "Hugging Face",
       "tags": [
@@ -886,14 +946,14 @@
         "text-generation"
       ],
       "publishedAt": "2026-10-05T04:26:43Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:JCisHERE/wan2-2-i2v-v3",
       "kind": "art",
       "title": "JCisHERE/wan2-2-i2v-v3",
-      "desc": "Hugging Face Space · gradio 데모 · 좋아요 499 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · gradio demo · likes 501",
       "url": "https://huggingface.co/spaces/JCisHERE/wan2-2-i2v-v3",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -901,14 +961,14 @@
         "gradio"
       ],
       "publishedAt": "2026-09-28T17:30:26Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:hugging-apps/bfs-best-face-swap",
       "kind": "art",
       "title": "hugging-apps/bfs-best-face-swap",
-      "desc": "Hugging Face Space · gradio 데모 · 좋아요 997 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · gradio demo · likes 997",
       "url": "https://huggingface.co/spaces/hugging-apps/bfs-best-face-swap",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -916,14 +976,14 @@
         "gradio"
       ],
       "publishedAt": "2026-09-27T18:26:19Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:amisima/Qwen-2.1-Turbo-Qwen-Face-Swap-MOSS-Image-Edit-Outpaint-Qwen-Detail-Enhancer",
       "kind": "art",
       "title": "amisima/Qwen-2.1-Turbo-Qwen-Face-Swap-MOSS-Image-Edit-Outpaint-Qwen-Detail-Enhancer",
-      "desc": "Hugging Face Space · gradio 데모 · 좋아요 103 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · gradio demo · likes 104",
       "url": "https://huggingface.co/spaces/amisima/Qwen-2.1-Turbo-Qwen-Face-Swap-MOSS-Image-Edit-Outpaint-Qwen-Detail-Enhancer",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -931,14 +991,14 @@
         "gradio"
       ],
       "publishedAt": "2026-09-25T09:54:39Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:AST-1320/Qwen-2511-Plus-Flux.2-klein",
       "kind": "art",
       "title": "AST-1320/Qwen-2511-Plus-Flux.2-klein",
-      "desc": "Hugging Face Space · gradio 데모 · 좋아요 459 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · gradio demo · likes 459",
       "url": "https://huggingface.co/spaces/AST-1320/Qwen-2511-Plus-Flux.2-klein",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -946,14 +1006,14 @@
         "gradio"
       ],
       "publishedAt": "2026-09-19T10:48:19Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:Qwen/Qwen3.8-27B",
       "kind": "model",
       "title": "Qwen/Qwen3.8-27B",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 20,690 · 다운로드 6,647,301 · image-text-to-text",
+      "desc": "Hugging Face · likes 20,693 · downloads 6,647,301 · image-text-to-text",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
       "source": "Hugging Face",
       "tags": [
@@ -965,14 +1025,14 @@
         "license:apache-2.0"
       ],
       "publishedAt": "2026-08-05T08:22:59Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-model:Lightricks/LTX-2.5",
       "kind": "model",
       "title": "Lightricks/LTX-2.5",
-      "desc": "Hugging Face 트렌딩 모델 · 좋아요 12,755 · 다운로드 2,934,937 · image-to-video",
+      "desc": "Hugging Face · likes 12,759 · downloads 2,934,937 · image-to-video",
       "url": "https://huggingface.co/Lightricks/LTX-2.5",
       "source": "Hugging Face",
       "tags": [
@@ -984,14 +1044,14 @@
         "audio-to-video"
       ],
       "publishedAt": "2026-07-23T07:55:24Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
       "id": "hf-space:microsoft/TRELLIS.2",
       "kind": "art",
       "title": "microsoft/TRELLIS.2",
-      "desc": "Hugging Face Space · gradio 데모 · 좋아요 2,428 · 바로 실행해 볼 수 있는 AI 앱",
+      "desc": "Hugging Face Space · gradio demo · likes 2,428",
       "url": "https://huggingface.co/spaces/microsoft/TRELLIS.2",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -999,8 +1059,8 @@
         "gradio"
       ],
       "publishedAt": "2025-12-10T03:50:25Z",
-      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
-      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
+      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     }
   ]
 }

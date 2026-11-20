@@ -97,8 +97,9 @@ def from_hf_models() -> list[dict]:
             "id": f"hf-model:{mid}",
             "kind": "model",
             "title": mid,
+            # 설명은 특정 언어에 묶이지 않게 영문/숫자만 쓴다(로케일 표기는 앱이 담당).
             "desc": clip(
-                f"Hugging Face 트렌딩 모델 · 좋아요 {m.get('likes', 0):,} · 다운로드 {m.get('downloads', 0):,}"
+                f"Hugging Face · likes {m.get('likes', 0):,} · downloads {m.get('downloads', 0):,}"
                 + (f" · {pipe}" if pipe else "")
             ),
             "url": f"https://huggingface.co/{mid}",
@@ -122,7 +123,7 @@ def from_hf_papers() -> list[dict]:
             "id": f"hf-paper:{pid}",
             "kind": "news",
             "title": title,
-            "desc": clip(paper.get("summary") or entry.get("summary") or "Hugging Face Daily Papers 오늘의 논문"),
+            "desc": clip(paper.get("summary") or entry.get("summary") or "Hugging Face Daily Papers"),
             "url": f"https://huggingface.co/papers/{pid}",
             "source": "HF Daily Papers",
             "tags": ["paper", "research"],
@@ -146,7 +147,7 @@ def from_hf_spaces() -> list[dict]:
             "id": f"hf-space:{sid}",
             "kind": "art",
             "title": sid,
-            "desc": clip(f"Hugging Face Space · {sdk} 데모 · 좋아요 {s.get('likes', 0):,} · 바로 실행해 볼 수 있는 AI 앱"),
+            "desc": clip(f"Hugging Face Space · {sdk} demo · likes {s.get('likes', 0):,}"),
             "url": f"https://huggingface.co/spaces/{sid}",
             "source": "Hugging Face Spaces",
             "tags": ["space", sdk],
@@ -188,7 +189,7 @@ def from_github() -> list[dict]:
                 "id": f"gh-repo:{full}",
                 "kind": kind,
                 "title": full,
-                "desc": clip(repo.get("description") or "GitHub에서 최근 업데이트된 AI 저장소"),
+                "desc": clip(repo.get("description") or "AI repository updated recently on GitHub"),
                 "url": repo.get("html_url") or f"https://github.com/{full}",
                 "source": "GitHub",
                 "tags": topics,
@@ -216,7 +217,7 @@ def from_hn() -> list[dict]:
                 "id": f"hn:{oid}",
                 "kind": "news",
                 "title": title,
-                "desc": clip(f"Hacker News · 포인트 {hit.get('points', 0)} · 댓글 {hit.get('num_comments', 0)}"),
+                "desc": clip(f"Hacker News · {hit.get('points', 0)} points · {hit.get('num_comments', 0)} comments"),
                 "url": link,
                 "source": "Hacker News",
                 "tags": ["news"],
