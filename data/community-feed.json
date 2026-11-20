@@ -1,0 +1,1006 @@
+{
+  "version": 1,
+  "generatedBy": "scripts/update_feed.py",
+  "updatedAt": "2026-11-20T04:34:23.122853Z",
+  "updatedAtKst": "2026-11-20 13:34 KST",
+  "sources": [
+    "Hugging Face models (12)",
+    "Hugging Face papers (10)",
+    "Hugging Face Spaces (12)",
+    "GitHub (16)",
+    "Hacker News (10)"
+  ],
+  "failedSources": [],
+  "count": 60,
+  "items": [
+    {
+      "id": "gh-repo:Imbad0202/academic-research-skills",
+      "kind": "prompt",
+      "title": "Imbad0202/academic-research-skills",
+      "desc": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "source": "GitHub",
+      "tags": [
+        "academic-pipeline",
+        "academic-writing",
+        "ai-research",
+        "claude",
+        "claude-code"
+      ],
+      "publishedAt": "2026-11-20T04:31:11Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:headroomlabs-ai/headroom",
+      "kind": "prompt",
+      "title": "headroomlabs-ai/headroom",
+      "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "source": "GitHub",
+      "tags": [
+        "agent",
+        "ai",
+        "anthropic",
+        "claude-code",
+        "compression"
+      ],
+      "publishedAt": "2026-11-20T03:14:47Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:f/prompts.chat",
+      "kind": "prompt",
+      "title": "f/prompts.chat",
+      "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat",
+      "source": "GitHub",
+      "tags": [
+        "ai",
+        "artificial-intelligence",
+        "awesome-list",
+        "chatgpt",
+        "chatgpt-prompts"
+      ],
+      "publishedAt": "2026-11-20T03:13:08Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:FurkanGozukara/Stable-Diffusion",
+      "kind": "tool",
+      "title": "FurkanGozukara/Stable-Diffusion",
+      "desc": "FLUX, Stable Diffusion, SDXL, SD3, LoRA, Fine Tuning, DreamBooth, Training, Automatic1111, Forge WebUI, SwarmUI, DeepFake, TTS, Animation, Text To Video, Tutorials, Guides, Lectures, Course…",
+      "url": "https://github.com/FurkanGozukara/Stable-Diffusion",
+      "source": "GitHub",
+      "tags": [
+        "ai-art",
+        "coding",
+        "deepfake-generation",
+        "dreambooth",
+        "education"
+      ],
+      "publishedAt": "2026-11-20T02:32:06Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:JuliusBrussee/caveman",
+      "kind": "prompt",
+      "title": "JuliusBrussee/caveman",
+      "desc": "why use many token when few token do trick. Skill + local proxy for coding agents: shorter answers, smaller tool output, every original recoverable.",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "source": "GitHub",
+      "tags": [
+        "ai",
+        "anthropic",
+        "caveman",
+        "claude",
+        "claude-code"
+      ],
+      "publishedAt": "2026-11-20T00:03:53Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:blader/humanizer",
+      "kind": "prompt",
+      "title": "blader/humanizer",
+      "desc": "Agent skill that removes signs of AI-generated writing from text",
+      "url": "https://github.com/blader/humanizer",
+      "source": "GitHub",
+      "tags": [
+        "agent-skills",
+        "ai-humanizer",
+        "ai-writing",
+        "chatgpt",
+        "claude"
+      ],
+      "publishedAt": "2026-11-19T18:53:14Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hn:50564282",
+      "kind": "news",
+      "title": "No Bailout for the AI Bubble, Anthropic IPO Protesters Say",
+      "desc": "Hacker News · 포인트 42 · 댓글 23",
+      "url": "https://www.techpolicy.press/no-bailout-for-the-ai-bubble-anthropic-ipo-protesters-say/",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-19T18:42:13Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hn:50562320",
+      "kind": "news",
+      "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+      "desc": "Hacker News · 포인트 96 · 댓글 69",
+      "url": "https://github.com/onlook-dev/onlook/",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-19T16:34:04Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:promptslab/Awesome-Prompt-Engineering",
+      "kind": "tool",
+      "title": "promptslab/Awesome-Prompt-Engineering",
+      "desc": "This repository contains a hand-curated resources for Prompt Engineering with a focus on Generative Pre-trained Transformer (GPT), ChatGPT, PaLM etc",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+      "source": "GitHub",
+      "tags": [
+        "chatgpt",
+        "chatgpt-api",
+        "deep-learning",
+        "few-shot-learning",
+        "gpt"
+      ],
+      "publishedAt": "2026-11-19T15:35:29Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:HBAI-Ltd/Toonflow-app",
+      "kind": "tool",
+      "title": "HBAI-Ltd/Toonflow-app",
+      "desc": "短剧、漫剧制作工具 Toonflow：开源 AI 视频创作平台，集成剧本创作、智能分镜、角色与场景资产管理、图像生成和视频生成。融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。Open-source AI short drama and motion comic creation tool with an infini…",
+      "url": "https://github.com/HBAI-Ltd/Toonflow-app",
+      "source": "GitHub",
+      "tags": [
+        "ai-agents",
+        "ai-comic",
+        "ai-content-creation",
+        "ai-filmmaking",
+        "ai-short-drama"
+      ],
+      "publishedAt": "2026-11-19T13:10:15Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:asgeirtj/system_prompts_leaks",
+      "kind": "prompt",
+      "title": "asgeirtj/system_prompts_leaks",
+      "desc": "Leaked system prompts of ChatGPT, Claude, Gemini and more. The hidden system prompt of every popular chatbot, in full, every version since May 2025. Also Anthropic Claude Code, OpenAI Codex…",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "source": "GitHub",
+      "tags": [
+        "ai",
+        "ai-agents",
+        "ai-prompts",
+        "anthropic",
+        "chatbot"
+      ],
+      "publishedAt": "2026-11-19T09:43:47Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:microsoft/generative-ai-for-beginners",
+      "kind": "prompt",
+      "title": "microsoft/generative-ai-for-beginners",
+      "desc": "21 Lessons, Get Started Building with Generative AI",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "source": "GitHub",
+      "tags": [
+        "ai",
+        "azure",
+        "chatgpt",
+        "dall-e",
+        "generative-ai"
+      ],
+      "publishedAt": "2026-11-19T03:43:07Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hn:50555093",
+      "kind": "news",
+      "title": "AI will not make you rich (2025)",
+      "desc": "Hacker News · 포인트 106 · 댓글 68",
+      "url": "https://colossus.com/article/ai-will-not-make-you-rich/",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-19T01:51:28Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hn:50554908",
+      "kind": "news",
+      "title": "Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction",
+      "desc": "Hacker News · 포인트 47 · 댓글 10",
+      "url": "https://arxiv.org/abs/2607.29378",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-19T01:27:02Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hn:50554641",
+      "kind": "news",
+      "title": "Black high school students sue after AI mistakes Doritos bag for gun",
+      "desc": "Hacker News · 포인트 117 · 댓글 88",
+      "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-19T00:57:20Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-paper:2611.26595",
+      "kind": "news",
+      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
+      "desc": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstr…",
+      "url": "https://huggingface.co/papers/2611.26595",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-18T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-paper:2611.26380",
+      "kind": "news",
+      "title": "EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning",
+      "desc": "Egocentric video captioning requires fine-grained detail and accurate timing, yet current multimodal large language models (MLLMs) often miss brief actions, confuse their order, or misinter…",
+      "url": "https://huggingface.co/papers/2611.26380",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-18T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:Anil-matcha/Open-Generative-AI",
+      "kind": "tool",
+      "title": "Anil-matcha/Open-Generative-AI",
+      "desc": "Uncensored Open-source alternative to AI video platforms — Free AI image & video generation studio with 800+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MI…",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "source": "GitHub",
+      "tags": [
+        "ai-image-generation",
+        "ai-video-generation",
+        "fal-ai-alternative",
+        "generative-ai",
+        "image-to-video"
+      ],
+      "publishedAt": "2026-11-18T09:10:01Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hn:50540836",
+      "kind": "news",
+      "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
+      "desc": "Hacker News · 포인트 98 · 댓글 58",
+      "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-18T01:45:11Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hn:50536468",
+      "kind": "news",
+      "title": "Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos",
+      "desc": "Hacker News · 포인트 87 · 댓글 52",
+      "url": "https://news.ycombinator.com/item?id=50536468",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-17T19:01:43Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-paper:2611.24809",
+      "kind": "news",
+      "title": "On-Policy Morphing into Hybrid Attention Models",
+      "desc": "Hybrid attention models combine full and linear attention to achieve a better quality--efficiency trade-off. Converting pretrained Transformers into such models requires identifying which l…",
+      "url": "https://huggingface.co/papers/2611.24809",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-17T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-paper:2611.24011",
+      "kind": "news",
+      "title": "WAM-Policy: World Action Models with On-Policy Distillation for Quadrupedal Loco-Manipulation",
+      "desc": "Arm-free quadrupeds can perform loco-manipulation, walking on three legs while manipulating with a front leg, yet no existing policy for it follows language instructions. World action model…",
+      "url": "https://huggingface.co/papers/2611.24011",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-17T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-paper:2611.23835",
+      "kind": "news",
+      "title": "NarrowSpec: Draft Hidden Width Need Not Match the Target in Speculative Decoding",
+      "desc": "Speculative decoding is widely used to speed up generation in large language models (LLMs), with a small draft model proposing tokens that one forward pass of the target model verifies. Dra…",
+      "url": "https://huggingface.co/papers/2611.23835",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-17T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hn:50533270",
+      "kind": "news",
+      "title": "Show HN: TrnRT – An open-source LLM inference engine for AWS Trainium",
+      "desc": "Hacker News · 포인트 54 · 댓글 8",
+      "url": "https://github.com/RunanywhereAI/trnrt",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-17T16:01:04Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hn:50531751",
+      "kind": "news",
+      "title": "Baidu, Xiaomi CEOs warn of growing gap between AI hype and returns",
+      "desc": "Hacker News · 포인트 191 · 댓글 259",
+      "url": "https://www.scmp.com/tech/big-tech/article/3374774/baidu-xiaomi-ceos-warn-growing-gap-between-ai-hype-and-returns",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-17T14:19:59Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hn:50531484",
+      "kind": "news",
+      "title": "S. Korea to send nationwide emergency alerts over college entrance exam cheating",
+      "desc": "Hacker News · 포인트 72 · 댓글 86",
+      "url": "https://apnews.com/article/south-korea-exam-cheating-ai-college-e25b5612dbf4bd09fdf9197254c4547e",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-17T14:00:47Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:sensenova/SenseNova-Loop-9B",
+      "kind": "model",
+      "title": "sensenova/SenseNova-Loop-9B",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 391 · 다운로드 1,447 · image-text-to-text",
+      "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
+      "source": "Hugging Face",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "sensenova_loop",
+        "text-generation",
+        "multimodal",
+        "image-text-to-text"
+      ],
+      "publishedAt": "2026-11-17T10:16:41Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:tencent/Hy4-flash",
+      "kind": "model",
+      "title": "tencent/Hy4-flash",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 359 · 다운로드 2,053 · image-text-to-text",
+      "url": "https://huggingface.co/tencent/Hy4-flash",
+      "source": "Hugging Face",
+      "tags": [
+        "image-text-to-text",
+        "transformers",
+        "safetensors",
+        "hy_v4_flash",
+        "text-generation",
+        "hunyuan",
+        "hy4-flash"
+      ],
+      "publishedAt": "2026-11-17T03:44:46Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-paper:2611.22666",
+      "kind": "news",
+      "title": "VSpark: Speculative Decoding for Autoregressive Vision-Language-Action Models",
+      "desc": "Our aim is to accelerate autoregressive vision-language-action models (VLAs), which generate robot actions one token at a time. Speculative decoding makes this possible: a lightweight draft…",
+      "url": "https://huggingface.co/papers/2611.22666",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-16T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:apple/FastFrames-L",
+      "kind": "model",
+      "title": "apple/FastFrames-L",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 347 · 다운로드 0 · text-to-video",
+      "url": "https://huggingface.co/apple/FastFrames-L",
+      "source": "Hugging Face",
+      "tags": [
+        "safetensors",
+        "text-to-video",
+        "arxiv:2611.23226",
+        "base_model:Wan-AI/Wan2.1-T2V-14B",
+        "base_model:finetune:Wan-AI/Wan2.1-T2V-14B",
+        "license:apple-amlr"
+      ],
+      "publishedAt": "2026-11-16T17:21:04Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:cfahlgren1/slack-moji",
+      "kind": "art",
+      "title": "cfahlgren1/slack-moji",
+      "desc": "Hugging Face Space · static 데모 · 좋아요 61 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/cfahlgren1/slack-moji",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "static"
+      ],
+      "publishedAt": "2026-11-16T16:52:00Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:harness-hub/Qwen3.8-27B-pi-adapted",
+      "kind": "model",
+      "title": "harness-hub/Qwen3.8-27B-pi-adapted",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 750 · 다운로드 1,320 · image-text-to-text",
+      "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
+      "source": "Hugging Face",
+      "tags": [
+        "image-text-to-text",
+        "peft",
+        "safetensors",
+        "trl",
+        "grpo",
+        "async-grpo",
+        "lora"
+      ],
+      "publishedAt": "2026-11-16T06:52:31Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-paper:2611.21373",
+      "kind": "news",
+      "title": "WeVisForensics: Self-Evolving Agent for Omni AI-Generated Video Detection",
+      "desc": "Recent advances in video generation call for reliable detection grounded in explicit forensic evidence. However, current methods primarily depend on single-pass chain-of-thought reasoning t…",
+      "url": "https://huggingface.co/papers/2611.21373",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-15T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:inworld/voice-isolator",
+      "kind": "model",
+      "title": "inworld/voice-isolator",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 282 · 다운로드 0 · audio-to-audio",
+      "url": "https://huggingface.co/inworld/voice-isolator",
+      "source": "Hugging Face",
+      "tags": [
+        "audio-to-audio",
+        "inworld-voice-isolation",
+        "audio",
+        "speech",
+        "speech-enhancement",
+        "speech-denoising",
+        "noise-suppression"
+      ],
+      "publishedAt": "2026-11-14T02:14:35Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-paper:2611.19230",
+      "kind": "news",
+      "title": "CompoundingKernel: Self-Improving from Zero to First",
+      "desc": "We present CompoundingKernel, a self-improving agent system that writes GPU kernels by search. As of 2026-11-11, its generated kernels rank #1 on the public L1, L2 and Quantization boards o…",
+      "url": "https://huggingface.co/papers/2611.19230",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-13T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:Lightricks/ComfyUI-LTXVideo",
+      "kind": "tool",
+      "title": "Lightricks/ComfyUI-LTXVideo",
+      "desc": "LTX-Video Support for ComfyUI",
+      "url": "https://github.com/Lightricks/ComfyUI-LTXVideo",
+      "source": "GitHub",
+      "tags": [
+        "comfyui",
+        "diffusion-models",
+        "dit",
+        "image-to-video",
+        "image-to-video-generation"
+      ],
+      "publishedAt": "2026-11-12T14:15:27Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:higurashi-ai/Haru-4B",
+      "kind": "model",
+      "title": "higurashi-ai/Haru-4B",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 3,657 · 다운로드 6,266 · audio-to-audio",
+      "url": "https://huggingface.co/higurashi-ai/Haru-4B",
+      "source": "Hugging Face",
+      "tags": [
+        "safetensors",
+        "haru",
+        "speech",
+        "full-duplex",
+        "speech-to-speech",
+        "audio-to-audio"
+      ],
+      "publishedAt": "2026-11-12T11:05:59Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-paper:2611.17460",
+      "kind": "news",
+      "title": "Unfinished-Bench: Measuring Rule Violations by Persistent Agents in Realistic Work Environments",
+      "desc": "AI agents are increasingly equipped with persistence toward task completion to run delegated work autonomously for long periods, under many unstated constraints from internal documents and…",
+      "url": "https://huggingface.co/papers/2611.17460",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-11T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:MiniMax-AI/MiniMax-MCP",
+      "kind": "tool",
+      "title": "MiniMax-AI/MiniMax-MCP",
+      "desc": "Official MiniMax Model Context Protocol (MCP) server that enables interaction with powerful Text to Speech, image generation and video generation APIs.",
+      "url": "https://github.com/MiniMax-AI/MiniMax-MCP",
+      "source": "GitHub",
+      "tags": [
+        "image-generation",
+        "image-to-video",
+        "mcp",
+        "mcp-server",
+        "mcp-tools"
+      ],
+      "publishedAt": "2026-11-10T09:49:32Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:elder-plinius/CL4R1T4S",
+      "kind": "prompt",
+      "title": "elder-plinius/CL4R1T4S",
+      "desc": "LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPLIT, AND MORE! - AI SYSTEMS TRANSPARENCY FOR ALL! 👐",
+      "url": "https://github.com/elder-plinius/CL4R1T4S",
+      "source": "GitHub",
+      "tags": [
+        "agents",
+        "ai",
+        "chatgpt",
+        "gemini",
+        "google"
+      ],
+      "publishedAt": "2026-11-09T23:48:58Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:MiniMaxAI/minimax-h3-image",
+      "kind": "art",
+      "title": "MiniMaxAI/minimax-h3-image",
+      "desc": "Hugging Face Space · gradio 데모 · 좋아요 204 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/MiniMaxAI/minimax-h3-image",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2026-11-09T13:26:35Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:wuyoscar/GPT-Image2-Skill",
+      "kind": "tool",
+      "title": "wuyoscar/GPT-Image2-Skill",
+      "desc": "GPT Image 2/2.5/2.6 prompt gallery, image prompt library, agentic skill, and CLI for OpenAI image generation/editing",
+      "url": "https://github.com/wuyoscar/GPT-Image2-Skill",
+      "source": "GitHub",
+      "tags": [
+        "agent-skills",
+        "ai-image-prompts",
+        "claude-code-skill",
+        "cli",
+        "codex-skill"
+      ],
+      "publishedAt": "2026-11-08T22:34:08Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-paper:2611.08136",
+      "kind": "news",
+      "title": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
+      "desc": "Anomaly detection (AD) is often framed as a representation-learning problem, where strong performance is expected to require learned features or AD-specific optimization. However, this view…",
+      "url": "https://huggingface.co/papers/2611.08136",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-08T19:00:00Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "gh-repo:OpenMOSS/MOSS-Image",
+      "kind": "tool",
+      "title": "OpenMOSS/MOSS-Image",
+      "desc": "Official repository for MOSS-Image, a 5B-parameter base DiT model with high-quality text rendering, layout generation, and efficient fine-tuning.",
+      "url": "https://github.com/OpenMOSS/MOSS-Image",
+      "source": "GitHub",
+      "tags": [
+        "controllable-generation",
+        "foundation-models",
+        "image-generation",
+        "text-rendering",
+        "text-to-image"
+      ],
+      "publishedAt": "2026-11-08T13:04:50Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "kind": "model",
+      "title": "chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 694 · 다운로드 268,540 · text-to-image",
+      "url": "https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
+      "source": "Hugging Face",
+      "tags": [
+        "diffusers",
+        "safetensors",
+        "gguf",
+        "qwen-image",
+        "qwen-image-2.1",
+        "text-to-image"
+      ],
+      "publishedAt": "2026-11-03T16:13:25Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:PrunaAI/P-Image-OSS",
+      "kind": "art",
+      "title": "PrunaAI/P-Image-OSS",
+      "desc": "Hugging Face Space · gradio 데모 · 좋아요 188 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/PrunaAI/P-Image-OSS",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2026-11-03T15:16:32Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:MiniMaxAI/MiniMax-H3-Image",
+      "kind": "model",
+      "title": "MiniMaxAI/MiniMax-H3-Image",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 1,652 · 다운로드 821,710 · text-to-image",
+      "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
+      "source": "Hugging Face",
+      "tags": [
+        "minimax-h3",
+        "diffusers",
+        "safetensors",
+        "text-to-image",
+        "image-to-image",
+        "image-editing"
+      ],
+      "publishedAt": "2026-11-03T06:34:36Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:waitinghere/Krea2T-Revamped",
+      "kind": "art",
+      "title": "waitinghere/Krea2T-Revamped",
+      "desc": "Hugging Face Space · gradio 데모 · 좋아요 84 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/waitinghere/Krea2T-Revamped",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2026-10-19T03:38:31Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:rdata92/LTX-2.3-10Eros",
+      "kind": "art",
+      "title": "rdata92/LTX-2.3-10Eros",
+      "desc": "Hugging Face Space · gradio 데모 · 좋아요 212 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/rdata92/LTX-2.3-10Eros",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2026-10-15T12:54:41Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:joelniklaus/harness-leaderboard",
+      "kind": "art",
+      "title": "joelniklaus/harness-leaderboard",
+      "desc": "Hugging Face Space · docker 데모 · 좋아요 465 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/joelniklaus/harness-leaderboard",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "docker"
+      ],
+      "publishedAt": "2026-10-15T06:00:13Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:maxwell-model/Maxwell-V1-Flash",
+      "kind": "model",
+      "title": "maxwell-model/Maxwell-V1-Flash",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 288 · 다운로드 1,703 · text-generation",
+      "url": "https://huggingface.co/maxwell-model/Maxwell-V1-Flash",
+      "source": "Hugging Face",
+      "tags": [
+        "safetensors",
+        "maxwell_moe",
+        "moe",
+        "text-generation",
+        "conversational",
+        "custom_code"
+      ],
+      "publishedAt": "2026-10-13T07:53:39Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:huggingface/moe-blogpost",
+      "kind": "art",
+      "title": "huggingface/moe-blogpost",
+      "desc": "Hugging Face Space · docker 데모 · 좋아요 754 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/huggingface/moe-blogpost",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "docker"
+      ],
+      "publishedAt": "2026-10-09T15:24:25Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "kind": "model",
+      "title": "nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 622 · 다운로드 172,088 · text-generation",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
+      "source": "Hugging Face",
+      "tags": [
+        "transformers",
+        "gguf",
+        "nvidia",
+        "pytorch",
+        "nemotron-3.5",
+        "text-generation"
+      ],
+      "publishedAt": "2026-10-05T04:26:43Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:JCisHERE/wan2-2-i2v-v3",
+      "kind": "art",
+      "title": "JCisHERE/wan2-2-i2v-v3",
+      "desc": "Hugging Face Space · gradio 데모 · 좋아요 499 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/JCisHERE/wan2-2-i2v-v3",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2026-09-28T17:30:26Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:hugging-apps/bfs-best-face-swap",
+      "kind": "art",
+      "title": "hugging-apps/bfs-best-face-swap",
+      "desc": "Hugging Face Space · gradio 데모 · 좋아요 997 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/hugging-apps/bfs-best-face-swap",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2026-09-27T18:26:19Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:amisima/Qwen-2.1-Turbo-Qwen-Face-Swap-MOSS-Image-Edit-Outpaint-Qwen-Detail-Enhancer",
+      "kind": "art",
+      "title": "amisima/Qwen-2.1-Turbo-Qwen-Face-Swap-MOSS-Image-Edit-Outpaint-Qwen-Detail-Enhancer",
+      "desc": "Hugging Face Space · gradio 데모 · 좋아요 103 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/amisima/Qwen-2.1-Turbo-Qwen-Face-Swap-MOSS-Image-Edit-Outpaint-Qwen-Detail-Enhancer",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2026-09-25T09:54:39Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:AST-1320/Qwen-2511-Plus-Flux.2-klein",
+      "kind": "art",
+      "title": "AST-1320/Qwen-2511-Plus-Flux.2-klein",
+      "desc": "Hugging Face Space · gradio 데모 · 좋아요 459 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/AST-1320/Qwen-2511-Plus-Flux.2-klein",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2026-09-19T10:48:19Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:Qwen/Qwen3.8-27B",
+      "kind": "model",
+      "title": "Qwen/Qwen3.8-27B",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 20,690 · 다운로드 6,647,301 · image-text-to-text",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "source": "Hugging Face",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "qwen3_5",
+        "image-text-to-text",
+        "conversational",
+        "license:apache-2.0"
+      ],
+      "publishedAt": "2026-08-05T08:22:59Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-model:Lightricks/LTX-2.5",
+      "kind": "model",
+      "title": "Lightricks/LTX-2.5",
+      "desc": "Hugging Face 트렌딩 모델 · 좋아요 12,755 · 다운로드 2,934,937 · image-to-video",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "source": "Hugging Face",
+      "tags": [
+        "diffusion-single-file",
+        "image-to-video",
+        "text-to-video",
+        "video-to-video",
+        "image-text-to-video",
+        "audio-to-video"
+      ],
+      "publishedAt": "2026-07-23T07:55:24Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    },
+    {
+      "id": "hf-space:microsoft/TRELLIS.2",
+      "kind": "art",
+      "title": "microsoft/TRELLIS.2",
+      "desc": "Hugging Face Space · gradio 데모 · 좋아요 2,428 · 바로 실행해 볼 수 있는 AI 앱",
+      "url": "https://huggingface.co/spaces/microsoft/TRELLIS.2",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2025-12-10T03:50:25Z",
+      "firstSeenAt": "2026-11-20T04:34:23.122853Z",
+      "lastSeenAt": "2026-11-20T04:34:23.122853Z"
+    }
+  ]
+}

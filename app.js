@@ -307,6 +307,7 @@
     mountShells();
     bindEvents();
     renderAll();
+    loadDailyFeed();
     if (!state.onboarded) showOnboarding();
     else hideOnboarding();
   }
@@ -328,6 +329,7 @@
       <div class="feed-hero" id="feed-hero"></div>
       <div id="feed-challenge"></div>
       <div id="feed-promo"></div>
+      <div id="feed-daily"></div>
       <div class="feed-toolbar">
         <div class="search" role="search">
           <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
@@ -365,6 +367,89 @@
       const l = lvOf(n);
       return `<div class="row">${lvBadge(n)}<span>${esc(l.short)}</span></div>`;
     }).join('');
+  }
+
+  /* ------------------------------------------------- daily feed (매일 자동 업데이트)
+     data/community-feed.json 은 GitHub Actions(scripts/update_feed.py)가 매일
+     공개 소스(Hugging Face · GitHub · Hacker News)에서 모아 커밋한다.
+     배포본은 저장소의 최신 파일을 읽고, 실패하면 배포 시 포함된 같은 파일로 돌아간다. */
+  const DAILY_FEED_URLS = [
+    'https://raw.githubusercontent.com/CM-jccho/prism-community/main/data/community-feed.json',
+    'data/community-feed.json'
+  ];
+  const DAILY_KINDS = ['model', 'tool', 'prompt', 'art', 'news'];
+  let dailyFeed = null;
+  let dailyFeedState = 'idle'; // idle | loading | ready | failed
+  let dailyOpen = false;
+
+  function dailyKindLabel(kind) {
+    const key = 'daily.kind.' + (DAILY_KINDS.includes(kind) ? kind : 'news');
+    const v = t(key);
+    return v === key ? kind : v;
+  }
+
+  function dailyDate(value) {
+    if (!value) return '';
+    const d = new Date(value);
+    if (Number.isNaN(d.getTime())) return '';
+    const p = (n) => String(n).padStart(2, '0');
+    return `${d.getFullYear()}.${p(d.getMonth() + 1)}.${p(d.getDate())}`;
+  }
+
+  async function loadDailyFeed() {
+    if (dailyFeedState === 'loading' || dailyFeedState === 'ready') return;
+    dailyFeedState = 'loading';
+    for (const url of DAILY_FEED_URLS) {
+      try {
+        const res = await fetch(url, { cache: 'no-cache' });
+        if (!res.ok) continue;
+        const data = await res.json();
+        if (!data || !Array.isArray(data.items) || !data.items.length) continue;
+        dailyFeed = data;
+        dailyFeedState = 'ready';
+        renderDailyFeed();
+        return;
+      } catch (e) { /* 다음 주소 시도 */ }
+    }
+    dailyFeedState = 'failed';
+    renderDailyFeed();
+  }
+
+  function dailyItems() {
+    if (!dailyFeed || !Array.isArray(dailyFeed.items)) return [];
+    return dailyFeed.items.filter((it) => it && it.title && it.url);
+  }
+
+  function renderDailyFeed() {
+    const root = $('#feed-daily');
+    if (!root) return;
+    const all = dailyItems();
+    if (!all.length) { root.innerHTML = ''; return; }
+    const shown = dailyOpen ? all.slice(0, 18) : all.slice(0, 6);
+    const updated = dailyDate(dailyFeed.updatedAt);
+    root.innerHTML = `
+      <section class="daily" aria-label="${esc(t('daily.title'))}">
+        <header class="daily-head">
+          <span class="daily-tag"><span class="pulse"></span>${esc(t('daily.tag'))}</span>
+          <strong>${esc(t('daily.title'))}</strong>
+          ${updated ? `<span class="daily-upd">${esc(t('daily.updated', { date: updated }))}</span>` : ''}
+        </header>
+        <p class="daily-sub">${esc(t('daily.sub'))}</p>
+        <ul class="daily-list">
+          ${shown.map((it) => `
+            <li class="daily-item">
+              <a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">
+                <span class="daily-kind k-${esc(it.kind || 'news')}">${esc(dailyKindLabel(it.kind))}</span>
+                <span class="daily-body">
+                  <b>${esc(it.title)}</b>
+                  ${it.desc ? `<span>${esc(it.desc)}</span>` : ''}
+                </span>
+                <span class="daily-meta">${esc(it.source || '')}${dailyDate(it.publishedAt) ? ` · ${dailyDate(it.publishedAt)}` : ''}</span>
+              </a>
+            </li>`).join('')}
+        </ul>
+        ${all.length > 6 ? `<button class="daily-more" type="button" data-act="daily-more">${esc(dailyOpen ? t('daily.less') : t('daily.more', { n: Math.min(all.length, 18) }))}</button>` : ''}
+      </section>`;
   }
 
   /* ---------------------------------------------------------------- renders */
@@ -423,6 +508,7 @@
 
     renderChallengeBanner();
     renderFeedPromo();
+    renderDailyFeed();
     renderChips();
     renderFeedList();
   }
@@ -1943,6 +2029,7 @@
         case 'open-market': openMarket(el.dataset.focus); break;
         case 'pro-demo': setPro(!isPro()); break;
         case 'challenge': openChallenge(); break;
+        case 'daily-more': dailyOpen = !dailyOpen; renderDailyFeed(); break;
         case 'challenge-join': challengeJoin(); break;
         case 'challenge-new': ui.challengeForm = true; renderRanks(); break;
         case 'challenge-cancel': ui.challengeForm = false; renderRanks(); break;
