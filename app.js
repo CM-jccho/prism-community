@@ -27,10 +27,10 @@
 
   /* English level names are the brand; label/short/desc come from the dictionary. */
   const LEVELS = {
-    1: { id: 1, name: 'Seed', emoji: '🌱', color: '#34D399' },
-    2: { id: 2, name: 'Builder', emoji: '⚡', color: '#60A5FA' },
-    3: { id: 3, name: 'Master', emoji: '🔥', color: '#FBBF24' },
-    4: { id: 4, name: 'Curator', emoji: '👑', color: '#C084FC' }
+    1: { id: 1, name: 'Seed', emoji: '', color: '#34D399' },
+    2: { id: 2, name: 'Builder', emoji: '', color: '#60A5FA' },
+    3: { id: 3, name: 'Master', emoji: '', color: '#FBBF24' },
+    4: { id: 4, name: 'Curator', emoji: '', color: '#C084FC' }
   };
 
   const PERMS = {
@@ -54,23 +54,23 @@
   ];
 
   const CATS = [
-    { id: 'image', emoji: '🖼️' },
-    { id: 'app', emoji: '🧩' },
-    { id: 'video', emoji: '🎬' },
-    { id: 'automation', emoji: '⚙️' }
+    { id: 'image', emoji: '' },
+    { id: 'app', emoji: '' },
+    { id: 'video', emoji: '' },
+    { id: 'automation', emoji: '' }
   ];
 
   const BENEFITS = [
-    { key: 'view', icon: '👀', min: 1 },
-    { key: 'comment', icon: '💬', min: 1 },
-    { key: 'promptView', icon: '🔓', min: 2 },
-    { key: 'copy', icon: '📋', min: 2 },
-    { key: 'suggest', icon: '💡', min: 2 },
-    { key: 'upload', icon: '⬆️', min: 2 },
-    { key: 'remix', icon: '🌿', min: 3 },
-    { key: 'vote', icon: '🏅', min: 3 },
-    { key: 'pick', icon: '👑', min: 4 },
-    { key: 'challenge', icon: '🎪', min: 4 }
+    { key: 'view', icon: '', min: 1 },
+    { key: 'comment', icon: '', min: 1 },
+    { key: 'promptView', icon: '', min: 2 },
+    { key: 'copy', icon: '', min: 2 },
+    { key: 'suggest', icon: '', min: 2 },
+    { key: 'upload', icon: '', min: 2 },
+    { key: 'remix', icon: '', min: 3 },
+    { key: 'vote', icon: '', min: 3 },
+    { key: 'pick', icon: '', min: 4 },
+    { key: 'challenge', icon: '', min: 4 }
   ];
 
   const EXPLORE_TAG_KEYS = ['glass', 'neon', 'poster', 'desert', 'flowly', 'news', 'icons3d', 'aura', 'storybook'];
@@ -159,7 +159,7 @@
     } catch (e) {
       if (!saveNow.warned) {
         saveNow.warned = true;
-        toast(t('toast.storage'), '⚠️', 'danger');
+        toast(t('toast.storage'), '', 'danger');
       }
     }
   }
@@ -327,40 +327,10 @@
 
   function mountShells() {
     $('#feed-root').innerHTML = `
-      <div class="feed-hero" id="feed-hero"></div>
-      <div id="feed-challenge"></div>
-      <div id="feed-promo"></div>
-      <div id="feed-daily"></div>
-      <div class="feed-toolbar">
-        <div class="search" role="search">
-          <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-          <input id="feed-search" type="search" placeholder="${esc(t('feed.searchPh'))}" autocomplete="off" aria-label="${esc(t('aria.feedSearch'))}">
-          <button class="clear" data-act="clear-search" aria-label="${esc(t('aria.clearSearch'))}" hidden>✕</button>
-        </div>
-        <div class="chips" id="feed-chips" role="tablist" aria-label="${esc(t('aria.catFilter'))}"></div>
-        <div class="feed-tools">
-          <span class="feed-count" id="feed-count"></span>
-          <div class="sort-toggle" id="feed-sort" aria-label="${esc(t('aria.sort'))}">
-            <button data-act="sort" data-s="new">${esc(t('sort.new'))}</button>
-            <button data-act="sort" data-s="pop">${esc(t('sort.pop'))}</button>
-          </div>
-        </div>
-      </div>
-      <div id="feed-list"></div>`;
+      <div class="feed-hero" id="feed-hero"></div><div id="feed-challenge"></div><div id="feed-promo"></div><div id="feed-daily"></div><div class="feed-toolbar"><div class="search" role="search"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input id="feed-search" type="search" placeholder="${esc(t('feed.searchPh'))}" autocomplete="off" aria-label="${esc(t('aria.feedSearch'))}"><button class="clear" data-act="clear-search" aria-label="${esc(t('aria.clearSearch'))}" hidden></button></div><div class="chips" id="feed-chips" role="tablist" aria-label="${esc(t('aria.catFilter'))}"></div><div class="feed-tools"><span class="feed-count" id="feed-count"></span><div class="sort-toggle" id="feed-sort" aria-label="${esc(t('aria.sort'))}"><button data-act="sort" data-s="new">${esc(t('sort.new'))}</button><button data-act="sort" data-s="pop">${esc(t('sort.pop'))}</button></div></div></div><div id="feed-list"></div>`;
 
     $('#explore-root').innerHTML = `
-      <div class="page-head">
-        <span class="eyebrow">EXPLORE</span>
-        <h2>${esc(t('explore.head'))}</h2>
-        <p>${esc(t('explore.sub'))}</p>
-      </div>
-      <div class="search" role="search">
-        <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        <input id="explore-search" type="search" placeholder="${esc(t('explore.searchPh'))}" autocomplete="off" aria-label="${esc(t('aria.exploreSearch'))}">
-        <button class="clear" data-act="clear-search" aria-label="${esc(t('aria.clearSearch'))}" hidden>✕</button>
-      </div>
-      <div id="explore-results" hidden></div>
-      <div id="explore-main"></div>`;
+      <div class="page-head"><span class="eyebrow">EXPLORE</span><h2>${esc(t('explore.head'))}</h2><p>${esc(t('explore.sub'))}</p></div><div class="search" role="search"><svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><input id="explore-search" type="search" placeholder="${esc(t('explore.searchPh'))}" autocomplete="off" aria-label="${esc(t('aria.exploreSearch'))}"><button class="clear" data-act="clear-search" aria-label="${esc(t('aria.clearSearch'))}" hidden></button></div><div id="explore-results" hidden></div><div id="explore-main"></div>`;
 
     $('#ranks-root').innerHTML = '<div id="ranks-inner"></div>';
     $('#my-root').innerHTML = '<div id="my-inner"></div>';
@@ -452,27 +422,11 @@
     const shown = dailyPick(all, dailyOpen ? 18 : 6);
     const updated = dailyDate(dailyFeed.updatedAt);
     root.innerHTML = `
-      <section class="daily" aria-label="${esc(t('daily.title'))}">
-        <header class="daily-head">
-          <span class="daily-tag"><span class="pulse"></span>${esc(t('daily.tag'))}</span>
-          <strong>${esc(t('daily.title'))}</strong>
-          ${updated ? `<span class="daily-upd">${esc(t('daily.updated', { date: updated }))}</span>` : ''}
-        </header>
-        <p class="daily-sub">${esc(t('daily.sub'))}</p>
-        <ul class="daily-list">
-          ${shown.map((it) => `
-            <li class="daily-item">
-              <a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer">
-                <span class="daily-kind k-${esc(it.kind || 'news')}">${esc(dailyKindLabel(it.kind))}</span>
-                <span class="daily-body">
-                  <b>${esc(it.title)}</b>
-                  ${it.desc ? `<span>${esc(it.desc)}</span>` : ''}
-                </span>
-                <span class="daily-meta">${esc(it.source || '')}${dailyDate(it.publishedAt) ? ` · ${dailyDate(it.publishedAt)}` : ''}</span>
-              </a>
-            </li>`).join('')}
-        </ul>
-        ${all.length > 6 ? `<button class="daily-more" type="button" data-act="daily-more">${esc(dailyOpen ? t('daily.less') : t('daily.more', { n: Math.min(all.length, 18) }))}</button>` : ''}
+      <section class="daily" aria-label="${esc(t('daily.title'))}"><header class="daily-head"><span class="daily-tag"><span class="pulse"></span>${esc(t('daily.tag'))}</span><strong>${esc(t('daily.title'))}</strong>${updated ? `<span class="daily-upd">${esc(t('daily.updated', { date: updated }))}</span>` : ''}
+        </header><p class="daily-sub">${esc(t('daily.sub'))}</p><ul class="daily-list">${shown.map((it) => `
+            <li class="daily-item"><a href="${esc(it.url)}" target="_blank" rel="noopener noreferrer"><span class="daily-kind k-${esc(it.kind || 'news')}">${esc(dailyKindLabel(it.kind))}</span><span class="daily-body"><b>${esc(it.title)}</b>${it.desc ? `<span>${esc(it.desc)}</span>` : ''}
+                </span><span class="daily-meta">${esc(it.source || '')}${dailyDate(it.publishedAt) ? ` · ${dailyDate(it.publishedAt)}` : ''}</span></a></li>`).join('')}
+        </ul>${all.length > 6 ? `<button class="daily-more" type="button" data-act="daily-more">${esc(dailyOpen ? t('daily.less') : t('daily.more', { n: Math.min(all.length, 18) }))}</button>` : ''}
       </section>`;
   }
 
@@ -520,7 +474,7 @@
       save();
     }).catch((e) => {
       console.warn('[PRISM] 글을 서버에 올리지 못했습니다', e);
-      toast(t('toast.sbFail'), '⚠️', 'danger');
+      toast(t('toast.sbFail'), '', 'danger');
     });
   }
 
@@ -531,7 +485,7 @@
       if (row) cm.remoteId = row.remoteId;
     }).catch((e) => {
       console.warn('[PRISM] 댓글을 서버에 올리지 못했습니다', e);
-      toast(t('toast.sbFail'), '⚠️', 'danger');
+      toast(t('toast.sbFail'), '', 'danger');
     });
   }
 
@@ -584,16 +538,7 @@
     const lp = levelProgress();
     const l = lvOf(lv);
     $('#feed-hero').innerHTML = `
-      <div class="hello">${t('feed.hello', { nick: esc(state.user.nickname || t('common.creator')) })} ${isDemo() ? `<span class="badge demo">${esc(t('badge.demo'))}</span>` : ''}</div>
-      <h2>${t('feed.title')}</h2>
-      <button class="level-strip" data-act="tab" data-tab="ranks">
-        <span class="ls-emoji">${l.emoji}</span>
-        <span class="ls-main">
-          <span class="ls-top"><span>Lv.${l.id} ${l.name}</span><span class="ls-pct">${Math.round(lp.pct)}%</span></span>
-          <span class="ls-sub">${esc(lp.hint)}</span>
-          <span class="bar"><i style="width:${lp.pct}%"></i></span>
-        </span>
-      </button>`;
+      <div class="hello">${t('feed.hello', { nick: esc(state.user.nickname || t('common.creator')) })} ${isDemo() ? `<span class="badge demo">${esc(t('badge.demo'))}</span>` : ''}</div><h2>${t('feed.title')}</h2><button class="level-strip" data-act="tab" data-tab="ranks"><span class="ls-emoji">${l.emoji}</span><span class="ls-main"><span class="ls-top"><span>Lv.${l.id} ${l.name}</span><span class="ls-pct">${Math.round(lp.pct)}%</span></span><span class="ls-sub">${esc(lp.hint)}</span><span class="bar"><i style="width:${lp.pct}%"></i></span></span></button>`;
 
     renderChallengeBanner();
     renderFeedPromo();
@@ -610,16 +555,7 @@
     const c = state.challenge;
     const x = challengeOf();
     $('#feed-challenge').innerHTML = `
-      <button class="challenge" data-act="challenge">
-        <span class="ch-tag"><span class="pulse"></span>${esc(t('challenge.tag'))}</span>
-        <strong>${esc(x.title)}${x.sub ? `<em>${esc(x.sub)}</em>` : ''}</strong>
-        <p>${esc(x.desc)}</p>
-        <span class="ch-foot">
-          <span>${esc(t('challenge.joiners', { n: nf(c.participants) }))}</span>
-          <span>D-${challengeDays()}</span>
-          <span class="ch-go">${esc(t('challenge.cta'))}</span>
-        </span>
-      </button>`;
+      <button class="challenge" data-act="challenge"><span class="ch-tag"><span class="pulse"></span>${esc(t('challenge.tag'))}</span><strong>${esc(x.title)}${x.sub ? `<em>${esc(x.sub)}</em>` : ''}</strong><p>${esc(x.desc)}</p><span class="ch-foot"><span>${esc(t('challenge.joiners', { n: nf(c.participants) }))}</span><span>D-${challengeDays()}</span><span class="ch-go">${esc(t('challenge.cta'))}</span></span></button>`;
   }
 
   function renderFeedPromo() {
@@ -627,11 +563,7 @@
     if (!el) return;
     if (isPro()) { el.innerHTML = ''; return; }
     el.innerHTML = `
-      <button class="feed-promo" data-act="open-market">
-        <span class="fp-tag">${esc(t('feedPromo.tag'))}</span>
-        <span class="fp-main"><b>${esc(t('feedPromo.title'))}</b><span>${esc(t('feedPromo.sub'))}</span></span>
-        <span class="fp-go">${esc(t('feedPromo.cta'))} ›</span>
-      </button>`;
+      <button class="feed-promo" data-act="open-market"><span class="fp-tag">${esc(t('feedPromo.tag'))}</span><span class="fp-main"><b>${esc(t('feedPromo.title'))}</b><span>${esc(t('feedPromo.sub'))}</span></span><span class="fp-go">${esc(t('feedPromo.cta'))} ›</span></button>`;
   }
 
   function renderChips() {
@@ -639,9 +571,7 @@
     CATS.forEach((c) => { counts[c.id] = state.posts.filter((p) => p.category === c.id).length; });
     const items = [{ id: 'all', name: t('chip.all') }, ...CATS.map((c) => ({ id: c.id, name: catName(c) }))];
     $('#feed-chips').innerHTML = items.map((c) => `
-      <button class="chip ${state.ui.filter === c.id ? 'is-on' : ''}" data-act="filter" data-f="${c.id}" role="tab" aria-selected="${state.ui.filter === c.id}">
-        ${esc(c.name)}<span class="n">${counts[c.id]}</span>
-      </button>`).join('');
+      <button class="chip ${state.ui.filter === c.id ? 'is-on' : ''}" data-act="filter" data-f="${c.id}" role="tab" aria-selected="${state.ui.filter === c.id}">${esc(c.name)}<span class="n">${counts[c.id]}</span></button>`).join('');
     $$('#feed-sort button').forEach((b) => {
       b.classList.toggle('is-on', b.dataset.s === state.ui.sort);
       b.textContent = t(b.dataset.s === 'new' ? 'sort.new' : 'sort.pop');
@@ -680,7 +610,7 @@
     if (countEl) countEl.textContent = cnt('feed.count', list.length);
     $('#feed-list').innerHTML = list.length
       ? list.map(postCard).join('')
-      : `<div class="empty"><div class="big">🫧</div>${q ? t('feed.emptyQuery', { q: esc(q) }) : esc(t('feed.emptyCat'))}<br><button class="btn small" style="margin-top:14px" data-act="clear-search">${esc(t('common.viewAll'))}</button></div>`;
+      : `<div class="empty"><div class="big"></div>${q ? t('feed.emptyQuery', { q: esc(q) }) : esc(t('feed.emptyCat'))}<br><button class="btn small" style="margin-top:14px" data-act="clear-search">${esc(t('common.viewAll'))}</button></div>`;
   }
 
   function reactionCount(p) {
@@ -696,63 +626,19 @@
     const commentCount = p.comments.reduce((a, cm) => a + 1 + (cm.replies?.length || 0), 0);
     const title = pTitle(p);
     return `
-    <article class="post" data-post="${p.id}">
-      <header class="post-head">
-        ${avatar(p.author)}
-        <div class="who">
-          <div class="post-name">
-            <span class="nick">${esc(nickOf(p.author))}</span>
-            ${lvBadge(p.author.level)}
+    <article class="post" data-post="${p.id}"><header class="post-head">${avatar(p.author)}
+        <div class="who"><div class="post-name"><span class="nick">${esc(nickOf(p.author))}</span>${lvBadge(p.author.level)}
             ${isMine ? `<span class="badge demo">${esc(t('common.me'))}</span>` : ''}
-          </div>
-          <div class="post-meta">
-            <span>${esc(toolName(tl))}</span><i></i><span>${esc(catName(c))}</span><i></i><span>${timeAgo(p.createdAt)}</span>
-          </div>
-        </div>
-        ${!isMine ? `<button class="follow-btn ${following ? 'is-on' : ''}" data-act="follow" data-handle="${esc(p.author.handle)}">${esc(following ? t('post.following') : t('post.follow'))}</button>` : ''}
-      </header>
-
-      <div class="media" data-act="open" data-id="${p.id}" role="button" tabindex="0" aria-label="${esc(t('post.openAria', { title }))}">
-        <img src="${p.image}" alt="${esc(title)}" loading="lazy">
-        <span class="cat-chip">${c.emoji} ${esc(catName(c))}</span>
-        ${p.picked ? `<span class="pick-chip">${esc(t('post.pick'))}</span>` : ''}
+          </div><div class="post-meta"><span>${esc(toolName(tl))}</span><i></i><span>${esc(catName(c))}</span><i></i><span>${timeAgo(p.createdAt)}</span></div></div>${!isMine ? `<button class="follow-btn ${following ? 'is-on' : ''}" data-act="follow" data-handle="${esc(p.author.handle)}">${esc(following ? t('post.following') : t('post.follow'))}</button>` : ''}
+      </header><div class="media" data-act="open" data-id="${p.id}" role="button" tabindex="0" aria-label="${esc(t('post.openAria', { title }))}"><img src="${p.image}" alt="${esc(title)}" loading="lazy"><span class="cat-chip">${c.emoji} ${esc(catName(c))}</span>${p.picked ? `<span class="pick-chip">${esc(t('post.pick'))}</span>` : ''}
         ${p.category === 'video' ? '<span class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></span>' : ''}
-        <span class="media-tool">${esc(toolName(tl))}</span>
-        ${p.views ? `<span class="media-views">▶ ${esc(nf(p.views))}</span>` : ''}
-      </div>
+        <span class="media-tool">${esc(toolName(tl))}</span>${p.views ? `<span class="media-views">▶ ${esc(nf(p.views))}</span>` : ''}
+      </div><h3 class="post-title" data-act="open" data-id="${p.id}">${esc(title)}</h3><p class="post-desc">${esc(pDesc(p))}</p><div class="prompt-box ${locked ? 'is-locked' : ''}"><div class="prompt-head"><span class="prompt-label">PROMPT</span><span class="prompt-model">${esc(toolName(tl))} · ${esc(locked ? t('post.locked') : t('post.original'))}</span></div><p class="prompt-text">${esc(p.prompt)}</p>${locked ? `<span class="lock-veil"><span class="lock-pill"><span class="lk"></span>${esc(t('post.lockPill'))}</span></span>` : ''}
+      </div>${locked && p.promptPublic ? `<div class="unlock-row"><button data-act="open-ranks">${esc(t('unlock.level'))}</button><span class="or">${esc(t('unlock.or'))}</span><button data-act="open-market" data-focus="pro">${esc(t('unlock.buy'))}</button></div>` : ''}
 
-      <h3 class="post-title" data-act="open" data-id="${p.id}">${esc(title)}</h3>
-      <p class="post-desc">${esc(pDesc(p))}</p>
-
-      <div class="prompt-box ${locked ? 'is-locked' : ''}">
-        <div class="prompt-head"><span class="prompt-label">PROMPT</span><span class="prompt-model">${esc(toolName(tl))} · ${esc(locked ? t('post.locked') : t('post.original'))}</span></div>
-        <p class="prompt-text">${esc(p.prompt)}</p>
-        ${locked ? `<span class="lock-veil"><span class="lock-pill"><span class="lk">🔒</span>${esc(t('post.lockPill'))}</span></span>` : ''}
-      </div>
-      ${locked && p.promptPublic ? `<div class="unlock-row">
-        <button data-act="open-ranks">${esc(t('unlock.level'))}</button>
-        <span class="or">${esc(t('unlock.or'))}</span>
-        <button data-act="open-market" data-focus="pro">${esc(t('unlock.buy'))}</button>
-      </div>` : ''}
-
-      <div class="post-actions">
-        ${['fire', 'bulb', 'clap'].map((k) => `
-          <button class="act ${p.me[k] ? 'is-on' : ''}" data-act="react" data-id="${p.id}" data-k="${k}" aria-pressed="${!!p.me[k]}">
-            <span class="emoji">${k === 'fire' ? '🔥' : k === 'bulb' ? '💡' : '👏'}</span><span>${nf(p.cheers[k])}</span>
-          </button>`).join('')}
-        <button class="act" data-act="open" data-id="${p.id}" aria-label="${esc(cnt('aria.commentCount', commentCount))}">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M20 12a7.5 7.5 0 0 1-11 6.6L4.5 20l1.2-4A7.5 7.5 0 1 1 20 12Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-          <span>${commentCount}</span>
-        </button>
-        <span class="spacer"></span>
-        <button class="act bm ${p.bookmarked ? 'is-on' : ''}" data-act="bookmark" data-id="${p.id}" aria-label="${esc(t('aria.bookmark'))}" aria-pressed="${!!p.bookmarked}">
-          <svg viewBox="0 0 24 24" fill="${p.bookmarked ? 'currentColor' : 'none'}"><path d="M7 4.5h10a1 1 0 0 1 1 1V20l-6-4-6 4V5.5a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-        </button>
-        <button class="act" data-act="share" data-id="${p.id}" aria-label="${esc(t('aria.share'))}">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 15V4m0 0L8.5 7.5M12 4l3.5 3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 13v5.5a1.5 1.5 0 0 0 1.5 1.5h11a1.5 1.5 0 0 0 1.5-1.5V13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-        </button>
-      </div>
-    </article>`;
+      <div class="post-actions">${['fire', 'bulb', 'clap'].map((k) => `
+          <button class="act ${p.me[k] ? 'is-on' : ''}" data-act="react" data-id="${p.id}" data-k="${k}" aria-pressed="${!!p.me[k]}"><span class="emoji">${k === 'fire' ? '' : k === 'bulb' ? '' : ''}</span><span>${nf(p.cheers[k])}</span></button>`).join('')}
+        <button class="act" data-act="open" data-id="${p.id}" aria-label="${esc(cnt('aria.commentCount', commentCount))}"><svg viewBox="0 0 24 24" fill="none"><path d="M20 12a7.5 7.5 0 0 1-11 6.6L4.5 20l1.2-4A7.5 7.5 0 1 1 20 12Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><span>${commentCount}</span></button><span class="spacer"></span><button class="act bm ${p.bookmarked ? 'is-on' : ''}" data-act="bookmark" data-id="${p.id}" aria-label="${esc(t('aria.bookmark'))}" aria-pressed="${!!p.bookmarked}"><svg viewBox="0 0 24 24" fill="${p.bookmarked ? 'currentColor' : 'none'}"><path d="M7 4.5h10a1 1 0 0 1 1 1V20l-6-4-6 4V5.5a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></button><button class="act" data-act="share" data-id="${p.id}" aria-label="${esc(t('aria.share'))}"><svg viewBox="0 0 24 24" fill="none"><path d="M12 15V4m0 0L8.5 7.5M12 4l3.5 3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 13v5.5a1.5 1.5 0 0 0 1.5 1.5h11a1.5 1.5 0 0 0 1.5-1.5V13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button></div></article>`;
   }
 
   /* ---------------------------------------------------------------- explore */
@@ -770,14 +656,8 @@
     if (q) {
       const list = state.posts.filter((p) => searchable(p).includes(q.toLowerCase()));
       $('#explore-results').innerHTML = `
-        <div class="section-head" style="margin-top:16px"><h3>${esc(t('explore.results'))} <span class="muted" style="font-size:12px">${list.length}</span></h3>
-        <button class="link" data-act="clear-search">${esc(t('explore.clear'))}</button></div>
-        ${list.length ? list.map((p) => `
-          <button class="result-row" data-act="open" data-id="${p.id}">
-            <img src="${p.image}" alt="" loading="lazy">
-            <span class="rr-main"><b>${esc(pTitle(p))}</b><span>${esc(nickOf(p.author))} · ${esc(toolName(toolOf(p.tool)))} · ${timeAgo(p.createdAt)}</span></span>
-            <span class="badge lv${p.author.level}">${LEVELS[p.author.level].emoji} Lv.${p.author.level}</span>
-          </button>`).join('') : `<div class="empty"><div class="big">🔍</div>${esc(t('explore.noMatch'))}</div>`}`;
+        <div class="section-head" style="margin-top:16px"><h3>${esc(t('explore.results'))} <span class="muted" style="font-size:12px">${list.length}</span></h3><button class="link" data-act="clear-search">${esc(t('explore.clear'))}</button></div>${list.length ? list.map((p) => `
+          <button class="result-row" data-act="open" data-id="${p.id}"><img src="${p.image}" alt="" loading="lazy"><span class="rr-main"><b>${esc(pTitle(p))}</b><span>${esc(nickOf(p.author))} · ${esc(toolName(toolOf(p.tool)))} · ${timeAgo(p.createdAt)}</span></span><span class="badge lv${p.author.level}">${LEVELS[p.author.level].emoji} Lv.${p.author.level}</span></button>`).join('') : `<div class="empty"><div class="big"></div>${esc(t('explore.noMatch'))}</div>`}`;
       return;
     }
 
@@ -791,50 +671,19 @@
     const newest = state.posts.slice(0, 4);
 
     $('#explore-main').innerHTML = `
-      <div class="section-head"><h3>${esc(t('explore.tags'))}</h3><span class="link">${esc(t('explore.weekly'))}</span></div>
-      <div class="tag-cloud">
-        ${tags.map((tg) => `<button class="tag" data-act="tag" data-tag="${esc(tg)}">${esc(tg)} <span class="h">${tagCount(tg)}</span></button>`).join('')}
-      </div>
-
-      <div class="section-head"><h3>${esc(t('explore.tools'))}</h3></div>
-      <div class="tool-grid">
-        ${TOOLS.slice(0, 8).map((tl) => {
+      <div class="section-head"><h3>${esc(t('explore.tags'))}</h3><span class="link">${esc(t('explore.weekly'))}</span></div><div class="tag-cloud">${tags.map((tg) => `<button class="tag" data-act="tag" data-tag="${esc(tg)}">${esc(tg)} <span class="h">${tagCount(tg)}</span></button>`).join('')}
+      </div><div class="section-head"><h3>${esc(t('explore.tools'))}</h3></div><div class="tool-grid">${TOOLS.slice(0, 8).map((tl) => {
           const n = state.posts.filter((p) => p.tool === tl.id).length;
-          return `<button class="tool-tile" data-act="tool" data-tool="${tl.id}">
-            <span class="tl" style="background:${tl.color}">${tl.mark}</span>
-            <span class="tt"><b>${esc(toolName(tl))}</b><span>${esc(cnt('explore.toolWorks', n))}</span></span>
-          </button>`;
+          return `<button class="tool-tile" data-act="tool" data-tool="${tl.id}"><span class="tl" style="background:${tl.color}">${tl.mark}</span><span class="tt"><b>${esc(toolName(tl))}</b><span>${esc(cnt('explore.toolWorks', n))}</span></span></button>`;
         }).join('')}
-      </div>
-
-      <div class="section-head"><h3>${esc(t('explore.cats'))}</h3></div>
-      <div class="cat-grid">
-        ${CATS.map((c) => {
+      </div><div class="section-head"><h3>${esc(t('explore.cats'))}</h3></div><div class="cat-grid">${CATS.map((c) => {
           const n = state.posts.filter((p) => p.category === c.id).length;
-          return `<button class="cat-card c-${c.id}" data-act="cat" data-cat="${c.id}">
-            <span class="cemoji" style="font-size:18px">${c.emoji}</span>
-            <span><b>${esc(catName(c))}</b><br><span>${esc(cnt('explore.catWorks', n))}</span></span>
-            <span class="arrow">↗</span>
-          </button>`;
+          return `<button class="cat-card c-${c.id}" data-act="cat" data-cat="${c.id}"><span class="cemoji" style="font-size:18px">${c.emoji}</span><span><b>${esc(catName(c))}</b><br><span>${esc(cnt('explore.catWorks', n))}</span></span><span class="arrow">↗</span></button>`;
         }).join('')}
-      </div>
-
-      <div class="section-head"><h3>${esc(t('explore.picked'))}</h3><button class="link" data-act="tab" data-tab="ranks">${esc(t('explore.pickCriteria'))}</button></div>
-      <div class="grid-2">
-        ${picked.map((p) => `
-          <button class="tile" data-act="open" data-id="${p.id}">
-            <img src="${p.image}" alt="${esc(pTitle(p))}" loading="lazy">
-            <span class="cap">${esc(pTitle(p))}<small>${esc(nickOf(p.author))} · 🔥 ${nf(p.cheers.fire)}</small></span>
-          </button>`).join('')}
-      </div>
-
-      <div class="section-head"><h3>${esc(t('explore.new'))}</h3></div>
-      ${newest.map((p) => `
-        <button class="result-row" data-act="open" data-id="${p.id}">
-          <img src="${p.image}" alt="" loading="lazy">
-          <span class="rr-main"><b>${esc(pTitle(p))}</b><span>${esc(toolName(toolOf(p.tool)))} · ${timeAgo(p.createdAt)} · ${esc(catName(catOf(p.category)))}</span></span>
-          <span class="chev" style="color:#4A5365">›</span>
-        </button>`).join('')}
+      </div><div class="section-head"><h3>${esc(t('explore.picked'))}</h3><button class="link" data-act="tab" data-tab="ranks">${esc(t('explore.pickCriteria'))}</button></div><div class="grid-2">${picked.map((p) => `
+          <button class="tile" data-act="open" data-id="${p.id}"><img src="${p.image}" alt="${esc(pTitle(p))}" loading="lazy"><span class="cap">${esc(pTitle(p))}<small>${esc(nickOf(p.author))} ·  ${nf(p.cheers.fire)}</small></span></button>`).join('')}
+      </div><div class="section-head"><h3>${esc(t('explore.new'))}</h3></div>${newest.map((p) => `
+        <button class="result-row" data-act="open" data-id="${p.id}"><img src="${p.image}" alt="" loading="lazy"><span class="rr-main"><b>${esc(pTitle(p))}</b><span>${esc(toolName(toolOf(p.tool)))} · ${timeAgo(p.createdAt)} · ${esc(catName(catOf(p.category)))}</span></span><span class="chev" style="color:#4A5365">›</span></button>`).join('')}
     `;
   }
 
@@ -842,29 +691,10 @@
   function productCard(x, i) {
     const k = 'shop.p' + (i + 1);
     return `
-      <article class="shop-card">
-        <div class="shop-cover">
-          <img src="${x.img}" alt="${esc(t(k + '.name'))}" loading="lazy">
-          <span class="shop-tag">${esc(t('shop.early'))}</span>
-          ${x.pro ? `<span class="shop-pro">${esc(t('badge.pro'))}</span>` : ''}
-        </div>
-        <div class="shop-body">
-          <h3>${esc(t(k + '.name'))}</h3>
-          <p class="shop-desc">${esc(t(k + '.desc'))}</p>
-          <div class="shop-inc">${esc(t('market.includes'))}</div>
-          <ul class="shop-list">
-            ${[1, 2, 3].map((n) => `<li>${esc(t(k + '.i' + n))}</li>`).join('')}
-          </ul>
-          <div class="shop-price">
-            <span class="now">${esc(krw(x.price))}</span>
-            <span class="was">${esc(t('shop.was'))} ${esc(krw(x.list))}</span>
-            <span class="off">${esc(t('shop.off', { p: shopOff(x) }))}</span>
-          </div>
-          <a class="btn primary block shop-cta" href="${x.url}" target="_blank" rel="noopener noreferrer">${esc(t(k + '.cta'))} ↗</a>
-          ${x.freeUrl ? `<a class="shop-free" href="${x.freeUrl}" target="_blank" rel="noopener noreferrer">${esc(t(k + '.free'))} ↗</a>` : ''}
-          <div class="shop-fine">${esc(t('shop.digital'))} · ${esc(t('shop.external'))}</div>
-        </div>
-      </article>`;
+      <article class="shop-card"><div class="shop-cover"><img src="${x.img}" alt="${esc(t(k + '.name'))}" loading="lazy"><span class="shop-tag">${esc(t('shop.early'))}</span>${x.pro ? `<span class="shop-pro">${esc(t('badge.pro'))}</span>` : ''}
+        </div><div class="shop-body"><h3>${esc(t(k + '.name'))}</h3><p class="shop-desc">${esc(t(k + '.desc'))}</p><div class="shop-inc">${esc(t('market.includes'))}</div><ul class="shop-list">${[1, 2, 3].map((n) => `<li>${esc(t(k + '.i' + n))}</li>`).join('')}
+          </ul><div class="shop-price"><span class="now">${esc(krw(x.price))}</span><span class="was">${esc(t('shop.was'))} ${esc(krw(x.list))}</span><span class="off">${esc(t('shop.off', { p: shopOff(x) }))}</span></div><a class="btn primary block shop-cta" href="${x.url}" target="_blank" rel="noopener noreferrer">${esc(t(k + '.cta'))} ↗</a>${x.freeUrl ? `<a class="shop-free" href="${x.freeUrl}" target="_blank" rel="noopener noreferrer">${esc(t(k + '.free'))} ↗</a>` : ''}
+          <div class="shop-fine">${esc(t('shop.digital'))} · ${esc(t('shop.external'))}</div></div></article>`;
   }
 
   function renderMarket() {
@@ -872,50 +702,9 @@
     if (!root) return;
     const pro = isPro();
     root.innerHTML = `
-      <div class="page-head">
-        <span class="eyebrow">MARKET</span>
-        <h2>${esc(t('market.head'))}</h2>
-        <p>${esc(t('market.sub'))}</p>
-      </div>
-
-      <section class="pro-card ${pro ? 'is-on' : ''}" id="pro-pass" aria-label="${esc(t('pro.title'))}">
-        <div class="pro-top">
-          <span class="pro-badge">${esc(t('pro.tag'))}</span>
-          <span class="pro-status ${pro ? 'on' : ''}"><i></i>${esc(pro ? t('pro.on') : t('pro.off'))}</span>
-        </div>
-        <h3>${esc(t('pro.title'))}</h3>
-        <p class="pro-desc">${esc(t('pro.desc'))}</p>
-        <ul class="pro-list">
-          ${[1, 2, 3].map((n) => `<li><span class="pi">${n === 1 ? '🔓' : n === 2 ? '📋' : '✨'}</span><span class="pt"><b>${esc(t('pro.b' + n + 't'))}</b><span>${esc(t('pro.b' + n + 's'))}</span></span></li>`).join('')}
-        </ul>
-        <a class="btn primary block" href="${SHOP[0].url}" target="_blank" rel="noopener noreferrer">${esc(t('pro.buy'))} ↗</a>
-        <div class="pro-price">${esc(t('pro.priceLine', { p: krw(SHOP[0].price), l: krw(SHOP[0].list) }))}</div>
-        <button class="btn ghost block pro-level" data-act="tab" data-tab="ranks">
-          <span class="pl-main">${esc(t('pro.level'))}</span>
-          <span class="pl-sub">${esc(t('pro.levelSub'))}</span>
-        </button>
-        <div class="pro-links">
-          <a class="pro-free" href="${SHOP[0].freeUrl}" target="_blank" rel="noopener noreferrer">${esc(t('pro.preview'))} ↗</a>
-          <button class="link-btn" data-act="pro-demo">${esc(pro ? t('pro.demoOff') : t('pro.demoOn'))}</button>
-        </div>
-        <p class="pro-demo-note">${esc(t('pro.demoNote'))}</p>
-      </section>
-
-      <div class="section-head"><h3>${esc(t('market.shop'))}</h3><span class="link">${esc(t('market.shopSub'))}</span></div>
-      <div class="shop-grid">${SHOP.map(productCard).join('')}</div>
-
-      <div class="section-head"><h3>${esc(t('market.trustTitle'))}</h3></div>
-      <section class="trust-card">
-        ${[1, 2, 3, 4].map((n) => `<div class="trust-row"><span class="ti">${['💳', '📥', '↩️', 'ℹ️'][n - 1]}</span><p>${esc(t('market.trust' + n))}</p></div>`).join('')}
-      </section>
-      <p class="market-legal">${esc(t('market.legal'))}</p>
-
-      <section class="roadmap">
-        <span class="rm-tag">${esc(t('market.roadmapTag'))}</span>
-        <h3>${esc(t('market.roadmapTitle'))}</h3>
-        <p>${esc(t('market.roadmapDesc'))}</p>
-      </section>
-    `;
+      <div class="page-head"><span class="eyebrow">MARKET</span><h2>${esc(t('market.head'))}</h2><p>${esc(t('market.sub'))}</p></div><section class="pro-card ${pro ? 'is-on' : ''}" id="pro-pass" aria-label="${esc(t('pro.title'))}"><div class="pro-top"><span class="pro-badge">${esc(t('pro.tag'))}</span><span class="pro-status ${pro ? 'on' : ''}"><i></i>${esc(pro ? t('pro.on') : t('pro.off'))}</span></div><h3>${esc(t('pro.title'))}</h3><p class="pro-desc">${esc(t('pro.desc'))}</p><ul class="pro-list">${[1, 2, 3].map((n) => `<li><span class="pi">${n === 1 ? '' : n === 2 ? '' : ''}</span><span class="pt"><b>${esc(t('pro.b' + n + 't'))}</b><span>${esc(t('pro.b' + n + 's'))}</span></span></li>`).join('')}
+        </ul><a class="btn primary block" href="${SHOP[0].url}" target="_blank" rel="noopener noreferrer">${esc(t('pro.buy'))} ↗</a><div class="pro-price">${esc(t('pro.priceLine', { p: krw(SHOP[0].price), l: krw(SHOP[0].list) }))}</div><button class="btn ghost block pro-level" data-act="tab" data-tab="ranks"><span class="pl-main">${esc(t('pro.level'))}</span><span class="pl-sub">${esc(t('pro.levelSub'))}</span></button><div class="pro-links"><a class="pro-free" href="${SHOP[0].freeUrl}" target="_blank" rel="noopener noreferrer">${esc(t('pro.preview'))} ↗</a><button class="link-btn" data-act="pro-demo">${esc(pro ? t('pro.demoOff') : t('pro.demoOn'))}</button></div><p class="pro-demo-note">${esc(t('pro.demoNote'))}</p></section><div class="section-head"><h3>${esc(t('market.shop'))}</h3><span class="link">${esc(t('market.shopSub'))}</span></div><div class="shop-grid">${SHOP.map(productCard).join('')}</div><div class="section-head"><h3>${esc(t('market.trustTitle'))}</h3></div><section class="trust-card">${[1, 2, 3, 4].map((n) => `<div class="trust-row"><span class="ti">${['', '', '↩', 'ℹ'][n - 1]}</span><p>${esc(t('market.trust' + n))}</p></div>`).join('')}
+      </section><p class="market-legal">${esc(t('market.legal'))}</p><section class="roadmap"><span class="rm-tag">${esc(t('market.roadmapTag'))}</span><h3>${esc(t('market.roadmapTitle'))}</h3><p>${esc(t('market.roadmapDesc'))}</p></section>`;
   }
 
   /* ---------------------------------------------------------------- ranks */
@@ -949,115 +738,25 @@
     const dash = 2 * Math.PI * 35;
 
     $('#ranks-inner').innerHTML = `
-      <div class="page-head">
-        <span class="eyebrow">LEVELS & RANKING</span>
-        <h2>${esc(t('ranks.head'))}</h2>
-        <p>${esc(t('ranks.sub'))}</p>
-      </div>
-
-      <section class="level-card" aria-label="${esc(t('ranks.myLevelAria'))}">
-        <div class="level-top">
-          <div class="ring">
-            <svg viewBox="0 0 84 84">
-              <defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2BE3A5"/><stop offset="1" stop-color="#38BDF8"/></linearGradient></defs>
-              <circle cx="42" cy="42" r="35" stroke="rgba(43,227,165,.16)" stroke-width="6" fill="none"/>
-              <circle cx="42" cy="42" r="35" stroke="url(#ringGrad)" stroke-width="6" fill="none" stroke-linecap="round"
-                stroke-dasharray="${dash.toFixed(1)}" stroke-dashoffset="${(dash * (1 - lp.pct / 100)).toFixed(1)}"/>
-            </svg>
-            <span class="ring-emoji">${l.emoji}</span>
-          </div>
-          <div class="lvl-meta">
-            <div class="lv-title">MY LEVEL ${isDemo() ? `<span class="badge demo">${esc(t('ranks.demoSwitched'))}</span>` : ''}</div>
-            <h3>Lv.${l.id} ${l.name}${L() === 'en' ? '' : `<span class="badge lv${l.id}">${l.emoji} ${esc(l.label)}</span>`}</h3>
-            <div class="lv-desc">${esc(l.desc)}</div>
-          </div>
-        </div>
-
-        <div class="lvl-progress">
-          <div class="lp-row"><span>${esc(lp.next)}</span><b>${esc(lp.label)}</b></div>
-          <div class="bar"><i style="width:${lp.pct}%"></i></div>
-          <div class="xp-row">
-            <span class="xp-chip">${esc(t('ranks.xp', { n: nf(xp()) }))}</span>
-            <span class="xp-chip">${esc(t('ranks.prompts', { n: s.prompts }))}</span>
-            <span class="xp-chip">${esc(t('ranks.wroteComments', { n: s.comments }))}</span>
-          </div>
-        </div>
-
-        <div class="demo-box">
-          <span class="dl"><b>${esc(t('ranks.demoSwitch'))}</b>${esc(t('ranks.demoSub'))}</span>
-          <div class="demo-seg" role="group" aria-label="${esc(t('ranks.demoSwitch'))}">
-            ${[1, 2, 3, 4].map((n) => `<button data-act="demo" data-lv="${n}" class="${Number(state.user.demoLevel) === n ? 'is-on' : ''}" title="Lv.${n} ${LEVELS[n].name}">${LEVELS[n].emoji}</button>`).join('')}
-            <button data-act="demo" data-lv="auto" class="auto ${!isDemo() ? 'is-on' : ''}">${esc(t('ranks.auto'))}</button>
-          </div>
-        </div>
-      </section>
-
-      <div class="section-head"><h3>${esc(t('ranks.benefits'))}</h3><span class="link">${esc(t('ranks.immediate'))}</span></div>
-      <section class="benefit" aria-label="${esc(t('ranks.benefitAria'))}">
-        <div class="benefit-row head">
-          <span class="bh" style="text-align:left">${esc(t('ranks.permission'))}</span>
-          ${[1, 2, 3, 4].map((n) => `<span class="bh">${LEVELS[n].emoji}<br>Lv.${n}</span>`).join('')}
-        </div>
-        ${BENEFITS.map((b) => `
-          <div class="benefit-row">
-            <span class="feat"><span class="fi2">${b.icon}</span>${esc(t('benefit.' + b.key))}</span>
-            ${[1, 2, 3, 4].map((n) => `<span class="cell ${n >= b.min ? 'on' : 'lock'} ${n === lv ? 'cur' : ''}">${n >= b.min ? '✓' : '·'}</span>`).join('')}
+      <div class="page-head"><span class="eyebrow">LEVELS & RANKING</span><h2>${esc(t('ranks.head'))}</h2><p>${esc(t('ranks.sub'))}</p></div><section class="level-card" aria-label="${esc(t('ranks.myLevelAria'))}"><div class="level-top"><div class="ring"><svg viewBox="0 0 84 84"><defs><linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2BE3A5"/><stop offset="1" stop-color="#38BDF8"/></linearGradient></defs><circle cx="42" cy="42" r="35" stroke="rgba(43,227,165,.16)" stroke-width="6" fill="none"/><circle cx="42" cy="42" r="35" stroke="url(#ringGrad)" stroke-width="6" fill="none" stroke-linecap="round"
+                stroke-dasharray="${dash.toFixed(1)}" stroke-dashoffset="${(dash * (1 - lp.pct / 100)).toFixed(1)}"/></svg><span class="ring-emoji">${l.emoji}</span></div><div class="lvl-meta"><div class="lv-title">MY LEVEL ${isDemo() ? `<span class="badge demo">${esc(t('ranks.demoSwitched'))}</span>` : ''}</div><h3>Lv.${l.id} ${l.name}${L() === 'en' ? '' : `<span class="badge lv${l.id}">${l.emoji} ${esc(l.label)}</span>`}</h3><div class="lv-desc">${esc(l.desc)}</div></div></div><div class="lvl-progress"><div class="lp-row"><span>${esc(lp.next)}</span><b>${esc(lp.label)}</b></div><div class="bar"><i style="width:${lp.pct}%"></i></div><div class="xp-row"><span class="xp-chip">${esc(t('ranks.xp', { n: nf(xp()) }))}</span><span class="xp-chip">${esc(t('ranks.prompts', { n: s.prompts }))}</span><span class="xp-chip">${esc(t('ranks.wroteComments', { n: s.comments }))}</span></div></div><div class="demo-box"><span class="dl"><b>${esc(t('ranks.demoSwitch'))}</b>${esc(t('ranks.demoSub'))}</span><div class="demo-seg" role="group" aria-label="${esc(t('ranks.demoSwitch'))}">${[1, 2, 3, 4].map((n) => `<button data-act="demo" data-lv="${n}" class="${Number(state.user.demoLevel) === n ? 'is-on' : ''}" title="Lv.${n} ${LEVELS[n].name}">${LEVELS[n].emoji}</button>`).join('')}
+            <button data-act="demo" data-lv="auto" class="auto ${!isDemo() ? 'is-on' : ''}">${esc(t('ranks.auto'))}</button></div></div></section><div class="section-head"><h3>${esc(t('ranks.benefits'))}</h3><span class="link">${esc(t('ranks.immediate'))}</span></div><section class="benefit" aria-label="${esc(t('ranks.benefitAria'))}"><div class="benefit-row head"><span class="bh" style="text-align:left">${esc(t('ranks.permission'))}</span>${[1, 2, 3, 4].map((n) => `<span class="bh">${LEVELS[n].emoji}<br>Lv.${n}</span>`).join('')}
+        </div>${BENEFITS.map((b) => `
+          <div class="benefit-row"><span class="feat"><span class="fi2">${b.icon}</span>${esc(t('benefit.' + b.key))}</span>${[1, 2, 3, 4].map((n) => `<span class="cell ${n >= b.min ? 'on' : 'lock'} ${n === lv ? 'cur' : ''}">${n >= b.min ? '' : '·'}</span>`).join('')}
           </div>`).join('')}
-        <div class="benefit-note">${esc(t('ranks.benefitNote'))}</div>
-      </section>
-
-      <div class="section-head"><h3>${esc(t('ranks.weeklyTop'))}</h3><span class="link">${esc(t('ranks.monday'))}</span></div>
-      <section aria-label="${esc(t('ranks.boardAria'))}">
-        ${board.map((r, i) => `
-          <div class="board-row ${r.mine ? 'me' : ''}">
-            <span class="rank r${i + 1}">${i + 1}</span>
-            ${avatar(r.author, 'sm')}
-            <span class="who">
-              <span class="nm">${esc(nickOf(r.author))} ${lvBadge(r.author.level)}${r.mine ? `<span class="badge demo">${esc(t('common.me'))}</span>` : ''}</span>
-              <span class="sub">${esc(cnt('ranks.boardSub', r.works, { w: r.works, r: nf(r.rec) }))}</span>
-            </span>
-            <span class="score"><b>${nf(r.score)}</b><span class="delta">+${(i + 2)}</span></span>
-          </div>`).join('')}
+        <div class="benefit-note">${esc(t('ranks.benefitNote'))}</div></section><div class="section-head"><h3>${esc(t('ranks.weeklyTop'))}</h3><span class="link">${esc(t('ranks.monday'))}</span></div><section aria-label="${esc(t('ranks.boardAria'))}">${board.map((r, i) => `
+          <div class="board-row ${r.mine ? 'me' : ''}"><span class="rank r${i + 1}">${i + 1}</span>${avatar(r.author, 'sm')}
+            <span class="who"><span class="nm">${esc(nickOf(r.author))} ${lvBadge(r.author.level)}${r.mine ? `<span class="badge demo">${esc(t('common.me'))}</span>` : ''}</span><span class="sub">${esc(cnt('ranks.boardSub', r.works, { w: r.works, r: nf(r.rec) }))}</span></span><span class="score"><b>${nf(r.score)}</b><span class="delta">+${(i + 2)}</span></span></div>`).join('')}
         ${myScore && !board.some((r) => r.mine) ? `
-          <div class="board-row me">
-            <span class="rank">—</span>${avatar(meAuthor(), 'sm')}
-            <span class="who"><span class="nm">${esc(state.user.nickname)} ${lvBadge(lv)}<span class="badge demo">${esc(t('common.me'))}</span></span><span class="sub">${esc(cnt('ranks.mySub', myScore.works, { w: myScore.works, s: nf(myScore.score) }))}</span></span>
-            <span class="score"><b>${nf(myScore.score)}</b><span>${esc(t('ranks.thisWeek'))}</span></span>
-          </div>` : ''}
-      </section>
-
-      <div class="section-head"><h3>${esc(t('ranks.best'))}</h3><span class="link">${esc(can('vote') ? t('ranks.canVote') : t('ranks.voteFrom3'))}</span></div>
-      <section aria-label="${esc(t('ranks.bestAria'))}">
-        ${best.map((p, i) => `
-          <div class="best-row">
-            <span class="rank r${i + 1}">${i + 1}</span>
-            <img src="${p.image}" alt="" loading="lazy">
-            <span class="best-main"><b>${esc(pTitle(p))}</b><span>${esc(nickOf(p.author))} · ${esc(toolName(toolOf(p.tool)))}</span></span>
-            <button class="vote-btn ${p.voted ? 'is-on' : ''}" data-act="vote" data-id="${p.id}">${p.voted ? '★' : '☆'} ${nf(p.votes)}</button>
-          </div>`).join('')}
-      </section>
-
-      <div class="section-head"><h3>${esc(t('ranks.weeklyChallenge'))}</h3><span class="link">D-${challengeDays()}</span></div>
-      <section class="challenge-block" id="challenge-block">
-        ${ui.challengeForm ? `
-          <h4>${esc(t('ranks.newForm'))} <em>CURATOR</em></h4>
-          <input class="f-input" id="ch-title" placeholder="${esc(t('ranks.chTitlePh'))}" maxlength="20" style="margin-top:10px">
-          <textarea class="f-input" id="ch-desc" placeholder="${esc(t('ranks.chDescPh'))}" style="margin-top:8px;min-height:70px"></textarea>
-          <div class="cb-foot">
-            <button class="btn small ghost" data-act="challenge-cancel">${esc(t('common.cancel'))}</button>
-            <button class="btn small primary" data-act="challenge-save">${esc(t('ranks.create'))}</button>
-          </div>
-        ` : `
-          <h4>${esc(cx.title)} ${cx.sub ? `<em>${esc(cx.sub)}</em>` : ''}</h4>
-          <p>${esc(cx.desc)}</p>
-          <div class="cb-foot">
-            <span class="tiny">${esc(t('ranks.statLine', { n: nf(c.participants), d: challengeDays() }))}</span>
-            <button class="btn small" data-act="challenge-join">${esc(t('ranks.join'))}</button>
-            ${can('challenge') ? `<button class="btn small dark" data-act="challenge-new">${esc(t('ranks.newChallenge'))}</button>` : `<span class="tiny" title="${esc(t('ranks.curatorOnly'))}">🔒 Lv.4</span>`}
+          <div class="board-row me"><span class="rank">—</span>${avatar(meAuthor(), 'sm')}
+            <span class="who"><span class="nm">${esc(state.user.nickname)} ${lvBadge(lv)}<span class="badge demo">${esc(t('common.me'))}</span></span><span class="sub">${esc(cnt('ranks.mySub', myScore.works, { w: myScore.works, s: nf(myScore.score) }))}</span></span><span class="score"><b>${nf(myScore.score)}</b><span>${esc(t('ranks.thisWeek'))}</span></span></div>` : ''}
+      </section><div class="section-head"><h3>${esc(t('ranks.best'))}</h3><span class="link">${esc(can('vote') ? t('ranks.canVote') : t('ranks.voteFrom3'))}</span></div><section aria-label="${esc(t('ranks.bestAria'))}">${best.map((p, i) => `
+          <div class="best-row"><span class="rank r${i + 1}">${i + 1}</span><img src="${p.image}" alt="" loading="lazy"><span class="best-main"><b>${esc(pTitle(p))}</b><span>${esc(nickOf(p.author))} · ${esc(toolName(toolOf(p.tool)))}</span></span><button class="vote-btn ${p.voted ? 'is-on' : ''}" data-act="vote" data-id="${p.id}">${p.voted ? '' : ''} ${nf(p.votes)}</button></div>`).join('')}
+      </section><div class="section-head"><h3>${esc(t('ranks.weeklyChallenge'))}</h3><span class="link">D-${challengeDays()}</span></div><section class="challenge-block" id="challenge-block">${ui.challengeForm ? `
+          <h4>${esc(t('ranks.newForm'))} <em>CURATOR</em></h4><input class="f-input" id="ch-title" placeholder="${esc(t('ranks.chTitlePh'))}" maxlength="20" style="margin-top:10px"><textarea class="f-input" id="ch-desc" placeholder="${esc(t('ranks.chDescPh'))}" style="margin-top:8px;min-height:70px"></textarea><div class="cb-foot"><button class="btn small ghost" data-act="challenge-cancel">${esc(t('common.cancel'))}</button><button class="btn small primary" data-act="challenge-save">${esc(t('ranks.create'))}</button></div>` : `
+          <h4>${esc(cx.title)} ${cx.sub ? `<em>${esc(cx.sub)}</em>` : ''}</h4><p>${esc(cx.desc)}</p><div class="cb-foot"><span class="tiny">${esc(t('ranks.statLine', { n: nf(c.participants), d: challengeDays() }))}</span><button class="btn small" data-act="challenge-join">${esc(t('ranks.join'))}</button>${can('challenge') ? `<button class="btn small dark" data-act="challenge-new">${esc(t('ranks.newChallenge'))}</button>` : `<span class="tiny" title="${esc(t('ranks.curatorOnly'))}"> Lv.4</span>`}
           </div>`}
-      </section>
-      <p class="tiny" style="margin:14px 2px 0;line-height:1.6;color:var(--txt-3)">${esc(t('ranks.scoreNote'))}</p>
-    `;
+      </section><p class="tiny" style="margin:14px 2px 0;line-height:1.6;color:var(--txt-3)">${esc(t('ranks.scoreNote'))}</p>`;
   }
 
   /* ---------------------------------------------------------------- my */
@@ -1071,92 +770,18 @@
     const interests = state.user.interests.map((id) => toolOf(id)).filter(Boolean);
 
     $('#my-inner').innerHTML = `
-      <div class="page-head">
-        <span class="eyebrow">MY SPACE</span>
-        <h2>${esc(t('my.head'))}</h2>
-        <p>${esc(t('my.sub'))}</p>
-      </div>
-
-      <section class="profile-card">
-        <div class="profile-top">
-          ${avatar({ nick: state.user.nickname || t('common.me'), hue: state.user.hue, me: true }, 'lg')}
-          <div class="pt-main">
-            <h2>${esc(state.user.nickname || t('common.creator'))} ${lvBadge(lv)}</h2>
-            <div class="handle">${esc(state.user.handle || '@me')} · ${esc(t('my.joined', { date: I18N.monthYear(state.user.joined) }))}</div>
-          </div>
-        </div>
-        <div class="profile-tags">
-          ${interests.length ? interests.map((x) => `<span class="tg">${esc(toolName(x))}</span>`).join('') : `<span class="tg">${esc(t('my.noInterests'))}</span>`}
+      <div class="page-head"><span class="eyebrow">MY SPACE</span><h2>${esc(t('my.head'))}</h2><p>${esc(t('my.sub'))}</p></div><section class="profile-card"><div class="profile-top">${avatar({ nick: state.user.nickname || t('common.me'), hue: state.user.hue, me: true }, 'lg')}
+          <div class="pt-main"><h2>${esc(state.user.nickname || t('common.creator'))} ${lvBadge(lv)}</h2><div class="handle">${esc(state.user.handle || '@me')} · ${esc(t('my.joined', { date: I18N.monthYear(state.user.joined) }))}</div></div></div><div class="profile-tags">${interests.length ? interests.map((x) => `<span class="tg">${esc(toolName(x))}</span>`).join('') : `<span class="tg">${esc(t('my.noInterests'))}</span>`}
           ${isPro() ? `<span class="tg pro">${esc(t('badge.pro'))}</span>` : ''}
           ${isDemo() ? `<span class="tg" style="color:#9AE6CF;border-color:rgba(43,227,165,.3)">${esc(t('my.demoUsing'))}</span>` : ''}
-        </div>
-        <div class="stats">
-          <div class="stat"><b>${s.prompts}</b><span>${esc(t('my.stat.upload'))}</span></div>
-          <div class="stat"><b>${nf(s.upvotes)}</b><span>${esc(t('my.stat.upvotes'))}</span></div>
-          <div class="stat"><b>${s.comments}</b><span>${esc(t('my.stat.comments'))}</span></div>
-          <div class="stat"><b>${s.bookmarks}</b><span>${esc(t('my.stat.bookmarks'))}</span></div>
-        </div>
-        <div class="lvl-progress">
-          <div class="lp-row"><span>${esc(lp.next)}</span><b>${esc(lp.label)}</b></div>
-          <div class="bar"><i style="width:${lp.pct}%"></i></div>
-        </div>
-      </section>
-
-      <div class="section-head"><h3>${esc(t('my.posts'))}</h3><button class="link" data-act="upload">${esc(t('my.uploadBtn'))}</button></div>
-      <section class="list" style="padding:2px 12px">
-        ${mine.length ? mine.slice(0, 4).map((p) => `
-          <button class="mini-post" data-act="open" data-id="${p.id}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(255,255,255,.05)">
-            <img src="${p.image}" alt="">
-            <span class="mp"><b>${esc(pTitle(p))}</b><span>${esc(toolName(toolOf(p.tool)))} · ${timeAgo(p.createdAt)} · 🔥 ${p.cheers.fire}</span></span>
-            <span class="chev" style="color:#4A5365">›</span>
-          </button>`).join('')
-          : `<div class="empty" style="padding:22px 8px"><div class="big">🎨</div>${esc(t('my.noPosts'))}<br>${esc(can('upload') ? t('my.firstPost') : t('my.lv2Upload'))}<br><button class="btn small primary" style="margin-top:12px" data-act="upload">${esc(t('my.openUpload'))}</button></div>`}
-      </section>
-
-      <div class="section-head"><h3>${esc(t('my.saved'))}</h3><span class="link">${bookmarks.length}</span></div>
-      <section class="list" style="padding:2px 12px">
-        ${bookmarks.length ? bookmarks.map((p) => `
-          <button class="mini-post" data-act="open" data-id="${p.id}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(255,255,255,.05)">
-            <img src="${p.image}" alt="">
-            <span class="mp"><b>${esc(pTitle(p))}</b><span>${esc(nickOf(p.author))} · ${esc(toolName(toolOf(p.tool)))}</span></span>
-            <span class="chev" style="color:#4A5365">›</span>
-          </button>`).join('')
+        </div><div class="stats"><div class="stat"><b>${s.prompts}</b><span>${esc(t('my.stat.upload'))}</span></div><div class="stat"><b>${nf(s.upvotes)}</b><span>${esc(t('my.stat.upvotes'))}</span></div><div class="stat"><b>${s.comments}</b><span>${esc(t('my.stat.comments'))}</span></div><div class="stat"><b>${s.bookmarks}</b><span>${esc(t('my.stat.bookmarks'))}</span></div></div><div class="lvl-progress"><div class="lp-row"><span>${esc(lp.next)}</span><b>${esc(lp.label)}</b></div><div class="bar"><i style="width:${lp.pct}%"></i></div></div></section><div class="section-head"><h3>${esc(t('my.posts'))}</h3><button class="link" data-act="upload">${esc(t('my.uploadBtn'))}</button></div><section class="list" style="padding:2px 12px">${mine.length ? mine.slice(0, 4).map((p) => `
+          <button class="mini-post" data-act="open" data-id="${p.id}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(255,255,255,.05)"><img src="${p.image}" alt=""><span class="mp"><b>${esc(pTitle(p))}</b><span>${esc(toolName(toolOf(p.tool)))} · ${timeAgo(p.createdAt)} ·  ${p.cheers.fire}</span></span><span class="chev" style="color:#4A5365">›</span></button>`).join('')
+          : `<div class="empty" style="padding:22px 8px"><div class="big"></div>${esc(t('my.noPosts'))}<br>${esc(can('upload') ? t('my.firstPost') : t('my.lv2Upload'))}<br><button class="btn small primary" style="margin-top:12px" data-act="upload">${esc(t('my.openUpload'))}</button></div>`}
+      </section><div class="section-head"><h3>${esc(t('my.saved'))}</h3><span class="link">${bookmarks.length}</span></div><section class="list" style="padding:2px 12px">${bookmarks.length ? bookmarks.map((p) => `
+          <button class="mini-post" data-act="open" data-id="${p.id}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid rgba(255,255,255,.05)"><img src="${p.image}" alt=""><span class="mp"><b>${esc(pTitle(p))}</b><span>${esc(nickOf(p.author))} · ${esc(toolName(toolOf(p.tool)))}</span></span><span class="chev" style="color:#4A5365">›</span></button>`).join('')
           : `<div class="empty" style="padding:20px 8px">${esc(t('my.savedEmpty'))}</div>`}
-      </section>
-
-      <div class="section-head"><h3>${esc(t('my.settings'))}</h3></div>
-      <section class="list">
-        <button class="list-row" data-act="open-market" data-focus="pro">
-          <span class="li-ic">✨</span>
-          <span class="li-main"><b>${esc(t('my.proRow'))}</b><span>${esc(isPro() ? t('my.proOn') : t('my.proOff'))}</span></span>
-          <span class="chev">›</span>
-        </button>
-        <button class="list-row" data-act="tab" data-tab="ranks">
-          <span class="li-ic">🎚️</span>
-          <span class="li-main"><b>${esc(t('my.demoRow'))}</b><span>${esc(t('my.current', { emoji: l.emoji, lv, name: l.name, state: isDemo() ? t('my.stateDemo') : t('my.stateAuto') }))}</span></span>
-          <span class="chev">›</span>
-        </button>
-        <div class="list-row">
-          <span class="li-ic">🔔</span>
-          <span class="li-main"><b>${esc(t('my.noti'))}</b><span>${esc(state.user.notificationsOn ? t('my.notiOn') : t('my.notiOff'))}</span></span>
-          <button class="switch ${state.user.notificationsOn ? 'is-on' : ''}" data-act="toggle-noti" role="switch" aria-checked="${!!state.user.notificationsOn}" aria-label="${esc(t('aria.notiToggle'))}"></button>
-        </div>
-        <button class="list-row" data-act="reset" style="color:${ui.resetArmed ? 'var(--danger)' : 'inherit'}">
-          <span class="li-ic">${ui.resetArmed ? '⚠️' : '🔄'}</span>
-          <span class="li-main"><b>${esc(ui.resetArmed ? t('my.resetArm') : t('my.reset'))}</b><span>${esc(ui.resetArmed ? t('my.resetSubArm') : t('my.resetSub'))}</span></span>
-          <span class="chev">${ui.resetArmed ? '!' : '›'}</span>
-        </button>
-        <div class="list-row">
-          <span class="li-ic">💾</span>
-          <span class="li-main"><b>${esc(t('my.saveMode'))}</b><span>${esc(t('my.saveModeSub'))}</span></span>
-          <span class="badge demo">v1.1</span>
-        </div>
-      </section>
-
-      <p class="tiny" style="text-align:center;margin:22px 0 6px;color:var(--txt-3);line-height:1.7">
-        ${esc(t('my.footer'))}<br>Made for creators who show their work.
-      </p>
-    `;
+      </section><div class="section-head"><h3>${esc(t('my.settings'))}</h3></div><section class="list"><button class="list-row" data-act="open-market" data-focus="pro"><span class="li-ic"></span><span class="li-main"><b>${esc(t('my.proRow'))}</b><span>${esc(isPro() ? t('my.proOn') : t('my.proOff'))}</span></span><span class="chev">›</span></button><button class="list-row" data-act="tab" data-tab="ranks"><span class="li-ic"></span><span class="li-main"><b>${esc(t('my.demoRow'))}</b><span>${esc(t('my.current', { emoji: l.emoji, lv, name: l.name, state: isDemo() ? t('my.stateDemo') : t('my.stateAuto') }))}</span></span><span class="chev">›</span></button><div class="list-row"><span class="li-ic"></span><span class="li-main"><b>${esc(t('my.noti'))}</b><span>${esc(state.user.notificationsOn ? t('my.notiOn') : t('my.notiOff'))}</span></span><button class="switch ${state.user.notificationsOn ? 'is-on' : ''}" data-act="toggle-noti" role="switch" aria-checked="${!!state.user.notificationsOn}" aria-label="${esc(t('aria.notiToggle'))}"></button></div><button class="list-row" data-act="reset" style="color:${ui.resetArmed ? 'var(--danger)' : 'inherit'}"><span class="li-ic">${ui.resetArmed ? '' : ''}</span><span class="li-main"><b>${esc(ui.resetArmed ? t('my.resetArm') : t('my.reset'))}</b><span>${esc(ui.resetArmed ? t('my.resetSubArm') : t('my.resetSub'))}</span></span><span class="chev">${ui.resetArmed ? '!' : '›'}</span></button><div class="list-row"><span class="li-ic"></span><span class="li-main"><b>${esc(t('my.saveMode'))}</b><span>${esc(t('my.saveModeSub'))}</span></span><span class="badge demo">v1.1</span></div></section><p class="tiny" style="text-align:center;margin:22px 0 6px;color:var(--txt-3);line-height:1.7">${esc(t('my.footer'))}<br>Made for creators who show their work.
+      </p>`;
   }
 
   /* ---------------------------------------------------------------- detail sheet */
@@ -1192,152 +817,42 @@
     const canSug = can('suggestion');
     const title = pTitle(p);
     return `
-      <div class="grab-row"><span class="grab"></span></div>
-      <div class="sheet-head">
-        <h3>${esc(t('detail.head'))}</h3>
-        <span class="sub">${esc(toolName(tl))} · ${esc(catName(c))}</span>
-        <button class="sheet-close" data-act="close-sheet" aria-label="${esc(t('aria.close'))}">✕</button>
-      </div>
-      <div class="sheet-scroll" id="detail-scroll">
-        <div class="detail-media">
-          <img src="${p.image}" alt="${esc(title)}">
-          ${p.picked ? `<span class="pick-chip">${esc(t('post.pick'))}</span>` : ''}
+      <div class="grab-row"><span class="grab"></span></div><div class="sheet-head"><h3>${esc(t('detail.head'))}</h3><span class="sub">${esc(toolName(tl))} · ${esc(catName(c))}</span><button class="sheet-close" data-act="close-sheet" aria-label="${esc(t('aria.close'))}"></button></div><div class="sheet-scroll" id="detail-scroll"><div class="detail-media"><img src="${p.image}" alt="${esc(title)}">${p.picked ? `<span class="pick-chip">${esc(t('post.pick'))}</span>` : ''}
           ${p.category === 'video' ? '<span class="play-btn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></svg></span>' : ''}
-        </div>
+        </div><div class="detail-author">${avatar(p.author)}
+          <div class="who"><div class="nm">${esc(nickOf(p.author))} ${lvBadge(p.author.level)} ${p.mine ? `<span class="badge demo">${esc(t('common.me'))}</span>` : ''}</div><div class="mt">${esc(p.author.handle)} · ${timeAgo(p.createdAt)}${p.views ? ' · ▶ ' + esc(nf(p.views)) : ''}</div></div>${!p.mine ? `<button class="follow-btn ${following ? 'is-on' : ''}" data-act="follow" data-handle="${esc(p.author.handle)}">${esc(following ? t('post.following') : t('post.follow'))}</button>` : ''}
+        </div><h2 class="detail-title">${esc(title)}</h2><p class="detail-desc">${esc(pDesc(p))}</p>${pTags(p).length ? `<div class="detail-tags">${pTags(p).map((g) => `<span>${esc(g)}</span>`).join('')}</div>` : ''}
 
-        <div class="detail-author">
-          ${avatar(p.author)}
-          <div class="who">
-            <div class="nm">${esc(nickOf(p.author))} ${lvBadge(p.author.level)} ${p.mine ? `<span class="badge demo">${esc(t('common.me'))}</span>` : ''}</div>
-            <div class="mt">${esc(p.author.handle)} · ${timeAgo(p.createdAt)}${p.views ? ' · ▶ ' + esc(nf(p.views)) : ''}</div>
-          </div>
-          ${!p.mine ? `<button class="follow-btn ${following ? 'is-on' : ''}" data-act="follow" data-handle="${esc(p.author.handle)}">${esc(following ? t('post.following') : t('post.follow'))}</button>` : ''}
-        </div>
-
-        <h2 class="detail-title">${esc(title)}</h2>
-        <p class="detail-desc">${esc(pDesc(p))}</p>
-        ${pTags(p).length ? `<div class="detail-tags">${pTags(p).map((g) => `<span>${esc(g)}</span>`).join('')}</div>` : ''}
-
-        <div class="prompt-card">
-          <div class="pc-head">
-            <span class="prompt-label">PROMPT</span>
-            <span class="badge demo">${esc(p.promptPublic ? t('detail.public') : t('detail.private'))}</span>
-            <span class="pm">${esc(toolName(tl))}</span>
-          </div>
-          ${locked
-            ? `<div class="pc-body is-locked" aria-hidden="true">${esc(p.prompt)}</div>
-               <div class="pc-lock">
-                 <span style="font-size:19px">🔒</span>
-                 <span class="t"><b>${esc(p.promptPublic ? t('detail.lockBuilder') : t('detail.lockPrivate'))}</b><br>${esc(p.promptPublic ? t('detail.lockBuilderSub') : t('detail.lockPrivateSub'))}</span>
-                 ${p.promptPublic ? `<div class="lock-actions">
-                   <button class="btn small primary" data-act="open-ranks">${esc(t('unlock.level'))}</button>
-                   <button class="btn small ghost" data-act="open-market" data-focus="pro">${esc(t('unlock.buy'))}</button>
-                 </div>` : ''}
+        <div class="prompt-card"><div class="pc-head"><span class="prompt-label">PROMPT</span><span class="badge demo">${esc(p.promptPublic ? t('detail.public') : t('detail.private'))}</span><span class="pm">${esc(toolName(tl))}</span></div>${locked
+            ? `<div class="pc-body is-locked" aria-hidden="true">${esc(p.prompt)}</div><div class="pc-lock"><span style="font-size:19px"></span><span class="t"><b>${esc(p.promptPublic ? t('detail.lockBuilder') : t('detail.lockPrivate'))}</b><br>${esc(p.promptPublic ? t('detail.lockBuilderSub') : t('detail.lockPrivateSub'))}</span>${p.promptPublic ? `<div class="lock-actions"><button class="btn small primary" data-act="open-ranks">${esc(t('unlock.level'))}</button><button class="btn small ghost" data-act="open-market" data-focus="pro">${esc(t('unlock.buy'))}</button></div>` : ''}
                </div>`
             : `<div class="pc-body" id="pc-text">${esc(p.prompt)}</div>`}
-          <div class="pc-foot">
-            <span class="copies">${esc(t('detail.copies', { n: nf(p.copies) }))}</span>
-            <span class="spacer"></span>
-            ${!p.promptPublic && !p.mine ? '' : `
-              <button class="btn small ${locked ? '' : 'primary'}" data-act="copy" data-id="${p.id}">${esc(locked ? t('detail.copyLocked') : t('detail.copy'))}</button>
-              <button class="btn small ${can('remix') ? 'dark' : 'ghost'}" data-act="remix" data-id="${p.id}">${esc(can('remix') ? t('detail.remix') : t('detail.remixLocked'))}</button>`}
-          </div>
-        </div>
+          <div class="pc-foot"><span class="copies">${esc(t('detail.copies', { n: nf(p.copies) }))}</span><span class="spacer"></span>${!p.promptPublic && !p.mine ? '' : `
+              <button class="btn small ${locked ? '' : 'primary'}" data-act="copy" data-id="${p.id}">${esc(locked ? t('detail.copyLocked') : t('detail.copy'))}</button><button class="btn small ${can('remix') ? 'dark' : 'ghost'}" data-act="remix" data-id="${p.id}">${esc(can('remix') ? t('detail.remix') : t('detail.remixLocked'))}</button>`}
+          </div></div><div class="reactions">${[['fire', '', 'react.fire'], ['bulb', '', 'react.bulb'], ['clap', '', 'react.clap']].map(([k, e, lb]) => `
+            <button class="reaction ${p.me[k] ? 'is-on' : ''}" data-act="react" data-id="${p.id}" data-k="${k}" aria-pressed="${!!p.me[k]}"><span class="e">${e}</span><span class="c">${nf(p.cheers[k])}</span><span class="lb">${esc(t(lb))}</span></button>`).join('')}
+        </div><div class="detail-actions"><button class="act bm ${p.bookmarked ? 'is-on' : ''}" data-act="bookmark" data-id="${p.id}" aria-pressed="${!!p.bookmarked}"><svg viewBox="0 0 24 24" fill="${p.bookmarked ? 'currentColor' : 'none'}"><path d="M7 4.5h10a1 1 0 0 1 1 1V20l-6-4-6 4V5.5a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>${esc(p.bookmarked ? t('detail.saved') : t('detail.save'))}
+          </button><button class="act" data-act="share" data-id="${p.id}"><svg viewBox="0 0 24 24" fill="none"><path d="M12 15V4m0 0L8.5 7.5M12 4l3.5 3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 13v5.5a1.5 1.5 0 0 0 1.5 1.5h11a1.5 1.5 0 0 0 1.5-1.5V13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>${esc(t('detail.share'))}
+          </button><button class="act" data-act="open-ranks"><svg viewBox="0 0 24 24" fill="none"><path d="M5 19V11M12 19V6M19 19v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>${esc(t('detail.myLevel'))}
+          </button></div><div class="vote-card"><span class="vi"></span><span class="vm"><b>${esc(t('detail.vote'))}</b><span>${esc(can('vote') ? t('detail.voteSub') : t('detail.voteSubLocked'))}</span></span><button class="vote-btn ${p.voted ? 'is-on' : ''}" data-act="vote" data-id="${p.id}">${p.voted ? '' : can('vote') ? '' : ''} ${nf(p.votes)}</button></div>${can('pick') ? `
+          <div class="curator-card"><span class="vi" style="width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:rgba(192,132,252,.14);font-size:15px;flex:none"></span><span class="vm"><b>${esc(t('curator.tools'))}</b><span>${esc(p.picked ? t('curator.isPicked') : t('curator.canPick'))}</span></span><button class="btn small ${p.picked ? 'dark' : ''}" data-act="pick" data-id="${p.id}">${esc(p.picked ? t('curator.unpick') : t('curator.pick'))}</button></div>` : ''}
 
-        <div class="reactions">
-          ${[['fire', '🔥', 'react.fire'], ['bulb', '💡', 'react.bulb'], ['clap', '👏', 'react.clap']].map(([k, e, lb]) => `
-            <button class="reaction ${p.me[k] ? 'is-on' : ''}" data-act="react" data-id="${p.id}" data-k="${k}" aria-pressed="${!!p.me[k]}">
-              <span class="e">${e}</span><span class="c">${nf(p.cheers[k])}</span><span class="lb">${esc(t(lb))}</span>
-            </button>`).join('')}
-        </div>
-
-        <div class="detail-actions">
-          <button class="act bm ${p.bookmarked ? 'is-on' : ''}" data-act="bookmark" data-id="${p.id}" aria-pressed="${!!p.bookmarked}">
-            <svg viewBox="0 0 24 24" fill="${p.bookmarked ? 'currentColor' : 'none'}"><path d="M7 4.5h10a1 1 0 0 1 1 1V20l-6-4-6 4V5.5a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
-            ${esc(p.bookmarked ? t('detail.saved') : t('detail.save'))}
-          </button>
-          <button class="act" data-act="share" data-id="${p.id}">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M12 15V4m0 0L8.5 7.5M12 4l3.5 3.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 13v5.5a1.5 1.5 0 0 0 1.5 1.5h11a1.5 1.5 0 0 0 1.5-1.5V13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
-            ${esc(t('detail.share'))}
-          </button>
-          <button class="act" data-act="open-ranks">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M5 19V11M12 19V6M19 19v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            ${esc(t('detail.myLevel'))}
-          </button>
-        </div>
-
-        <div class="vote-card">
-          <span class="vi">🏅</span>
-          <span class="vm"><b>${esc(t('detail.vote'))}</b><span>${esc(can('vote') ? t('detail.voteSub') : t('detail.voteSubLocked'))}</span></span>
-          <button class="vote-btn ${p.voted ? 'is-on' : ''}" data-act="vote" data-id="${p.id}">${p.voted ? '★' : can('vote') ? '☆' : '🔒'} ${nf(p.votes)}</button>
-        </div>
-
-        ${can('pick') ? `
-          <div class="curator-card">
-            <span class="vi" style="width:34px;height:34px;border-radius:11px;display:grid;place-items:center;background:rgba(192,132,252,.14);font-size:15px;flex:none">👑</span>
-            <span class="vm"><b>${esc(t('curator.tools'))}</b><span>${esc(p.picked ? t('curator.isPicked') : t('curator.canPick'))}</span></span>
-            <button class="btn small ${p.picked ? 'dark' : ''}" data-act="pick" data-id="${p.id}">${esc(p.picked ? t('curator.unpick') : t('curator.pick'))}</button>
-          </div>` : ''}
-
-        <div class="comments-head">
-          <h4>${esc(t('comments.title'))}</h4><span class="n">${cc}</span>
-          <span class="my-lv">${lvBadge(currentLevel())}</span>
-        </div>
-
-        <div id="comments">
-          ${p.comments.length ? p.comments.map((cm) => commentHTML(p, cm)).join('') : `<div class="empty" style="padding:22px 6px">${esc(t('comments.empty'))}</div>`}
-        </div>
-      </div>
-
-      <div class="sheet-foot">
-        <div class="composer">
-          <div class="cmp-box">
-            ${ui.replyTo ? `<div class="cmp-reply">↩ <b>${esc(t('comments.replyTo', { nick: ui.replyTo.nick }))}</b> <button data-act="cancel-reply" aria-label="${esc(t('aria.cancelReply'))}">✕</button></div>` : ''}
-            <textarea id="cmp-text" rows="1" maxlength="400" placeholder="${esc(ui.replyTo ? t('comments.phReply') : canSug ? t('comments.phSuggest') : t('comments.phGeneral'))}" aria-label="${esc(t('aria.commentInput'))}">${esc(ui.draft)}</textarea>
-            <div class="cmp-tools">
-              <div class="type-seg" role="group" aria-label="${esc(t('aria.commentType'))}">
-                <button data-act="type" data-type="general" class="${ui.commentType === 'general' ? 'is-on' : ''}">${esc(t('comments.typeGeneral'))}</button>
-                <button data-act="type" data-type="suggestion" class="${ui.commentType === 'suggestion' ? 'is-on' : ''}" ${canSug ? '' : `disabled title="Lv.2 Builder"`}>${esc(canSug ? t('comments.typeSuggest') : t('comments.typeSuggestLocked'))}</button>
-              </div>
-              <span class="cmp-hint">${esc(canSug ? t('comments.hint') : t('comments.hintLocked'))}</span>
-            </div>
-          </div>
-          <button class="cmp-send" data-act="send-comment" aria-label="${esc(t('aria.send'))}">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5 19 5l-4.2 14.5-3.3-6-6.5-1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-          </button>
-        </div>
-      </div>`;
+        <div class="comments-head"><h4>${esc(t('comments.title'))}</h4><span class="n">${cc}</span><span class="my-lv">${lvBadge(currentLevel())}</span></div><div id="comments">${p.comments.length ? p.comments.map((cm) => commentHTML(p, cm)).join('') : `<div class="empty" style="padding:22px 6px">${esc(t('comments.empty'))}</div>`}
+        </div></div><div class="sheet-foot"><div class="composer"><div class="cmp-box">${ui.replyTo ? `<div class="cmp-reply">↩ <b>${esc(t('comments.replyTo', { nick: ui.replyTo.nick }))}</b> <button data-act="cancel-reply" aria-label="${esc(t('aria.cancelReply'))}"></button></div>` : ''}
+            <textarea id="cmp-text" rows="1" maxlength="400" placeholder="${esc(ui.replyTo ? t('comments.phReply') : canSug ? t('comments.phSuggest') : t('comments.phGeneral'))}" aria-label="${esc(t('aria.commentInput'))}">${esc(ui.draft)}</textarea><div class="cmp-tools"><div class="type-seg" role="group" aria-label="${esc(t('aria.commentType'))}"><button data-act="type" data-type="general" class="${ui.commentType === 'general' ? 'is-on' : ''}">${esc(t('comments.typeGeneral'))}</button><button data-act="type" data-type="suggestion" class="${ui.commentType === 'suggestion' ? 'is-on' : ''}" ${canSug ? '' : `disabled title="Lv.2 Builder"`}>${esc(canSug ? t('comments.typeSuggest') : t('comments.typeSuggestLocked'))}</button></div><span class="cmp-hint">${esc(canSug ? t('comments.hint') : t('comments.hintLocked'))}</span></div></div><button class="cmp-send" data-act="send-comment" aria-label="${esc(t('aria.send'))}"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5 19 5l-4.2 14.5-3.3-6-6.5-1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button></div></div>`;
   }
 
   function commentHTML(p, cm) {
     const sug = cm.type === 'suggestion';
     return `
-      <div class="comment">
-        ${avatar(cm.author, 'sm')}
-        <div class="c-main">
-          <div class="c-head">
-            <b>${esc(nickOf(cm.author))}</b>
-            ${lvBadge(cm.author.level)}
+      <div class="comment">${avatar(cm.author, 'sm')}
+        <div class="c-main"><div class="c-head"><b>${esc(nickOf(cm.author))}</b>${lvBadge(cm.author.level)}
             ${sug ? `<span class="c-tag">${esc(t('comments.suggestTag'))}</span>` : ''}
-            <time>${timeAgo(cm.createdAt)}</time>
-          </div>
-          <p class="c-text">${esc(cmText(cm))}</p>
-          <div class="c-acts">
-            <button class="${cm.liked ? 'on' : ''}" data-act="comment-like" data-pid="${p.id}" data-cid="${cm.id}">${cm.liked ? '♥' : '♡'} ${cm.likes || ''}</button>
-            <button data-act="reply" data-pid="${p.id}" data-cid="${cm.id}">${esc(t('comments.reply'))}</button>
-          </div>
-          ${(cm.replies || []).length ? `<div class="replies">
-            ${cm.replies.map((r) => `
-              <div class="reply">
-                ${avatar(r.author, 'xs')}
-                <div class="r-main">
-                  <div class="r-head"><b>${esc(nickOf(r.author))}</b>${lvBadge(r.author.level)}<time>${timeAgo(r.createdAt)}</time></div>
-                  <p>${esc(cmText(r))}</p>
-                </div>
-              </div>`).join('')}
+            <time>${timeAgo(cm.createdAt)}</time></div><p class="c-text">${esc(cmText(cm))}</p><div class="c-acts"><button class="${cm.liked ? 'on' : ''}" data-act="comment-like" data-pid="${p.id}" data-cid="${cm.id}">${cm.liked ? '' : ''} ${cm.likes || ''}</button><button data-act="reply" data-pid="${p.id}" data-cid="${cm.id}">${esc(t('comments.reply'))}</button></div>${(cm.replies || []).length ? `<div class="replies">${cm.replies.map((r) => `
+              <div class="reply">${avatar(r.author, 'xs')}
+                <div class="r-main"><div class="r-head"><b>${esc(nickOf(r.author))}</b>${lvBadge(r.author.level)}<time>${timeAgo(r.createdAt)}</time></div><p>${esc(cmText(r))}</p></div></div>`).join('')}
           </div>` : ''}
-        </div>
-      </div>`;
+        </div></div>`;
   }
 
   function refreshDetail() {
@@ -1376,104 +891,28 @@
     if (!can('upload')) {
       const s = stats();
       return `
-        <div class="grab-row"><span class="grab"></span></div>
-        <div class="sheet-head"><h3>${esc(t('up.head'))}</h3><span class="sub">Lv.${lv} ${LEVELS[lv].name}</span>
-          <button class="sheet-close" data-act="close-sheet" aria-label="${esc(t('aria.close'))}">✕</button></div>
-        <div class="sheet-scroll">
-          <div class="upload-lock">
-            <div class="ul-ic">🔒</div>
-            <h4>${esc(t('up.lockTitle'))}</h4>
-            <p>${esc(t('up.lockDesc'))}</p>
-            <ul class="checklist">
-              <li><span class="ck ${s.prompts >= 3 ? 'done' : ''}">${s.prompts >= 3 ? '✓' : ''}</span>${esc(t('up.step1', { n: s.prompts }))}</li>
-              <li><span class="ck ${s.prompts >= 3 ? 'done' : ''}">${s.prompts >= 3 ? '✓' : ''}</span>${esc(t('up.step2'))}</li>
-              <li><span class="ck">·</span>${esc(t('up.step3'))}</li>
-            </ul>
-          </div>
-          <div style="display:flex;gap:8px;margin-top:18px">
-            <button class="btn ghost" style="flex:1" data-act="close-sheet">${esc(t('up.browse'))}</button>
-            <button class="btn primary" style="flex:1" data-act="demo-and-upload">${esc(t('up.enable'))}</button>
-          </div>
-          <p class="form-hint" style="text-align:center;margin-top:12px">${t('up.demoHint')}</p>
-        </div>`;
+        <div class="grab-row"><span class="grab"></span></div><div class="sheet-head"><h3>${esc(t('up.head'))}</h3><span class="sub">Lv.${lv} ${LEVELS[lv].name}</span><button class="sheet-close" data-act="close-sheet" aria-label="${esc(t('aria.close'))}"></button></div><div class="sheet-scroll"><div class="upload-lock"><div class="ul-ic"></div><h4>${esc(t('up.lockTitle'))}</h4><p>${esc(t('up.lockDesc'))}</p><ul class="checklist"><li><span class="ck ${s.prompts >= 3 ? 'done' : ''}">${s.prompts >= 3 ? '' : ''}</span>${esc(t('up.step1', { n: s.prompts }))}</li><li><span class="ck ${s.prompts >= 3 ? 'done' : ''}">${s.prompts >= 3 ? '' : ''}</span>${esc(t('up.step2'))}</li><li><span class="ck">·</span>${esc(t('up.step3'))}</li></ul></div><div style="display:flex;gap:8px;margin-top:18px"><button class="btn ghost" style="flex:1" data-act="close-sheet">${esc(t('up.browse'))}</button><button class="btn primary" style="flex:1" data-act="demo-and-upload">${esc(t('up.enable'))}</button></div><p class="form-hint" style="text-align:center;margin-top:12px">${t('up.demoHint')}</p></div>`;
     }
 
     const u = ui.upload;
     const selectedTool = TOOLS.find((x) => x.id === u.tool);
     const samples = ART.slice(0, 6);
     return `
-      <div class="grab-row"><span class="grab"></span></div>
-      <div class="sheet-head"><h3>${esc(t('up.head'))}</h3><span class="sub">Lv.${lv} ${LEVELS[lv].name} · ${esc(state.user.nickname)}</span>
-        <button class="sheet-close" data-act="close-sheet" aria-label="${esc(t('aria.close'))}">✕</button></div>
-      <div class="sheet-scroll">
-        <div class="form-block">
-          <div class="form-label"><span>${esc(t('up.imageLabel'))}<span class="req">*</span></span><small>${esc(t('up.imageHint'))}</small></div>
-          <div class="drop ${u.image ? 'has-img' : ''}" ${u.image ? '' : 'data-act="pick-file"'} role="button" tabindex="0" aria-label="${esc(t('aria.pickImage'))}">
-            ${u.image
+      <div class="grab-row"><span class="grab"></span></div><div class="sheet-head"><h3>${esc(t('up.head'))}</h3><span class="sub">Lv.${lv} ${LEVELS[lv].name} · ${esc(state.user.nickname)}</span><button class="sheet-close" data-act="close-sheet" aria-label="${esc(t('aria.close'))}"></button></div><div class="sheet-scroll"><div class="form-block"><div class="form-label"><span>${esc(t('up.imageLabel'))}<span class="req">*</span></span><small>${esc(t('up.imageHint'))}</small></div><div class="drop ${u.image ? 'has-img' : ''}" ${u.image ? '' : 'data-act="pick-file"'} role="button" tabindex="0" aria-label="${esc(t('aria.pickImage'))}">${u.image
               ? `<img src="${u.image}" alt="${esc(t('up.previewAlt'))}"><span class="overlay"><span>${esc(u.image.startsWith('data:') ? t('up.myImage') : t('up.sampleArt'))}</span><b data-act="pick-file">${esc(t('up.otherImage'))}</b></span>`
-              : `<span class="di">🖼️</span><b>${esc(t('up.dropTap'))}</b><span>${esc(t('up.dropSub'))}</span>`}
-          </div>
-          <input type="file" id="up-file" accept="image/*" hidden>
-          <div class="samples">
-            ${samples.map((src) => `<button class="sample ${u.image === src ? 'is-on' : ''}" data-act="pick-sample" data-src="${src}" aria-label="${esc(t('aria.samplePick'))}"><img src="${src}" alt=""></button>`).join('')}
-          </div>
-        </div>
-
-        <div class="form-block">
-          <div class="form-label"><span>${esc(t('up.titleLabel'))}<span class="req">*</span></span><small>${(u.title || '').length}/40</small></div>
-          <input class="f-input" data-up="title" maxlength="40" placeholder="${esc(t('up.titlePh'))}" value="${esc(u.title)}">
-        </div>
-
-        <div class="form-block">
-          <div class="form-label"><span>${esc(t('up.category'))}</span></div>
-          <div class="seg" role="group" aria-label="${esc(t('aria.category'))}">
-            ${CATS.map((c) => `<button class="${u.category === c.id ? 'is-on' : ''}" data-act="up-cat" data-cat="${c.id}">${c.emoji} ${esc(catName(c))}</button>`).join('')}
-          </div>
-        </div>
-
-        <div class="form-block">
-          <div class="form-label"><span>${esc(t('up.tool'))}<span class="req">*</span></span><small>${selectedTool ? esc(toolName(selectedTool)) : esc(t('up.pickOne'))}</small></div>
-          <div class="tool-pick" role="group" aria-label="${esc(t('aria.tool'))}">
-            ${TOOLS.map((x) => `<button class="${u.tool === x.id ? 'is-on' : ''}" data-act="up-tool" data-tool="${x.id}"><span class="td" style="background:${x.color}"></span>${esc(toolName(x))}</button>`).join('')}
-          </div>
-        </div>
-
-        <div class="form-block">
-          <div class="form-label"><span>${esc(t('up.promptLabel'))}<span class="req">*</span></span><small>${esc(cnt('up.chars', (u.prompt || '').length))}</small></div>
-          <textarea class="f-input" data-up="prompt" placeholder="${esc(t('up.promptPh'))}">${esc(u.prompt)}</textarea>
-          <p class="form-hint">${esc(t('up.promptHint'))}</p>
-        </div>
-
-        <div class="form-block">
-          <div class="form-label"><span>${esc(t('up.descLabel'))}</span><small>${(u.desc || '').length}/300</small></div>
-          <textarea class="f-input" data-up="desc" maxlength="300" placeholder="${esc(t('up.descPh'))}">${esc(u.desc)}</textarea>
-        </div>
-
-        <div class="form-block">
-          <div class="switch-row">
-            <span class="sm"><b>${esc(t('up.public'))}</b><span>${esc(u.promptPublic ? t('up.publicOn') : t('up.publicOff'))}</span></span>
-            <button class="switch ${u.promptPublic ? 'is-on' : ''}" data-act="up-public" role="switch" aria-checked="${!!u.promptPublic}" aria-label="${esc(t('aria.public'))}"></button>
-          </div>
-        </div>
-        <p class="form-hint">${t('up.submitHint')}</p>
-      </div>
-      <div class="sheet-foot">
-        <button class="btn primary block" data-act="submit-upload">${esc(t('up.submit'))}</button>
-      </div>`;
+              : `<span class="di"></span><b>${esc(t('up.dropTap'))}</b><span>${esc(t('up.dropSub'))}</span>`}
+          </div><input type="file" id="up-file" accept="image/*" hidden><div class="samples">${samples.map((src) => `<button class="sample ${u.image === src ? 'is-on' : ''}" data-act="pick-sample" data-src="${src}" aria-label="${esc(t('aria.samplePick'))}"><img src="${src}" alt=""></button>`).join('')}
+          </div></div><div class="form-block"><div class="form-label"><span>${esc(t('up.titleLabel'))}<span class="req">*</span></span><small>${(u.title || '').length}/40</small></div><input class="f-input" data-up="title" maxlength="40" placeholder="${esc(t('up.titlePh'))}" value="${esc(u.title)}"></div><div class="form-block"><div class="form-label"><span>${esc(t('up.category'))}</span></div><div class="seg" role="group" aria-label="${esc(t('aria.category'))}">${CATS.map((c) => `<button class="${u.category === c.id ? 'is-on' : ''}" data-act="up-cat" data-cat="${c.id}">${c.emoji} ${esc(catName(c))}</button>`).join('')}
+          </div></div><div class="form-block"><div class="form-label"><span>${esc(t('up.tool'))}<span class="req">*</span></span><small>${selectedTool ? esc(toolName(selectedTool)) : esc(t('up.pickOne'))}</small></div><div class="tool-pick" role="group" aria-label="${esc(t('aria.tool'))}">${TOOLS.map((x) => `<button class="${u.tool === x.id ? 'is-on' : ''}" data-act="up-tool" data-tool="${x.id}"><span class="td" style="background:${x.color}"></span>${esc(toolName(x))}</button>`).join('')}
+          </div></div><div class="form-block"><div class="form-label"><span>${esc(t('up.promptLabel'))}<span class="req">*</span></span><small>${esc(cnt('up.chars', (u.prompt || '').length))}</small></div><textarea class="f-input" data-up="prompt" placeholder="${esc(t('up.promptPh'))}">${esc(u.prompt)}</textarea><p class="form-hint">${esc(t('up.promptHint'))}</p></div><div class="form-block"><div class="form-label"><span>${esc(t('up.descLabel'))}</span><small>${(u.desc || '').length}/300</small></div><textarea class="f-input" data-up="desc" maxlength="300" placeholder="${esc(t('up.descPh'))}">${esc(u.desc)}</textarea></div><div class="form-block"><div class="switch-row"><span class="sm"><b>${esc(t('up.public'))}</b><span>${esc(u.promptPublic ? t('up.publicOn') : t('up.publicOff'))}</span></span><button class="switch ${u.promptPublic ? 'is-on' : ''}" data-act="up-public" role="switch" aria-checked="${!!u.promptPublic}" aria-label="${esc(t('aria.public'))}"></button></div></div><p class="form-hint">${t('up.submitHint')}</p></div><div class="sheet-foot"><button class="btn primary block" data-act="submit-upload">${esc(t('up.submit'))}</button></div>`;
   }
 
   /* ---------------------------------------------------------------- notify sheet */
   function notifyHTML() {
     const list = state.notifications;
     return `
-      <div class="grab-row"><span class="grab"></span></div>
-      <div class="sheet-head"><h3>${esc(t('noti.head'))}</h3><span class="sub">${esc(cnt('noti.unread', list.filter((n) => !n.read).length))}</span>
-        <button class="sheet-close" data-act="close-sheet" aria-label="${esc(t('aria.close'))}">✕</button></div>
-      <div class="sheet-scroll">
-        ${list.map((n) => `<div class="notif ${n.read ? '' : 'unread'}"><span class="ni">${n.icon}</span><span class="nm"><b>${esc(pickText(n.texts) || n.text)}</b><span>${timeAgo(n.at)}</span></span></div>`).join('')}
-        <p class="tiny" style="margin-top:16px;color:var(--txt-3);line-height:1.6">${esc(t('noti.note'))}</p>
-      </div>
-      <div class="sheet-foot"><button class="btn block" data-act="read-all">${esc(t('noti.readAll'))}</button></div>`;
+      <div class="grab-row"><span class="grab"></span></div><div class="sheet-head"><h3>${esc(t('noti.head'))}</h3><span class="sub">${esc(cnt('noti.unread', list.filter((n) => !n.read).length))}</span><button class="sheet-close" data-act="close-sheet" aria-label="${esc(t('aria.close'))}"></button></div><div class="sheet-scroll">${list.map((n) => `<div class="notif ${n.read ? '' : 'unread'}"><span class="ni">${n.icon}</span><span class="nm"><b>${esc(pickText(n.texts) || n.text)}</b><span>${timeAgo(n.at)}</span></span></div>`).join('')}
+        <p class="tiny" style="margin-top:16px;color:var(--txt-3);line-height:1.6">${esc(t('noti.note'))}</p></div><div class="sheet-foot"><button class="btn block" data-act="read-all">${esc(t('noti.readAll'))}</button></div>`;
   }
 
   function openNotify() {
@@ -1584,7 +1023,7 @@
     renderFeedList();
     renderMy();
     if (ui.detailId === id) refreshDetail();
-    toast(p.bookmarked ? t('toast.saveAdd') : t('toast.saveRemove'), p.bookmarked ? '🔖' : '↩️');
+    toast(p.bookmarked ? t('toast.saveAdd') : t('toast.saveRemove'), p.bookmarked ? '' : '↩');
   }
 
   async function sharePost(id) {
@@ -1592,14 +1031,14 @@
     if (!p) return;
     const url = location.href.split('#')[0] + '#post-' + p.id;
     const ok = await copyText(url);
-    toast(ok ? t('toast.linkCopied') : t('toast.shareLink', { url: '#post-' + p.id }), ok ? '🔗' : '⚠️');
+    toast(ok ? t('toast.linkCopied') : t('toast.shareLink', { url: '#post-' + p.id }), ok ? '' : '');
   }
 
   function follow(handle) {
     if (!handle) return;
     const i = state.follows.indexOf(handle);
-    if (i >= 0) { state.follows.splice(i, 1); toast(t('toast.followCancel', { handle }), '↩️'); }
-    else { state.follows.push(handle); toast(t('toast.followed', { handle }), '✅'); }
+    if (i >= 0) { state.follows.splice(i, 1); toast(t('toast.followCancel', { handle }), '↩'); }
+    else { state.follows.push(handle); toast(t('toast.followed', { handle }), ''); }
     save();
     renderFeedList();
     if (ui.detailId) refreshDetail();
@@ -1611,7 +1050,7 @@
     if (!p) return;
     const ta = $('#cmp-text');
     const text = (ta?.value || '').trim();
-    if (!text) { ta?.focus(); toast(t('toast.needText'), '✏️'); return; }
+    if (!text) { ta?.focus(); toast(t('toast.needText'), ''); return; }
 
     const author = meAuthor();
     const type = can('suggestion') && ui.commentType === 'suggestion' ? 'suggestion' : 'general';
@@ -1642,7 +1081,7 @@
       }
       renderRanks();
     });
-    toast(can('suggestion') && type === 'suggestion' ? t('toast.suggestion') : t('toast.comment'), '💬');
+    toast(can('suggestion') && type === 'suggestion' ? t('toast.suggestion') : t('toast.comment'), '');
   }
 
   function likeComment(pid, cid) {
@@ -1659,7 +1098,7 @@
 
   /* ---------------------------------------------------------------- vote / pick / remix */
   function vote(id) {
-    if (!can('vote')) { toast(t('toast.voteLocked'), '🔒'); openRanks(); return; }
+    if (!can('vote')) { toast(t('toast.voteLocked'), ''); openRanks(); return; }
     const p = state.posts.find((x) => x.id === id);
     if (!p) return;
     p.voted = !p.voted;
@@ -1670,22 +1109,22 @@
     renderFeedList();
     renderMy();
     if (ui.detailId === id) refreshDetail();
-    toast(p.voted ? t('toast.voted') : t('toast.voteCancel'), p.voted ? '🏅' : '↩️');
+    toast(p.voted ? t('toast.voted') : t('toast.voteCancel'), p.voted ? '' : '↩');
   }
 
   function pick(id) {
-    if (!can('pick')) { toast(t('toast.pickLocked'), '👑'); return; }
+    if (!can('pick')) { toast(t('toast.pickLocked'), ''); return; }
     const p = state.posts.find((x) => x.id === id);
     if (!p) return;
     p.picked = !p.picked;
     save();
     renderAll();
     if (ui.detailId === id) refreshDetail();
-    toast(p.picked ? t('toast.picked') : t('toast.unpicked'), '👑');
+    toast(p.picked ? t('toast.picked') : t('toast.unpicked'), '');
   }
 
   function remix(id) {
-    if (!can('remix')) { toast(t('toast.remixLocked'), '🔒'); openRanks(); return; }
+    if (!can('remix')) { toast(t('toast.remixLocked'), ''); openRanks(); return; }
     const p = state.posts.find((x) => x.id === id);
     if (!p) return;
     ui.upload = {
@@ -1695,7 +1134,7 @@
       tags: pTags(p).join(' ')
     };
     closeSheet();
-    setTimeout(() => { openUpload(); toast(t('toast.remixStart'), '🌿'); }, 180);
+    setTimeout(() => { openUpload(); toast(t('toast.remixStart'), ''); }, 180);
   }
 
   /* ---------------------------------------------------------------- upload flow */
@@ -1707,15 +1146,15 @@
     const f = e.target.files?.[0];
     e.target.value = '';
     if (!f) return;
-    if (!f.type.startsWith('image/')) { toast(t('toast.imageOnly'), '⚠️', 'danger'); return; }
-    if (f.size > 8 * 1024 * 1024) { toast(t('toast.tooBig'), '⚠️', 'danger'); return; }
+    if (!f.type.startsWith('image/')) { toast(t('toast.imageOnly'), '', 'danger'); return; }
+    if (f.size > 8 * 1024 * 1024) { toast(t('toast.tooBig'), '', 'danger'); return; }
     try {
       const data = await fileToDataURL(f, 1000);
       ui.upload.image = data;
       $('#sheet-upload').innerHTML = uploadHTML();
-      toast(t('toast.imageLoaded'), '🖼️');
+      toast(t('toast.imageLoaded'), '');
     } catch (err) {
-      toast(t('toast.imageFail'), '⚠️', 'danger');
+      toast(t('toast.imageFail'), '', 'danger');
     }
   }
 
@@ -1741,7 +1180,7 @@
   }
 
   function submitUpload() {
-    if (!can('upload')) { toast(t('toast.uploadLocked'), '🔒'); return; }
+    if (!can('upload')) { toast(t('toast.uploadLocked'), ''); return; }
     const u = ui.upload;
     const errors = [];
     if (!u.image) errors.push(['image', t('err.image')]);
@@ -1749,7 +1188,7 @@
     if ((u.title || '').trim().length < 2) errors.push(['title', t('err.title')]);
     if ((u.prompt || '').trim().length < 10) errors.push(['prompt', t('err.prompt')]);
     if (errors.length) {
-      toast(errors[0][1], '⚠️', 'danger');
+      toast(errors[0][1], '', 'danger');
       const el = $(`[data-up="${errors[0][0]}"]`);
       if (el) { el.classList.add('err', 'shake'); el.focus(); setTimeout(() => el.classList.remove('shake'), 450); }
       return;
@@ -1778,7 +1217,7 @@
     renderRanks();
     renderMy();
     $('#screen-feed').scrollTop = 0;
-    toast(t('toast.uploaded'), '🚀');
+    toast(t('toast.uploaded'), '');
     pushRemotePost(post);
 
     const after = earnedLevel();
@@ -1786,13 +1225,13 @@
       setTimeout(() => levelUpToast(after), 700);
     } else if (!isDemo() && currentLevel() < 2) {
       const left = Math.max(0, 3 - stats().prompts);
-      setTimeout(() => toast(left ? t('toast.promptsLeft', { n: left }) : t('toast.promptsAll'), '⚡'), 900);
+      setTimeout(() => toast(left ? t('toast.promptsLeft', { n: left }) : t('toast.promptsAll'), ''), 900);
     }
   }
 
   function levelUpToast(lv) {
     const l = LEVELS[lv];
-    toast(t('toast.levelUp', { emoji: l.emoji, lv, name: l.name, short: t('level.' + lv + '.short') }), '🎉', 'gold', 4200);
+    toast(t('toast.levelUp', { emoji: l.emoji, lv, name: l.name, short: t('level.' + lv + '.short') }), '', 'gold', 4200);
   }
 
   function beforeAfterLevel(fn) {
@@ -1808,7 +1247,7 @@
   function setDemo(lv) {
     if (lv === 'auto') {
       state.user.demoLevel = null;
-      toast(t('toast.autoLevel'), '🌱');
+      toast(t('toast.autoLevel'), '');
     } else {
       const n = clamp(Number(lv), 1, 4);
       state.user.demoLevel = n;
@@ -1847,7 +1286,7 @@
     save();
     renderAll();
     if (ui.detailId) refreshDetail();
-    toast(on ? t('toast.proOn') : t('toast.proOff'), on ? '🔓' : '🔒');
+    toast(on ? t('toast.proOn') : t('toast.proOff'), on ? '' : '');
   }
 
   function openChallenge() {
@@ -1865,7 +1304,7 @@
   function saveChallenge() {
     const title = $('#ch-title')?.value.trim();
     const desc = $('#ch-desc')?.value.trim();
-    if (!title) { toast(t('toast.needChTitle'), '✏️'); $('#ch-title')?.focus(); return; }
+    if (!title) { toast(t('toast.needChTitle'), ''); $('#ch-title')?.focus(); return; }
     const tag = '#' + title.replace(/\s+/g, '');
     const texts = {};
     ['ko', 'en', 'zh', 'ja'].forEach((code) => { texts[code] = { title, sub: '', desc: desc || '', tag }; });
@@ -1877,13 +1316,13 @@
     save();
     renderRanks();
     renderFeed();
-    toast(t('toast.challengeCreated'), '🎪');
+    toast(t('toast.challengeCreated'), '');
   }
 
   function challengeJoin() {
-    if (!can('upload')) { toast(t('toast.joinLocked'), '🔒'); openUpload(); return; }
+    if (!can('upload')) { toast(t('toast.joinLocked'), ''); openUpload(); return; }
     openUpload();
-    setTimeout(() => toast(t('toast.joinTag', { tag: challengeOf().tag }), '🎯'), 350);
+    setTimeout(() => toast(t('toast.joinTag', { tag: challengeOf().tag }), ''), 350);
   }
 
   /* ---------------------------------------------------------------- onboarding */
@@ -1902,8 +1341,7 @@
 
   function renderObTools() {
     $('#ob-tools').innerHTML = TOOLS.map((x) => `
-      <button class="tool-chip ${obTools.has(x.id) ? 'is-on' : ''}" data-act="ob-tool" data-tool="${x.id}">
-        <span class="dot" style="background:${x.color}"></span>${esc(toolName(x))}
+      <button class="tool-chip ${obTools.has(x.id) ? 'is-on' : ''}" data-act="ob-tool" data-tool="${x.id}"><span class="dot" style="background:${x.color}"></span>${esc(toolName(x))}
       </button>`).join('');
   }
 
@@ -1934,7 +1372,7 @@
     save();
     hideOnboarding();
     renderAll();
-    setTimeout(() => toast(t('ob.welcome', { nick }), '🎉', 'gold', 3200), 250);
+    setTimeout(() => toast(t('ob.welcome', { nick }), '', 'gold', 3200), 250);
   }
 
   /* ---------------------------------------------------------------- misc */
@@ -1961,14 +1399,14 @@
   async function copyPrompt(id) {
     const p = state.posts.find((x) => x.id === id);
     if (!p) return;
-    if (lockedFor(p)) { toast(t('toast.copyLocked'), '🔒'); openRanks(); return; }
+    if (lockedFor(p)) { toast(t('toast.copyLocked'), ''); openRanks(); return; }
     const ok = await copyText(p.prompt);
     if (ok) {
       p.copies += 1;
       save();
       if (ui.detailId === id) refreshDetail();
       renderFeedList();
-      toast(t('toast.copied'), '📋');
+      toast(t('toast.copied'), '');
     } else {
       const box = $('#pc-text');
       if (box) {
@@ -1978,12 +1416,12 @@
         sel.removeAllRanges();
         sel.addRange(r);
       }
-      toast(t('toast.copySelect'), '✂️');
+      toast(t('toast.copySelect'), '');
     }
   }
 
   let toastTimer = new Map();
-  function toast(msg, icon = '✨', kind = '', ms = 2600) {
+  function toast(msg, icon = '', kind = '', ms = 2600) {
     const wrap = $('#toasts');
     if (!wrap) return;
     const el = document.createElement('div');
@@ -2003,7 +1441,7 @@
     if (!ui.resetArmed) {
       ui.resetArmed = true;
       renderMy();
-      toast(t('toast.resetArm'), '⚠️', 'danger', 3400);
+      toast(t('toast.resetArm'), '', 'danger', 3400);
       setTimeout(() => { if (ui.resetArmed) { ui.resetArmed = false; renderMy(); } }, 4000);
       return;
     }
@@ -2106,7 +1544,7 @@
           break;
         case 'type':
           if (el.dataset.type === 'suggestion' && !can('suggestion')) {
-            toast(t('toast.suggestLocked'), '🔒');
+            toast(t('toast.suggestLocked'), '');
             break;
           }
           ui.commentType = el.dataset.type;
@@ -2117,7 +1555,7 @@
         case 'demo-and-upload':
           setDemo(2);
           openUpload();
-          toast(t('toast.demoAndUpload'), '⚡');
+          toast(t('toast.demoAndUpload'), '');
           break;
         case 'open-ranks': openRanks(); break;
         case 'open-market': openMarket(el.dataset.focus); break;
@@ -2134,14 +1572,14 @@
           save();
           renderTopbar();
           closeSheet();
-          toast(t('toast.readAll'), '✅');
+          toast(t('toast.readAll'), '');
           break;
         case 'toggle-noti':
           state.user.notificationsOn = !state.user.notificationsOn;
           save();
           renderMy();
           renderTopbar();
-          toast(state.user.notificationsOn ? t('toast.notiOn') : t('toast.notiOff'), state.user.notificationsOn ? '🔔' : '🔕');
+          toast(state.user.notificationsOn ? t('toast.notiOn') : t('toast.notiOff'), state.user.notificationsOn ? '' : '');
           break;
         case 'reset': resetDemo(); break;
         case 'pick-file': pickFile(); break;

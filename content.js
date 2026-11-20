@@ -55,10 +55,10 @@ window.PRISM_SEED_DATA = (() => {
         {
           author: 'seorin', type: 'general', h: 0.4, likes: 12,
           texts: {
-            ko: '간판 색감 진짜 미쳤다… 저장했어요 🔥',
-            en: 'The sign colors are unreal… saved 🔥',
-            zh: '招牌的色调太绝了…已收藏 🔥',
-            ja: '看板の色味が本当にすごい…保存しました 🔥'
+            ko: '간판 색감 진짜 미쳤다… 저장했어요 ',
+            en: 'The sign colors are unreal… saved ',
+            zh: '招牌的色调太绝了…已收藏 ',
+            ja: '看板の色味が本当にすごい…保存しました '
           }
         },
         {
@@ -72,10 +72,10 @@ window.PRISM_SEED_DATA = (() => {
           replies: [{
             author: 'yuri', h: 0.3,
             texts: {
-              ko: '오 85mm는 못 해봤네요. 다음 렌더에 바로 넣어볼게요 🙌',
-              en: 'Oh, I have not tried 85mm. Putting it in the next render 🙌',
-              zh: '哦，85mm还没试过，下次渲染就用上 🙌',
-              ja: 'お、85mmはまだ試してないです。次のレンダーですぐ入れます 🙌'
+              ko: '오 85mm는 못 해봤네요. 다음 렌더에 바로 넣어볼게요 ',
+              en: 'Oh, I have not tried 85mm. Putting it in the next render ',
+              zh: '哦，85mm还没试过，下次渲染就用上 ',
+              ja: 'お、85mmはまだ試してないです。次のレンダーですぐ入れます '
             }
           }]
         },
@@ -100,10 +100,10 @@ window.PRISM_SEED_DATA = (() => {
         {
           author: 'bom', type: 'general', h: 0.2, likes: 5,
           texts: {
-            ko: '비 오는 날 감성 그대로네요. 바탕화면으로 씁니다 🌃',
-            en: 'Exactly the rainy-day mood. Using it as my wallpaper 🌃',
-            zh: '雨天的氛围拿捏住了，拿来当壁纸 🌃',
-            ja: '雨の日の雰囲気そのものですね。壁紙にします 🌃'
+            ko: '비 오는 날 감성 그대로네요. 바탕화면으로 씁니다 ',
+            en: 'Exactly the rainy-day mood. Using it as my wallpaper ',
+            zh: '雨天的氛围拿捏住了，拿来当壁纸 ',
+            ja: '雨の日の雰囲気そのものですね。壁紙にします '
           }
         }
       ]
@@ -575,7 +575,7 @@ window.PRISM_SEED_DATA = (() => {
 
   const notifications = [
     {
-      icon: '🔥', minutesAgo: 3, read: false,
+      icon: '', minutesAgo: 3, read: false,
       texts: {
         ko: '내 프롬프트에 공감 12개가 달렸어요',
         en: 'Your prompt got 12 reactions',
@@ -584,7 +584,7 @@ window.PRISM_SEED_DATA = (() => {
       }
     },
     {
-      icon: '👑', minutesAgo: 62, read: false,
+      icon: '', minutesAgo: 62, read: false,
       texts: {
         ko: '큐레이터 유리가 회원님의 작품을 저장했어요',
         en: 'Curator Yuri saved your work',
@@ -593,7 +593,7 @@ window.PRISM_SEED_DATA = (() => {
       }
     },
     {
-      icon: '🏆', minutesAgo: 300, read: false,
+      icon: '', minutesAgo: 300, read: false,
       texts: {
         ko: '이번 주 챌린지 ‘투명함’ 마감이 3일 남았어요',
         en: 'This week’s challenge “Transparency” closes in 3 days',
@@ -602,7 +602,7 @@ window.PRISM_SEED_DATA = (() => {
       }
     },
     {
-      icon: '⚡', minutesAgo: 1560, read: true,
+      icon: '', minutesAgo: 1560, read: true,
       texts: {
         ko: '프롬프트 3개를 올리면 Builder 등급이 열려요',
         en: 'Post 3 prompts to unlock Builder',
