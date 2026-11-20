@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="MOA Hive AI team setup pack cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1016"/>
+      <stop offset="0.55" stop-color="#0D1A1F"/>
+      <stop offset="1" stop-color="#07110F"/>
+    </linearGradient>
+    <linearGradient id="em" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#2BE3A5"/>
+      <stop offset="0.55" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#2BE3A5" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#2BE3A5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="hex" width="88" height="76" patternUnits="userSpaceOnUse" patternTransform="translate(0 0)">
+      <path d="M22 2 44 2 55 21 44 40 22 40 11 21Z" fill="none" stroke="#2BE3A5" stroke-opacity="0.10" stroke-width="1.4"/>
+      <path d="M66 40 88 40 99 59 88 78 66 78 55 59Z" fill="none" stroke="#38BDF8" stroke-opacity="0.08" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect width="1200" height="900" fill="url(#hex)"/>
+  <ellipse cx="880" cy="220" rx="420" ry="360" fill="url(#glow)"/>
+
+  <g opacity="0.5">
+    <circle cx="1010" cy="700" r="210" fill="none" stroke="#2BE3A5" stroke-opacity="0.16" stroke-width="1.4"/>
+    <circle cx="1010" cy="700" r="150" fill="none" stroke="#38BDF8" stroke-opacity="0.14" stroke-width="1.4"/>
+    <circle cx="1010" cy="700" r="92" fill="none" stroke="#A78BFA" stroke-opacity="0.12" stroke-width="1.4"/>
+  </g>
+
+  <g transform="translate(96 104)">
+    <rect x="0" y="0" width="228" height="44" rx="22" fill="#2BE3A5" fill-opacity="0.10" stroke="#2BE3A5" stroke-opacity="0.34"/>
+    <text x="114" y="29" text-anchor="middle" font-family="Pretendard, -apple-system, Segoe UI, sans-serif" font-size="19" font-weight="700" letter-spacing="3" fill="#7BF3CB">MOA DAILY</text>
+  </g>
+
+  <text x="96" y="286" font-family="Pretendard, -apple-system, Segoe UI, sans-serif" font-size="106" font-weight="800" letter-spacing="-2" fill="#EDF1F8">MOA Hive</text>
+  <text x="96" y="352" font-family="Pretendard, -apple-system, Segoe UI, sans-serif" font-size="34" font-weight="600" letter-spacing="1" fill="#9FB0C4">ChatGPT · Claude AI 팀 세팅 팩</text>
+
+  <g transform="translate(96 420)">
+    <rect x="0" y="0" width="440" height="2" fill="url(#em)" opacity="0.65"/>
+  </g>
+
+  <g font-family="Pretendard, -apple-system, Segoe UI, sans-serif" font-size="27" font-weight="600" fill="#C6D2E0">
+    <text x="96" y="486">업종 6종 맞춤팩</text>
+    <text x="96" y="532">실전 프롬프트 50개</text>
+    <text x="96" y="578">5역할 마스터 지침 (한·영)</text>
+    <text x="96" y="624">Claude Code 스킬팩</text>
+    <text x="96" y="670">평생 무료 업데이트</text>
+  </g>
+
+  <g transform="translate(96 714)">
+    <circle cx="7" cy="0" r="7" fill="#2BE3A5"/>
+    <text x="24" y="8" font-family="Pretendard, -apple-system, Segoe UI, sans-serif" font-size="21" font-weight="600" fill="#6F7E91">3분 복붙으로 다섯 역할이 나눠 일하는 내 AI 팀</text>
+  </g>
+
+  <g transform="translate(760 470)">
+    <g transform="translate(0 0)">
+      <path d="M0 66 46 0 92 66Z" fill="none" stroke="url(#em)" stroke-width="3"/>
+    </g>
+    <g transform="translate(112 0)">
+      <path d="M0 66 46 0 92 66Z" fill="none" stroke="url(#em)" stroke-width="3" opacity="0.75"/>
+    </g>
+    <g transform="translate(224 0)">
+      <path d="M0 66 46 0 92 66Z" fill="none" stroke="url(#em)" stroke-width="3" opacity="0.55"/>
+    </g>
+    <g transform="translate(336 0)">
+      <path d="M0 66 46 0 92 66Z" fill="none" stroke="url(#em)" stroke-width="3" opacity="0.4"/>
+    </g>
+    <g transform="translate(168 96)">
+      <path d="M0 66 46 0 92 66 46 132Z" fill="none" stroke="#38BDF8" stroke-opacity="0.5" stroke-width="3"/>
+    </g>
+    <g transform="translate(280 96)">
+      <path d="M0 66 46 0 92 66 46 132Z" fill="none" stroke="#A78BFA" stroke-opacity="0.45" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

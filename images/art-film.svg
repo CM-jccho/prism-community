@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" fill="none">
+<defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" stitchTiles="stitch"/>
+  <feColorMatrix type="saturate" values="0"/>
+  <feComponentTransfer><feFuncA type="linear" slope="0.55"/></feComponentTransfer>
+</filter>
+<filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="38"/></filter>
+<filter id="soft2" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="16"/></filter>
+<filter id="blur6" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+<radialGradient id="vig" cx="50%" cy="42%" r="72%">
+  <stop offset="0.55" stop-color="#000" stop-opacity="0"/>
+  <stop offset="1" stop-color="#000" stop-opacity="0.85"/>
+</radialGradient><linearGradient id="sky5" x1="0" y1="0" x2="0" y2="1000" gradientUnits="userSpaceOnUse">
+  <stop offset="0" stop-color="#191033"/><stop offset="0.35" stop-color="#4C1D3D"/><stop offset="0.62" stop-color="#B45309"/>
+  <stop offset="0.78" stop-color="#F59E0B"/><stop offset="1" stop-color="#3F1D0B"/></linearGradient>
+<linearGradient id="dune1" x1="0" y1="620" x2="0" y2="1000">
+  <stop offset="0" stop-color="#7C3A1E"/><stop offset="1" stop-color="#2A1208"/></linearGradient>
+<linearGradient id="dune2" x1="0" y1="700" x2="0" y2="1000">
+  <stop offset="0" stop-color="#B45309"/><stop offset="1" stop-color="#451A03"/></linearGradient>
+<linearGradient id="dune3" x1="0" y1="780" x2="0" y2="1000">
+  <stop offset="0" stop-color="#F59E0B" stop-opacity="0.9"/><stop offset="1" stop-color="#31100A"/></linearGradient>
+</defs>
+<rect width="800" height="1000" fill="url(#sky5)"/><circle cx="520" cy="560" r="96" fill="#FFE9C4" opacity="0.95"/><circle cx="520" cy="560" r="170" fill="#FCD34D" opacity="0.35" filter="url(#soft)"/><ellipse cx="250" cy="330" rx="290" ry="42" fill="#7C3AED" opacity="0.35" filter="url(#soft2)"/><ellipse cx="600" cy="250" rx="250" ry="30" fill="#F472B6" opacity="0.25" filter="url(#soft2)"/><ellipse cx="380" cy="430" rx="330" ry="30" fill="#FBBF24" opacity="0.25" filter="url(#soft2)"/><path d="M0 620 C160 560 300 640 470 610 C610 586 700 560 800 596 L800 1000 L0 1000 Z" fill="url(#dune1)"/><path d="M0 720 C140 660 300 730 470 700 C610 676 720 660 800 690 L800 1000 L0 1000 Z" fill="url(#dune2)"/><path d="M0 840 C180 780 340 860 520 820 C650 792 740 800 800 812 L800 1000 L0 1000 Z" fill="url(#dune3)" opacity="0.85"/><path d="M0 760 C200 744 420 772 800 746" stroke="#FDE68A" stroke-opacity="0.1" stroke-width="1.5"/><path d="M0 786 C200 770 420 798 800 772" stroke="#FDE68A" stroke-opacity="0.092" stroke-width="1.5"/><path d="M0 812 C200 796 420 824 800 798" stroke="#FDE68A" stroke-opacity="0.084" stroke-width="1.5"/><path d="M0 838 C200 822 420 850 800 824" stroke="#FDE68A" stroke-opacity="0.07600000000000001" stroke-width="1.5"/><path d="M0 864 C200 848 420 876 800 850" stroke="#FDE68A" stroke-opacity="0.068" stroke-width="1.5"/><path d="M0 890 C200 874 420 902 800 876" stroke="#FDE68A" stroke-opacity="0.060000000000000005" stroke-width="1.5"/><path d="M0 916 C200 900 420 928 800 902" stroke="#FDE68A" stroke-opacity="0.052000000000000005" stroke-width="1.5"/><g fill="#160A06"><ellipse cx="300" cy="742" rx="7" ry="12"/><path d="M300 752 l-7 30 l4 0 l3 -20 l3 20 l4 0 l-7 -30 Z"/></g><path d="M304 742 l18 6" stroke="#160A06" stroke-width="2"/><ellipse cx="316" cy="762" rx="30" ry="3" fill="#000" opacity="0.35"/><rect x="0" y="0" width="800" height="86" fill="#05030A"/><rect x="0" y="914" width="800" height="86" fill="#05030A"/><text x="56" y="960" fill="#FDE68A" opacity="0.75" font-family="Helvetica,Arial" font-size="16" letter-spacing="5">SORA / TAKE 07</text><text x="744" y="960" text-anchor="end" fill="#FDE68A" opacity="0.55" font-family="Helvetica,Arial" font-size="16" letter-spacing="2">00:12:04</text><rect width="800" height="1000" filter="url(#grain)" opacity="0.22" style="mix-blend-mode:overlay"/>
+<rect width="800" height="1000" fill="url(#vig)" opacity="0.55"/>
+</svg>
