@@ -160,7 +160,67 @@ python3 -m http.server 8080
 
 ---
 
-## 7. 파일 구조
+## 7. 매일 자동 업데이트되는 AI 소식 피드
+
+피드 상단의 **"오늘의 AI 소식"** 섹션은 저장소의 `data/community-feed.json`을 읽어 그립니다. 그 파일은 GitHub Actions가 매일 09:10 KST에 공개 소스에서 실제 항목만 모아 갱신합니다.
+
+**수집 소스 (전부 공개·무료·API 키 불필요)**
+
+| 소스 | 엔드포인트 | 담는 것 |
+|---|---|---|
+| Hugging Face 모델 | `huggingface.co/api/models?sort=trendingScore` | 트렌딩 모델 12건 (좋아요·다운로드·태스크) |
+| Hugging Face Daily Papers | `huggingface.co/api/daily_papers` | 오늘의 논문 10건 |
+| Hugging Face Spaces | `huggingface.co/api/spaces?sort=trendingScore` | 바로 실행 가능한 데모 12건 |
+| GitHub | `api.github.com/search/repositories` | 최근 2주 안에 푸시된 프롬프트/AI 저장소 16건 |
+| Hacker News | `hn.algolia.com/api/v1/search` | 3일 안 포인트 40+ 스토리 10건 |
+
+**동작 규칙**
+
+- 항목 id는 `소스:원본id`라서 다시 돌려도 중복이 생기지 않습니다.
+- 한 소스가 실패해도 나머지는 저장되고, **모든 소스가 실패하면 기존 파일을 건드리지 않고 종료코드 1**로 끝납니다(워크플로가 빈 파일을 커밋하지 않음).
+- 내용이 실제로 바뀔 때만 파일을 다시 쓰고 커밋합니다.
+- 사이트는 `raw.githubusercontent.com/CM-jccho/prism-community/main/data/community-feed.json`을 먼저 읽고, 실패하면 배포본에 포함된 `data/community-feed.json`으로 폴백합니다 → **재배포 없이 매일 갱신**.
+- 네트워크가 없거나 JSON이 없으면 섹션만 조용히 사라지고 앱은 그대로 동작합니다.
+
+**직접 실행**
+
+```bash
+python3 scripts/update_feed.py          # 수집 → data/community-feed.json
+python3 -c "import json;d=json.load(open('data/community-feed.json'));print(d['updatedAtKst'],d['count'])"
+```
+
+**워크플로**: `.github/workflows/daily-feed.yml` (매일 09:10 KST + 수동 실행, `contents: write`, 변경분만 커밋)
+
+> ⚠️ 이 워크플로 파일은 GitHub App의 `workflows` 권한이 없어 자동화 도구로 푸시할 수 없습니다. GitHub 웹에서 파일을 추가해야 스케줄이 켜집니다.
+
+---
+
+## 8. Supabase 연동 (실제 방문자가 서로의 글을 보는 커뮤니티)
+
+지금 상태로도 앱은 완전히 동작합니다(로컬 `localStorage`). 아래 세 단계를 채우면 **모든 방문자가 같은 글·댓글을 보고 쓸 수 있는 실제 커뮤니티**가 됩니다.
+
+1. **프로젝트 생성** — supabase.com 무료 플랜 → New project (리전: Northeast Asia (Tokyo) 권장)
+2. **스키마 실행** — SQL Editor에 `supabase/schema.sql` 전체를 붙여 넣고 Run
+   - `prism_posts`(작품명·프롬프트·도구·카테고리·태그·이미지·닉네임·좋아요·created_at)
+   - `prism_comments`(post_id·닉네임·본문·종류·좋아요·created_at)
+   - RLS: 읽기 전체 공개 · 익명 insert 허용(좋아요 0으로만) · update/delete 정책 없음 → 남의 글을 고치거나 지울 수 없음
+   - 좋아요는 `security definer` RPC `prism_like_post` / `prism_like_comment`로만 +1
+3. **키 연결** — `supabase.js` 맨 위 `CONFIG`에 Project URL과 **anon(publishable) 키**를 넣습니다. `service_role` 키는 절대 넣지 마세요.
+
+```js
+const CONFIG = window.PRISM_SUPABASE || {
+  url: 'https://<project-ref>.supabase.co',
+  anonKey: '<anon public key>'
+};
+```
+
+연결되면 앱은 시작할 때 최근 글 60건을 불러와 피드에 합치고, 새 작품 업로드·댓글·🔥 좋아요를 서버에 기록합니다. 서버 호출이 실패하면 토스트로 알리고 로컬 상태는 유지합니다.
+
+> 공개 쓰기 정책은 누구나 글을 쓸 수 있다는 뜻입니다. 스팸이 문제가 되면 Supabase Auth(익명 로그인)나 Edge Function의 rate limit을 추가하는 것을 권장합니다.
+
+---
+
+## 9. 파일 구조
 
 ```
 ai-community-site/
@@ -169,6 +229,11 @@ ai-community-site/
 ├── i18n.js                     # KO/EN/ZH/JA 사전 + 언어 전환·포맷
 ├── content.js                  # 샘플 작품·댓글·챌린지 4개 국어 콘텐츠
 ├── app.js                      # 상태 · 등급 로직 · 마켓 · 렌더링 · 인터랙션
+├── supabase.js                 # (선택) Supabase REST 클라이언트 — 키가 비면 완전 무동작
+├── data/community-feed.json    # 매일 자동 갱신되는 AI 소식 (워크플로가 커밋)
+├── scripts/update_feed.py      # 공개 소스 수집 스크립트
+├── supabase/schema.sql         # 테이블 2개 + RLS + 좋아요 RPC
+├── .github/workflows/daily-feed.yml  # 매일 09:10 KST 수집·커밋 (웹에서 추가 필요)
 ├── favicon.svg
 ├── images/                     # 로컬 SVG 아트워크 12종 + 상품 커버 2종 (외부 CDN 없음)
 │   ├── art-neon-city.svg       ├── art-brand.svg
@@ -194,10 +259,10 @@ ai-community-site/
 
 ---
 
-## 8. 기술 메모
+## 10. 기술 메모
 
 - **프레임워크 없음**: 바닐라 JS + CSS. `index.html`을 직접 열어도 동작하도록 `file://` 환경까지 고려했습니다.
-- **외부 요청 0건**: 아이콘은 전부 인라인 SVG, 아트워크는 로컬 SVG, 폰트는 로컬 woff2. CDN이 죽어도 깨지지 않습니다.
+- **핵심 자산 외부 요청 0건**: 아이콘은 전부 인라인 SVG, 아트워크는 로컬 SVG, 폰트는 로컬 woff2. CDN이 죽어도 깨지지 않습니다. 예외는 7장의 AI 소식 JSON 1건(실패해도 섹션만 숨김)과, Supabase 키를 넣었을 때의 글·댓글 API 호출뿐입니다.
 - **모바일 퍼스트**: 390px 기준 설계, 430px까지 자연스럽게 확장, 560px 이하에서는 전체 화면.
   데스크톱(1180px+)에서는 중앙 폰 프레임과 좌우 가이드 패널이 함께 보입니다.
 - **접근성**: 시맨틱 버튼, `aria-pressed`/`aria-label`, 키보드 `Esc`로 시트 닫기, `prefers-reduced-motion` 대응.
@@ -219,7 +284,7 @@ ai-community-site/
 
 ---
 
-## 9. 검증 결과 (v1.2 · 2026-11-20)
+## 11. 검증 결과 (v1.2 · 2026-11-20)
 
 헤드리스 Chromium 자동화 **59개 체크 전부 통과**. 스크립트 `scratch/prism_verify.py`, 결과 `scratch/prism_verify_results.json`.
 
@@ -244,7 +309,7 @@ ai-community-site/
 
 ---
 
-## 10. 라이선스
+## 12. 라이선스
 
 - 코드: 이 데모 프로젝트용으로 자유롭게 수정·배포 가능
 - Pretendard: Copyright (c) 2021 Kil Hyung-jin, SIL Open Font License 1.1 (`assets/fonts/OFL.txt`)
