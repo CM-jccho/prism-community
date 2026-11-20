@@ -35,9 +35,9 @@ python3 -m http.server 8080
 
 폴더를 그대로 올리면 됩니다. 빌드 단계가 없습니다.
 
-- Vercel: 프로젝트 Root Directory를 `ai-community-site`로 지정 → Deploy
+- **GitHub Pages (현재 경로)**: 저장소 `CM-jccho/prism-community`의 `main` 브랜치 루트에 이 폴더 내용이 올라가 있습니다. 저장소 Settings → Pages → Source `Deploy from a branch` → `main` / `/(root)` → Save를 한 번 누르면 `https://cm-jccho.github.io/prism-community/`에서 열립니다.
+- Vercel: 프로젝트 Root Directory를 이 폴더로 지정 → Deploy
 - Netlify: 폴더를 드래그 앤 드롭
-- GitHub Pages: 저장소에 폴더를 푸시하고 Pages 소스를 해당 폴더로 지정
 
 ---
 
