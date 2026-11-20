@@ -308,6 +308,7 @@
     bindEvents();
     renderAll();
     loadDailyFeed();
+    syncRemotePosts();
     if (!state.onboarded) showOnboarding();
     else hideOnboarding();
   }
@@ -420,12 +421,35 @@
     return dailyFeed.items.filter((it) => it && it.title && it.url);
   }
 
+  /* 종류별로 번갈리며 골라 첫 화면에 모델·작품·소식이 섞이게 한다. */
+  function dailyPick(items, limit) {
+    const buckets = {};
+    items.forEach((it) => {
+      const k = DAILY_KINDS.includes(it.kind) ? it.kind : 'news';
+      (buckets[k] = buckets[k] || []).push(it);
+    });
+    const out = [];
+    for (let round = 0; out.length < limit; round += 1) {
+      let added = false;
+      for (const k of DAILY_KINDS) {
+        const b = buckets[k];
+        if (b && b[round]) {
+          out.push(b[round]);
+          added = true;
+          if (out.length >= limit) break;
+        }
+      }
+      if (!added) break;
+    }
+    return out;
+  }
+
   function renderDailyFeed() {
     const root = $('#feed-daily');
     if (!root) return;
     const all = dailyItems();
     if (!all.length) { root.innerHTML = ''; return; }
-    const shown = dailyOpen ? all.slice(0, 18) : all.slice(0, 6);
+    const shown = dailyPick(all, dailyOpen ? 18 : 6);
     const updated = dailyDate(dailyFeed.updatedAt);
     root.innerHTML = `
       <section class="daily" aria-label="${esc(t('daily.title'))}">
@@ -450,6 +474,71 @@
         </ul>
         ${all.length > 6 ? `<button class="daily-more" type="button" data-act="daily-more">${esc(dailyOpen ? t('daily.less') : t('daily.more', { n: Math.min(all.length, 18) }))}</button>` : ''}
       </section>`;
+  }
+
+  /* --------------------------------------------- Supabase 연동(실제 방문자 공유)
+     supabase.js 의 PRISM_SB 가 설정되어 있을 때만 동작한다.
+     주소·anon 키가 비어 있으면 아래 함수는 전부 즉시 빠지고 로컬 상태 그대로 남는다. */
+  const sb = () => (window.PRISM_SB && window.PRISM_SB.ready() ? window.PRISM_SB : null);
+
+  async function syncRemotePosts() {
+    const api = sb();
+    if (!api) return;
+    try {
+      const rows = await api.listPosts(60);
+      if (!rows || !rows.length) return;
+      const seen = new Set(state.posts.map((p) => p.id));
+      const fresh = rows.filter((p) => p && p.id && !seen.has(p.id));
+      if (!fresh.length) return;
+      state.posts = fresh.concat(state.posts);
+      renderFeed();
+      renderExplore();
+      renderRanks();
+      renderMy();
+    } catch (e) {
+      console.warn('[PRISM] 서버의 글을 불러오지 못했습니다', e);
+    }
+  }
+
+  async function syncRemoteComments(p) {
+    const api = sb();
+    if (!api || !p || !p.remoteId) return;
+    try {
+      p.comments = await api.listComments(p.remoteId);
+      if (ui.detailId === p.id) refreshDetail();
+    } catch (e) {
+      console.warn('[PRISM] 서버의 댓글을 불러오지 못했습니다', e);
+    }
+  }
+
+  function pushRemotePost(post) {
+    const api = sb();
+    if (!api) return;
+    api.insertPost(post).then((row) => {
+      if (!row) return;
+      post.remoteId = row.remoteId;
+      save();
+    }).catch((e) => {
+      console.warn('[PRISM] 글을 서버에 올리지 못했습니다', e);
+      toast(t('toast.sbFail'), '⚠️', 'danger');
+    });
+  }
+
+  function pushRemoteComment(p, cm, text, type) {
+    const api = sb();
+    if (!api || !p.remoteId) return;
+    api.insertComment(p.remoteId, (cm.author && cm.author.nick) || 'guest', text, type).then((row) => {
+      if (row) cm.remoteId = row.remoteId;
+    }).catch((e) => {
+      console.warn('[PRISM] 댓글을 서버에 올리지 못했습니다', e);
+      toast(t('toast.sbFail'), '⚠️', 'danger');
+    });
+  }
+
+  function pushRemoteLike(postId) {
+    const api = sb();
+    if (!api) return;
+    api.likePost(postId).catch((e) => console.warn('[PRISM] 좋아요를 서버에 반영하지 못했습니다', e));
   }
 
   /* ---------------------------------------------------------------- renders */
@@ -1086,6 +1175,7 @@
     ui.commentType = 'general';
     $('#sheet-detail').innerHTML = detailHTML(p);
     openSheet('detail');
+    syncRemoteComments(p);
     const sc = $('#detail-scroll');
     if (sc) {
       if (opts.toBottom) sc.scrollTop = sc.scrollHeight;
@@ -1475,6 +1565,7 @@
       p.cheers[k] += 1;
       p.me[k] = true;
       state.user.reactionsGiven = (state.user.reactionsGiven || 0) + 1;
+      if (k === 'fire' && p.remoteId) pushRemoteLike(p.remoteId);
     }
     save();
     renderFeedList();
@@ -1525,6 +1616,7 @@
     const author = meAuthor();
     const type = can('suggestion') && ui.commentType === 'suggestion' ? 'suggestion' : 'general';
     const cm = { id: uid(), author, text, type, createdAt: Date.now(), likes: 0, liked: false, replies: [], mine: true };
+    const isReply = !!ui.replyTo;
 
     if (ui.replyTo) {
       const parent = p.comments.find((c) => c.id === ui.replyTo.cid);
@@ -1535,6 +1627,7 @@
     } else {
       p.comments.unshift(cm);
     }
+    if (!isReply) pushRemoteComment(p, cm, text, type);
     state.user.commentsMade = (state.user.commentsMade || 0) + 1;
     ui.draft = '';
     ui.replyTo = null;
@@ -1686,6 +1779,7 @@
     renderMy();
     $('#screen-feed').scrollTop = 0;
     toast(t('toast.uploaded'), '🚀');
+    pushRemotePost(post);
 
     const after = earnedLevel();
     if (after > before && !isDemo()) {
