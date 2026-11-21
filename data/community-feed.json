@@ -1,17 +1,17 @@
 {
   "version": 1,
   "generatedBy": "scripts/update_feed.py",
-  "updatedAt": "2026-11-20T04:57:09.447698Z",
-  "updatedAtKst": "2026-11-20 13:57 KST",
+  "updatedAt": "2026-11-21T07:00:09.969400Z",
+  "updatedAtKst": "2026-11-21 16:00 KST",
   "sources": [
     "Hugging Face models (12)",
     "Hugging Face papers (10)",
     "Hugging Face Spaces (12)",
     "GitHub (16)",
-    "Hacker News (10)"
+    "Hacker News (9)"
   ],
   "failedSources": [],
-  "count": 64,
+  "count": 80,
   "items": [
     {
       "id": "gh-repo:Imbad0202/academic-research-skills",
@@ -27,27 +27,9 @@
         "claude",
         "claude-code"
       ],
-      "publishedAt": "2026-11-20T04:50:03Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "gh-repo:headroomlabs-ai/headroom",
-      "kind": "prompt",
-      "title": "headroomlabs-ai/headroom",
-      "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-      "url": "https://github.com/headroomlabs-ai/headroom",
-      "source": "GitHub",
-      "tags": [
-        "agent",
-        "ai",
-        "anthropic",
-        "claude-code",
-        "compression"
-      ],
-      "publishedAt": "2026-11-20T04:39:00Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "publishedAt": "2026-11-21T05:36:24Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "gh-repo:f/prompts.chat",
@@ -63,9 +45,164 @@
         "chatgpt",
         "chatgpt-prompts"
       ],
-      "publishedAt": "2026-11-20T03:13:08Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "publishedAt": "2026-11-21T03:12:33Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "gh-repo:asgeirtj/system_prompts_leaks",
+      "kind": "prompt",
+      "title": "asgeirtj/system_prompts_leaks",
+      "desc": "Leaked system prompts of ChatGPT, Claude, Gemini and more. The hidden system prompt of every popular chatbot, in full, every version since May 2025. Also Anthropic Claude Code, OpenAI Codex…",
+      "url": "https://github.com/asgeirtj/system_prompts_leaks",
+      "source": "GitHub",
+      "tags": [
+        "ai",
+        "ai-agents",
+        "ai-prompts",
+        "anthropic",
+        "chatbot"
+      ],
+      "publishedAt": "2026-11-20T23:41:22Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hn:50579331",
+      "kind": "news",
+      "title": "We promoted developers into architects without informing them",
+      "desc": "Hacker News · 381 points · 219 comments",
+      "url": "https://manidoraisamy.com/developer-to-architect.html",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-20T18:17:51Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "gh-repo:headroomlabs-ai/headroom",
+      "kind": "prompt",
+      "title": "headroomlabs-ai/headroom",
+      "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
+      "url": "https://github.com/headroomlabs-ai/headroom",
+      "source": "GitHub",
+      "tags": [
+        "agent",
+        "ai",
+        "anthropic",
+        "claude-code",
+        "compression"
+      ],
+      "publishedAt": "2026-11-20T15:35:42Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "gh-repo:promptslab/Awesome-Prompt-Engineering",
+      "kind": "tool",
+      "title": "promptslab/Awesome-Prompt-Engineering",
+      "desc": "This repository contains a hand-curated resources for Prompt Engineering with a focus on Generative Pre-trained Transformer (GPT), ChatGPT, PaLM etc",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+      "source": "GitHub",
+      "tags": [
+        "chatgpt",
+        "chatgpt-api",
+        "deep-learning",
+        "few-shot-learning",
+        "gpt"
+      ],
+      "publishedAt": "2026-11-20T15:14:57Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hn:50574383",
+      "kind": "news",
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+      "desc": "Hacker News · 248 points · 515 comments",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-20T13:29:59Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hf-model:unsloth/Inkling-2-Mini-GGUF",
+      "kind": "model",
+      "title": "unsloth/Inkling-2-Mini-GGUF",
+      "desc": "Hugging Face · likes 305 · downloads 0 · image-text-to-text",
+      "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
+      "source": "Hugging Face",
+      "tags": [
+        "gguf",
+        "conversational",
+        "image-text-to-text",
+        "moe",
+        "unsloth",
+        "base_model:thinkingmachines/Inkling-2-Mini"
+      ],
+      "publishedAt": "2026-11-20T13:09:48Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "gh-repo:Anil-matcha/Open-Generative-AI",
+      "kind": "tool",
+      "title": "Anil-matcha/Open-Generative-AI",
+      "desc": "Uncensored Open-source alternative to AI video platforms — Free AI image & video generation studio with 800+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MI…",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "source": "GitHub",
+      "tags": [
+        "ai-image-generation",
+        "ai-video-generation",
+        "fal-ai-alternative",
+        "generative-ai",
+        "image-to-video"
+      ],
+      "publishedAt": "2026-11-20T12:00:32Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "gh-repo:HBAI-Ltd/Toonflow-app",
+      "kind": "tool",
+      "title": "HBAI-Ltd/Toonflow-app",
+      "desc": "短剧、漫剧制作工具 Toonflow：开源 AI 视频创作平台，集成剧本创作、智能分镜、角色与场景资产管理、图像生成和视频生成。融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。Open-source AI short drama and motion comic creation tool with an infini…",
+      "url": "https://github.com/HBAI-Ltd/Toonflow-app",
+      "source": "GitHub",
+      "tags": [
+        "ai-agents",
+        "ai-comic",
+        "ai-content-creation",
+        "ai-filmmaking",
+        "ai-short-drama"
+      ],
+      "publishedAt": "2026-11-20T11:01:16Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "gh-repo:JuliusBrussee/caveman",
+      "kind": "prompt",
+      "title": "JuliusBrussee/caveman",
+      "desc": "why use many token when few token do trick. Skill + local proxy for coding agents: shorter answers, smaller tool output, every original recoverable.",
+      "url": "https://github.com/JuliusBrussee/caveman",
+      "source": "GitHub",
+      "tags": [
+        "ai",
+        "anthropic",
+        "caveman",
+        "claude",
+        "claude-code"
+      ],
+      "publishedAt": "2026-11-20T07:32:16Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "gh-repo:FurkanGozukara/Stable-Diffusion",
@@ -82,26 +219,8 @@
         "education"
       ],
       "publishedAt": "2026-11-20T02:32:06Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "gh-repo:JuliusBrussee/caveman",
-      "kind": "prompt",
-      "title": "JuliusBrussee/caveman",
-      "desc": "why use many token when few token do trick. Skill + local proxy for coding agents: shorter answers, smaller tool output, every original recoverable.",
-      "url": "https://github.com/JuliusBrussee/caveman",
-      "source": "GitHub",
-      "tags": [
-        "ai",
-        "anthropic",
-        "caveman",
-        "claude",
-        "claude-code"
-      ],
-      "publishedAt": "2026-11-20T00:03:53Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "gh-repo:blader/humanizer",
@@ -118,90 +237,50 @@
         "claude"
       ],
       "publishedAt": "2026-11-19T18:53:14Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hn:50564282",
       "kind": "news",
       "title": "No Bailout for the AI Bubble, Anthropic IPO Protesters Say",
-      "desc": "Hacker News · 43 points · 24 comments",
+      "desc": "Hacker News · 51 points · 36 comments",
       "url": "https://www.techpolicy.press/no-bailout-for-the-ai-bubble-anthropic-ipo-protesters-say/",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-19T18:42:13Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hn:50563328",
+      "kind": "news",
+      "title": "AI came for the coders. Understanding why tells us who's next",
+      "desc": "Hacker News · 68 points · 81 comments",
+      "url": "https://www.robertpeake.com/archives/104254-ai-came-for-the-coders-understanding-why-tells-us-whos-next.html",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-19T17:43:38Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hn:50562320",
       "kind": "news",
       "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
-      "desc": "Hacker News · 97 points · 71 comments",
+      "desc": "Hacker News · 124 points · 85 comments",
       "url": "https://github.com/onlook-dev/onlook/",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-19T16:34:04Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "gh-repo:promptslab/Awesome-Prompt-Engineering",
-      "kind": "tool",
-      "title": "promptslab/Awesome-Prompt-Engineering",
-      "desc": "This repository contains a hand-curated resources for Prompt Engineering with a focus on Generative Pre-trained Transformer (GPT), ChatGPT, PaLM etc",
-      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
-      "source": "GitHub",
-      "tags": [
-        "chatgpt",
-        "chatgpt-api",
-        "deep-learning",
-        "few-shot-learning",
-        "gpt"
-      ],
-      "publishedAt": "2026-11-19T15:35:29Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "gh-repo:HBAI-Ltd/Toonflow-app",
-      "kind": "tool",
-      "title": "HBAI-Ltd/Toonflow-app",
-      "desc": "短剧、漫剧制作工具 Toonflow：开源 AI 视频创作平台，集成剧本创作、智能分镜、角色与场景资产管理、图像生成和视频生成。融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。Open-source AI short drama and motion comic creation tool with an infini…",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app",
-      "source": "GitHub",
-      "tags": [
-        "ai-agents",
-        "ai-comic",
-        "ai-content-creation",
-        "ai-filmmaking",
-        "ai-short-drama"
-      ],
-      "publishedAt": "2026-11-19T13:10:15Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "gh-repo:asgeirtj/system_prompts_leaks",
-      "kind": "prompt",
-      "title": "asgeirtj/system_prompts_leaks",
-      "desc": "Leaked system prompts of ChatGPT, Claude, Gemini and more. The hidden system prompt of every popular chatbot, in full, every version since May 2025. Also Anthropic Claude Code, OpenAI Codex…",
-      "url": "https://github.com/asgeirtj/system_prompts_leaks",
-      "source": "GitHub",
-      "tags": [
-        "ai",
-        "ai-agents",
-        "ai-prompts",
-        "anthropic",
-        "chatbot"
-      ],
-      "publishedAt": "2026-11-19T09:43:47Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "gh-repo:microsoft/generative-ai-for-beginners",
@@ -218,22 +297,22 @@
         "generative-ai"
       ],
       "publishedAt": "2026-11-19T03:43:07Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hn:50555093",
       "kind": "news",
       "title": "AI will not make you rich (2025)",
-      "desc": "Hacker News · 106 points · 68 comments",
+      "desc": "Hacker News · 108 points · 70 comments",
       "url": "https://colossus.com/article/ai-will-not-make-you-rich/",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-19T01:51:28Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hn:50554908",
@@ -246,22 +325,37 @@
         "news"
       ],
       "publishedAt": "2026-11-19T01:27:02Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hn:50554641",
       "kind": "news",
       "title": "Black high school students sue after AI mistakes Doritos bag for gun",
-      "desc": "Hacker News · 117 points · 88 comments",
+      "desc": "Hacker News · 118 points · 92 comments",
       "url": "https://www.lawyerscommittee.org/lawyers-committee-files-lawsuit-on-behalf-of-black-students-detained-and-searched-due-to-ai-alert-falsely-identifying-a-bag-of-chips-as-a-firearm/",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-19T00:57:20Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hf-paper:2611.26627",
+      "kind": "news",
+      "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+      "desc": "Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rende…",
+      "url": "https://huggingface.co/papers/2611.26627",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-18T19:00:00Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-paper:2611.26603",
@@ -324,6 +418,66 @@
       "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
+      "id": "hf-paper:2611.26239",
+      "kind": "news",
+      "title": "Teaching Vision-Language-Action Models to Stop Safely",
+      "desc": "Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, st…",
+      "url": "https://huggingface.co/papers/2611.26239",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-18T19:00:00Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hf-paper:2611.26232",
+      "kind": "news",
+      "title": "Time Series Structure Learning with Local Causal Parent Discovery",
+      "desc": "Learning and inference on time series can pose significant statistical challenges, including autocorrelated observations, distribution shift over time, and the curse of dimensionality. Thes…",
+      "url": "https://huggingface.co/papers/2611.26232",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-18T19:00:00Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hf-paper:2611.25604",
+      "kind": "news",
+      "title": "PAD: Policy-Aware Data Valuation for Autonomous Driving",
+      "desc": "End-to-end autonomous driving increasingly depends on scaling training demonstrations, yet data growth does not guarantee proportional gains. However, additional data do not guarantee bette…",
+      "url": "https://huggingface.co/papers/2611.25604",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-18T19:00:00Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hf-paper:2611.25567",
+      "kind": "news",
+      "title": "Online Mistake Detection in Instruction-Conditioned Procedural Video",
+      "desc": "An assistant monitoring a person performing a procedure is most useful when it can detect mistakes while there is still time to recover. This requires judging actions against task instructi…",
+      "url": "https://huggingface.co/papers/2611.25567",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-18T19:00:00Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
       "id": "hf-paper:2611.25387",
       "kind": "news",
       "title": "TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs",
@@ -339,22 +493,18 @@
       "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
-      "id": "gh-repo:Anil-matcha/Open-Generative-AI",
-      "kind": "tool",
-      "title": "Anil-matcha/Open-Generative-AI",
-      "desc": "Uncensored Open-source alternative to AI video platforms — Free AI image & video generation studio with 800+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MI…",
-      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
-      "source": "GitHub",
+      "id": "hn:50549188",
+      "kind": "news",
+      "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
+      "desc": "Hacker News · 60 points · 65 comments",
+      "url": "https://news.ycombinator.com/item?id=50549188",
+      "source": "Hacker News",
       "tags": [
-        "ai-image-generation",
-        "ai-video-generation",
-        "fal-ai-alternative",
-        "generative-ai",
-        "image-to-video"
+        "news"
       ],
-      "publishedAt": "2026-11-18T09:10:01Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "publishedAt": "2026-11-18T17:26:28Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hn:50540836",
@@ -385,6 +535,21 @@
       "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
+      "id": "hf-paper:2611.25200",
+      "kind": "news",
+      "title": "Squoosh Bench: Evaluating UX-1 on 318 Historical Website A/B Tests",
+      "desc": "Experimentation teams must decide which proposed website changes to test with live traffic. We evaluated whether forecasts from simulated shoppers could inform that choice. We screened 412…",
+      "url": "https://huggingface.co/papers/2611.25200",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-17T19:00:00Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
       "id": "hf-paper:2611.24809",
       "kind": "news",
       "title": "On-Policy Morphing into Hybrid Attention Models",
@@ -413,6 +578,21 @@
       "publishedAt": "2026-11-17T19:00:00Z",
       "firstSeenAt": "2026-11-20T04:57:09.447698Z",
       "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+    },
+    {
+      "id": "hf-paper:2611.23875",
+      "kind": "news",
+      "title": "In Situ Training of Optical Neural Networks by Coding Agents",
+      "desc": "Optical neural networks promise fast, energy-efficient computing, but every device departs from its design and must be trained with the hardware. In situ training relies on an expert-built…",
+      "url": "https://huggingface.co/papers/2611.23875",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-17T19:00:00Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-paper:2611.23835",
@@ -475,7 +655,7 @@
       "id": "hf-model:sensenova/SenseNova-Loop-9B",
       "kind": "model",
       "title": "sensenova/SenseNova-Loop-9B",
-      "desc": "Hugging Face · likes 391 · downloads 1,447 · image-text-to-text",
+      "desc": "Hugging Face · likes 453 · downloads 1,631 · image-text-to-text",
       "url": "https://huggingface.co/sensenova/SenseNova-Loop-9B",
       "source": "Hugging Face",
       "tags": [
@@ -487,14 +667,14 @@
         "image-text-to-text"
       ],
       "publishedAt": "2026-11-17T10:16:41Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-model:tencent/Hy4-flash",
       "kind": "model",
       "title": "tencent/Hy4-flash",
-      "desc": "Hugging Face · likes 360 · downloads 2,053 · image-text-to-text",
+      "desc": "Hugging Face · likes 556 · downloads 3,949 · image-text-to-text",
       "url": "https://huggingface.co/tencent/Hy4-flash",
       "source": "Hugging Face",
       "tags": [
@@ -507,8 +687,27 @@
         "hy4-flash"
       ],
       "publishedAt": "2026-11-17T03:44:46Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hf-model:thinkingmachines/Inkling-2-Mini",
+      "kind": "model",
+      "title": "thinkingmachines/Inkling-2-Mini",
+      "desc": "Hugging Face · likes 932 · downloads 136 · image-text-to-text",
+      "url": "https://huggingface.co/thinkingmachines/Inkling-2-Mini",
+      "source": "Hugging Face",
+      "tags": [
+        "transformers",
+        "safetensors",
+        "inkling2_loop",
+        "text-generation",
+        "conversational",
+        "image-text-to-text"
+      ],
+      "publishedAt": "2026-11-17T00:26:57Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-paper:2611.22666",
@@ -529,7 +728,7 @@
       "id": "hf-model:apple/FastFrames-L",
       "kind": "model",
       "title": "apple/FastFrames-L",
-      "desc": "Hugging Face · likes 348 · downloads 0 · text-to-video",
+      "desc": "Hugging Face · likes 492 · downloads 0 · text-to-video",
       "url": "https://huggingface.co/apple/FastFrames-L",
       "source": "Hugging Face",
       "tags": [
@@ -541,14 +740,14 @@
         "license:apple-amlr"
       ],
       "publishedAt": "2026-11-16T17:21:04Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-space:cfahlgren1/slack-moji",
       "kind": "art",
       "title": "cfahlgren1/slack-moji",
-      "desc": "Hugging Face Space · static demo · likes 61",
+      "desc": "Hugging Face Space · static demo · likes 70",
       "url": "https://huggingface.co/spaces/cfahlgren1/slack-moji",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -556,14 +755,14 @@
         "static"
       ],
       "publishedAt": "2026-11-16T16:52:00Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-model:harness-hub/Qwen3.8-27B-pi-adapted",
       "kind": "model",
       "title": "harness-hub/Qwen3.8-27B-pi-adapted",
-      "desc": "Hugging Face · likes 750 · downloads 1,320 · image-text-to-text",
+      "desc": "Hugging Face · likes 827 · downloads 1,874 · image-text-to-text",
       "url": "https://huggingface.co/harness-hub/Qwen3.8-27B-pi-adapted",
       "source": "Hugging Face",
       "tags": [
@@ -576,8 +775,23 @@
         "lora"
       ],
       "publishedAt": "2026-11-16T06:52:31Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hf-paper:2611.21885",
+      "kind": "news",
+      "title": "Language Models Can Rewrite Their Own Weights",
+      "desc": "Language models are trained once, frozen and deployed: improving one again takes another training run, and a prompt, a scaffold or extra computation at inference is gone once the task ends.…",
+      "url": "https://huggingface.co/papers/2611.21885",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-15T19:00:00Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-paper:2611.21383",
@@ -610,10 +824,25 @@
       "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
+      "id": "hf-paper:2611.21053",
+      "kind": "news",
+      "title": "System 1 agents: a method for local, reliable and fast agentic AI",
+      "desc": "Agentic artificial intelligence could automate analyses of sensitive clinical data, but current agents depend on large language models (LLMs). Cloud LLMs expose patient data. Local LLMs hal…",
+      "url": "https://huggingface.co/papers/2611.21053",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-15T19:00:00Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
       "id": "hf-model:inworld/voice-isolator",
       "kind": "model",
       "title": "inworld/voice-isolator",
-      "desc": "Hugging Face · likes 282 · downloads 0 · audio-to-audio",
+      "desc": "Hugging Face · likes 510 · downloads 0 · audio-to-audio",
       "url": "https://huggingface.co/inworld/voice-isolator",
       "source": "Hugging Face",
       "tags": [
@@ -626,8 +855,8 @@
         "noise-suppression"
       ],
       "publishedAt": "2026-11-14T02:14:35Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-paper:2611.19230",
@@ -659,14 +888,14 @@
         "image-to-video-generation"
       ],
       "publishedAt": "2026-11-12T14:15:27Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-model:higurashi-ai/Haru-4B",
       "kind": "model",
       "title": "higurashi-ai/Haru-4B",
-      "desc": "Hugging Face · likes 3,659 · downloads 6,266 · audio-to-audio",
+      "desc": "Hugging Face · likes 5,706 · downloads 7,323 · audio-to-audio",
       "url": "https://huggingface.co/higurashi-ai/Haru-4B",
       "source": "Hugging Face",
       "tags": [
@@ -678,8 +907,8 @@
         "audio-to-audio"
       ],
       "publishedAt": "2026-11-12T11:05:59Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-paper:2611.17460",
@@ -697,6 +926,21 @@
       "lastSeenAt": "2026-11-20T04:34:23.122853Z"
     },
     {
+      "id": "hf-paper:2611.15941",
+      "kind": "news",
+      "title": "Lang-SVG: Hierarchical Image Vectorization with Language Priors",
+      "desc": "Image vectorization reconstructs raster images as compact scalable vector graph- ics (SVG), providing a structured and editable code representation of images. However, most existing vectori…",
+      "url": "https://huggingface.co/papers/2611.15941",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-10T19:00:00Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
       "id": "gh-repo:MiniMax-AI/MiniMax-MCP",
       "kind": "tool",
       "title": "MiniMax-AI/MiniMax-MCP",
@@ -711,8 +955,8 @@
         "mcp-tools"
       ],
       "publishedAt": "2026-11-10T09:49:32Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "gh-repo:elder-plinius/CL4R1T4S",
@@ -729,14 +973,29 @@
         "google"
       ],
       "publishedAt": "2026-11-09T23:48:58Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hf-space:thejagstudio/tessera-pixel-studio",
+      "kind": "art",
+      "title": "thejagstudio/tessera-pixel-studio",
+      "desc": "Hugging Face Space · gradio demo · likes 55",
+      "url": "https://huggingface.co/spaces/thejagstudio/tessera-pixel-studio",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2026-11-09T20:45:03Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-space:MiniMaxAI/minimax-h3-image",
       "kind": "art",
       "title": "MiniMaxAI/minimax-h3-image",
-      "desc": "Hugging Face Space · gradio demo · likes 204",
+      "desc": "Hugging Face Space · gradio demo · likes 229",
       "url": "https://huggingface.co/spaces/MiniMaxAI/minimax-h3-image",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -744,8 +1003,23 @@
         "gradio"
       ],
       "publishedAt": "2026-11-09T13:26:35Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
+    },
+    {
+      "id": "hf-space:Lakonik/pi-H3",
+      "kind": "art",
+      "title": "Lakonik/pi-H3",
+      "desc": "Hugging Face Space · gradio demo · likes 54",
+      "url": "https://huggingface.co/spaces/Lakonik/pi-H3",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2026-11-09T04:59:51Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "gh-repo:wuyoscar/GPT-Image2-Skill",
@@ -762,8 +1036,8 @@
         "codex-skill"
       ],
       "publishedAt": "2026-11-08T22:34:08Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-paper:2611.08136",
@@ -795,8 +1069,8 @@
         "text-to-image"
       ],
       "publishedAt": "2026-11-08T13:04:50Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-model:chatrlabs/Qwen-Image-2.1-Uncensored-Omni-Quantized",
@@ -836,7 +1110,7 @@
       "id": "hf-model:MiniMaxAI/MiniMax-H3-Image",
       "kind": "model",
       "title": "MiniMaxAI/MiniMax-H3-Image",
-      "desc": "Hugging Face · likes 1,653 · downloads 821,710 · text-to-image",
+      "desc": "Hugging Face · likes 1,688 · downloads 876,986 · text-to-image",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3-Image",
       "source": "Hugging Face",
       "tags": [
@@ -848,14 +1122,14 @@
         "image-editing"
       ],
       "publishedAt": "2026-11-03T06:34:36Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-space:waitinghere/Krea2T-Revamped",
       "kind": "art",
       "title": "waitinghere/Krea2T-Revamped",
-      "desc": "Hugging Face Space · gradio demo · likes 85",
+      "desc": "Hugging Face Space · gradio demo · likes 99",
       "url": "https://huggingface.co/spaces/waitinghere/Krea2T-Revamped",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -863,14 +1137,14 @@
         "gradio"
       ],
       "publishedAt": "2026-10-19T03:38:31Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-space:rdata92/LTX-2.3-10Eros",
       "kind": "art",
       "title": "rdata92/LTX-2.3-10Eros",
-      "desc": "Hugging Face Space · gradio demo · likes 212",
+      "desc": "Hugging Face Space · gradio demo · likes 217",
       "url": "https://huggingface.co/spaces/rdata92/LTX-2.3-10Eros",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -878,14 +1152,14 @@
         "gradio"
       ],
       "publishedAt": "2026-10-15T12:54:41Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-space:joelniklaus/harness-leaderboard",
       "kind": "art",
       "title": "joelniklaus/harness-leaderboard",
-      "desc": "Hugging Face Space · docker demo · likes 465",
+      "desc": "Hugging Face Space · docker demo · likes 483",
       "url": "https://huggingface.co/spaces/joelniklaus/harness-leaderboard",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -893,8 +1167,8 @@
         "docker"
       ],
       "publishedAt": "2026-10-15T06:00:13Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-model:maxwell-model/Maxwell-V1-Flash",
@@ -919,7 +1193,7 @@
       "id": "hf-space:huggingface/moe-blogpost",
       "kind": "art",
       "title": "huggingface/moe-blogpost",
-      "desc": "Hugging Face Space · docker demo · likes 754",
+      "desc": "Hugging Face Space · docker demo · likes 784",
       "url": "https://huggingface.co/spaces/huggingface/moe-blogpost",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -927,8 +1201,8 @@
         "docker"
       ],
       "publishedAt": "2026-10-09T15:24:25Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-model:nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB",
@@ -953,7 +1227,7 @@
       "id": "hf-space:JCisHERE/wan2-2-i2v-v3",
       "kind": "art",
       "title": "JCisHERE/wan2-2-i2v-v3",
-      "desc": "Hugging Face Space · gradio demo · likes 501",
+      "desc": "Hugging Face Space · gradio demo · likes 540",
       "url": "https://huggingface.co/spaces/JCisHERE/wan2-2-i2v-v3",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -961,14 +1235,14 @@
         "gradio"
       ],
       "publishedAt": "2026-09-28T17:30:26Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-space:hugging-apps/bfs-best-face-swap",
       "kind": "art",
       "title": "hugging-apps/bfs-best-face-swap",
-      "desc": "Hugging Face Space · gradio demo · likes 997",
+      "desc": "Hugging Face Space · gradio demo · likes 1,013",
       "url": "https://huggingface.co/spaces/hugging-apps/bfs-best-face-swap",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -976,14 +1250,14 @@
         "gradio"
       ],
       "publishedAt": "2026-09-27T18:26:19Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-space:amisima/Qwen-2.1-Turbo-Qwen-Face-Swap-MOSS-Image-Edit-Outpaint-Qwen-Detail-Enhancer",
       "kind": "art",
       "title": "amisima/Qwen-2.1-Turbo-Qwen-Face-Swap-MOSS-Image-Edit-Outpaint-Qwen-Detail-Enhancer",
-      "desc": "Hugging Face Space · gradio demo · likes 104",
+      "desc": "Hugging Face Space · gradio demo · likes 107",
       "url": "https://huggingface.co/spaces/amisima/Qwen-2.1-Turbo-Qwen-Face-Swap-MOSS-Image-Edit-Outpaint-Qwen-Detail-Enhancer",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -991,8 +1265,8 @@
         "gradio"
       ],
       "publishedAt": "2026-09-25T09:54:39Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     },
     {
       "id": "hf-space:AST-1320/Qwen-2511-Plus-Flux.2-klein",
@@ -1010,57 +1284,19 @@
       "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     },
     {
-      "id": "hf-model:Qwen/Qwen3.8-27B",
-      "kind": "model",
-      "title": "Qwen/Qwen3.8-27B",
-      "desc": "Hugging Face · likes 20,693 · downloads 6,647,301 · image-text-to-text",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
-      "source": "Hugging Face",
-      "tags": [
-        "transformers",
-        "safetensors",
-        "qwen3_5",
-        "image-text-to-text",
-        "conversational",
-        "license:apache-2.0"
-      ],
-      "publishedAt": "2026-08-05T08:22:59Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "hf-model:Lightricks/LTX-2.5",
-      "kind": "model",
-      "title": "Lightricks/LTX-2.5",
-      "desc": "Hugging Face · likes 12,759 · downloads 2,934,937 · image-to-video",
-      "url": "https://huggingface.co/Lightricks/LTX-2.5",
-      "source": "Hugging Face",
-      "tags": [
-        "diffusion-single-file",
-        "image-to-video",
-        "text-to-video",
-        "video-to-video",
-        "image-text-to-video",
-        "audio-to-video"
-      ],
-      "publishedAt": "2026-07-23T07:55:24Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "hf-space:microsoft/TRELLIS.2",
+      "id": "hf-space:agent-memory-leaderboard/leaderboard",
       "kind": "art",
-      "title": "microsoft/TRELLIS.2",
-      "desc": "Hugging Face Space · gradio demo · likes 2,428",
-      "url": "https://huggingface.co/spaces/microsoft/TRELLIS.2",
+      "title": "agent-memory-leaderboard/leaderboard",
+      "desc": "Hugging Face Space · static demo · likes 932",
+      "url": "https://huggingface.co/spaces/agent-memory-leaderboard/leaderboard",
       "source": "Hugging Face Spaces",
       "tags": [
         "space",
-        "gradio"
+        "static"
       ],
-      "publishedAt": "2025-12-10T03:50:25Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
+      "publishedAt": "2026-08-06T15:18:18Z",
+      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
+      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
     }
   ]
 }
