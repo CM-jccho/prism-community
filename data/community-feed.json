@@ -1,8 +1,8 @@
 {
   "version": 1,
   "generatedBy": "scripts/update_feed.py",
-  "updatedAt": "2026-11-25T08:25:45.931415Z",
-  "updatedAtKst": "2026-11-25 17:25 KST",
+  "updatedAt": "2026-11-26T08:10:44.018961Z",
+  "updatedAtKst": "2026-11-26 17:10 KST",
   "sources": [
     "Hugging Face models (12)",
     "Hugging Face papers (10)",
@@ -27,27 +27,9 @@
         "claude",
         "claude-code"
       ],
-      "publishedAt": "2026-11-25T08:22:14Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
-    },
-    {
-      "id": "gh-repo:f/prompts.chat",
-      "kind": "prompt",
-      "title": "f/prompts.chat",
-      "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-      "url": "https://github.com/f/prompts.chat",
-      "source": "GitHub",
-      "tags": [
-        "ai",
-        "artificial-intelligence",
-        "awesome-list",
-        "chatgpt",
-        "chatgpt-prompts"
-      ],
-      "publishedAt": "2026-11-25T08:21:50Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "publishedAt": "2026-11-26T07:44:16Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "gh-repo:headroomlabs-ai/headroom",
@@ -63,9 +45,27 @@
         "claude-code",
         "compression"
       ],
-      "publishedAt": "2026-11-25T02:09:47Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "publishedAt": "2026-11-26T07:27:51Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "gh-repo:f/prompts.chat",
+      "kind": "prompt",
+      "title": "f/prompts.chat",
+      "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat",
+      "source": "GitHub",
+      "tags": [
+        "ai",
+        "artificial-intelligence",
+        "awesome-list",
+        "chatgpt",
+        "chatgpt-prompts"
+      ],
+      "publishedAt": "2026-11-26T07:09:14Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "gh-repo:JuliusBrussee/caveman",
@@ -81,23 +81,41 @@
         "claude",
         "claude-code"
       ],
-      "publishedAt": "2026-11-24T21:36:13Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "publishedAt": "2026-11-26T05:20:45Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
-      "id": "hn:50634734",
+      "id": "gh-repo:microsoft/generative-ai-for-beginners",
+      "kind": "prompt",
+      "title": "microsoft/generative-ai-for-beginners",
+      "desc": "21 Lessons, Get Started Building with Generative AI",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners",
+      "source": "GitHub",
+      "tags": [
+        "ai",
+        "azure",
+        "chatgpt",
+        "dall-e",
+        "generative-ai"
+      ],
+      "publishedAt": "2026-11-26T03:43:40Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hn:50647673",
       "kind": "news",
-      "title": "Working with AI",
-      "desc": "Hacker News · 70 points · 66 comments",
-      "url": "https://www.anthropic.com/research/working-with-ai",
+      "title": "The New York Times warns photographers not to update Photoshop over AI features",
+      "desc": "Hacker News · 341 points · 290 comments",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
-      "publishedAt": "2026-11-24T21:07:38Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "publishedAt": "2026-11-25T21:18:02Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "gh-repo:promptslab/Awesome-Prompt-Engineering",
@@ -113,29 +131,198 @@
         "few-shot-learning",
         "gpt"
       ],
-      "publishedAt": "2026-11-24T17:25:15Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "publishedAt": "2026-11-25T17:01:12Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "gh-repo:worldbench/DiffusionOPSD",
+      "kind": "tool",
+      "title": "worldbench/DiffusionOPSD",
+      "desc": "🔥 On-Policy Self-Distillation in Diffusion Models",
+      "url": "https://github.com/worldbench/DiffusionOPSD",
+      "source": "GitHub",
+      "tags": [
+        "aigc",
+        "diffusion-models",
+        "generative-ai",
+        "image-editing",
+        "image-generation"
+      ],
+      "publishedAt": "2026-11-25T16:27:18Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "gh-repo:Anil-matcha/Open-Generative-AI",
+      "kind": "tool",
+      "title": "Anil-matcha/Open-Generative-AI",
+      "desc": "Uncensored AI Image & Video Generator — Free AI image & video generation studio with 800+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+      "source": "GitHub",
+      "tags": [
+        "ai-image-generation",
+        "ai-video-generation",
+        "fal-ai-alternative",
+        "generative-ai",
+        "image-to-video"
+      ],
+      "publishedAt": "2026-11-25T08:33:43Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hn:50634734",
+      "kind": "news",
+      "title": "Working with AI",
+      "desc": "Hacker News · 88 points · 76 comments",
+      "url": "https://www.anthropic.com/research/working-with-ai",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-24T21:07:38Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hn:50634426",
+      "kind": "news",
+      "title": "Launch HN: Versine (YC F26) – MCP to send and receive money",
+      "desc": "Hacker News · 105 points · 103 comments",
+      "url": "https://news.ycombinator.com/item?id=50634426",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-24T20:44:15Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hf-paper:2611.34923",
+      "kind": "news",
+      "title": "Mixture-of-Loops Transformer",
+      "desc": "Looped Transformers boost expressivity by reusing shared layers across loops, yet at the cost of efficiency. Pushing their expressivity-efficiency frontier requires rethinking the core mech…",
+      "url": "https://huggingface.co/papers/2611.34923",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-24T19:00:00Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hf-paper:2611.34912",
+      "kind": "news",
+      "title": "LiveVAE: Causal Window Attention Makes Efficient Streaming Video VAE",
+      "desc": "While video diffusion models have grown faster and increasingly streamable, the video VAE remains a primary latency bottleneck across interactive generation and editing pipelines. Existing…",
+      "url": "https://huggingface.co/papers/2611.34912",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-24T19:00:00Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hf-paper:2611.34750",
+      "kind": "news",
+      "title": "SOLVE: Sparse, Ordered Keyposes Make LLM Agents Versatile and Efficient Robot Manipulator",
+      "desc": "LLM agents have made remarkable progress in robot manipulation, yet they suffer from expensive inference, dense step-by-step control, and tool bottlenecks. We introduce SOLVE, a training-fr…",
+      "url": "https://huggingface.co/papers/2611.34750",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-24T19:00:00Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hf-paper:2611.34466",
+      "kind": "news",
+      "title": "EgoUseBench: Benchmarking Computer-Use Agents under Evolving First-Person Contexts",
+      "desc": "AI wearables, such as smart glasses, extend the context available to agents beyond digital environments to users' physical surroundings. With these devices, computer tasks can originate fro…",
+      "url": "https://huggingface.co/papers/2611.34466",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-24T19:00:00Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hf-paper:2611.34420",
+      "kind": "news",
+      "title": "DocSEAM: Bidirectional Cross-Page Encoding for Multi-Page Document Understanding",
+      "desc": "Multi-page document vision-language models encode each page independently, creating a feature-level discontinuity at page boundaries: visual tokens are formed without access to content on a…",
+      "url": "https://huggingface.co/papers/2611.34420",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-24T19:00:00Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hf-paper:2611.34064",
+      "kind": "news",
+      "title": "SPARC: Geometry-Guided Attention Pruning for Long-Horizon Camera-Controlled Video Generation",
+      "desc": "We present SPARC, a geometry-guided attention pruning framework that turns the native self-attention of pretrained video diffusion transformers into a unified mechanism for camera control a…",
+      "url": "https://huggingface.co/papers/2611.34064",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-24T19:00:00Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hf-paper:2611.33925",
+      "kind": "news",
+      "title": "Beyond the Happy Path: Generalizing Robot World Models from Simulated Failures",
+      "desc": "Robot world models are increasingly used to evaluate and plan policies, yet robot training data are dominated by successful demonstrations. Off the happy path, when a grasp is misaligned or…",
+      "url": "https://huggingface.co/papers/2611.33925",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-24T19:00:00Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hn:50630809",
       "kind": "news",
       "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
-      "desc": "Hacker News · 260 points · 193 comments",
+      "desc": "Hacker News · 450 points · 346 comments",
       "url": "https://news.ycombinator.com/item?id=50630809",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-24T16:45:44Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hf-model:prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "kind": "model",
       "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
-      "desc": "Hugging Face · likes 174 · downloads 0 · text-generation",
+      "desc": "Hugging Face · likes 390 · downloads 59,366 · text-generation",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "source": "Hugging Face",
       "tags": [
@@ -148,8 +335,8 @@
         "cuda"
       ],
       "publishedAt": "2026-11-24T16:32:20Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "gh-repo:Capsize-Games/airunner",
@@ -166,26 +353,8 @@
         "chatbot"
       ],
       "publishedAt": "2026-11-24T15:19:32Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
-    },
-    {
-      "id": "gh-repo:Anil-matcha/Open-Generative-AI",
-      "kind": "tool",
-      "title": "Anil-matcha/Open-Generative-AI",
-      "desc": "Uncensored AI Image & Video Generator — Free AI image & video generation studio with 800+ models (Flux, Midjourney, Kling, Sora, Veo). No content filters. Self-hosted, MIT licensed.",
-      "url": "https://github.com/Anil-matcha/Open-Generative-AI",
-      "source": "GitHub",
-      "tags": [
-        "ai-image-generation",
-        "ai-video-generation",
-        "fal-ai-alternative",
-        "generative-ai",
-        "image-to-video"
-      ],
-      "publishedAt": "2026-11-24T10:33:41Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "gh-repo:asgeirtj/system_prompts_leaks",
@@ -202,8 +371,23 @@
         "chatbot"
       ],
       "publishedAt": "2026-11-24T07:10:50Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hf-paper:2611.33457",
+      "kind": "news",
+      "title": "Playfulness as Feedback for Agentic Game Development",
+      "desc": "Coding agents can generate runnable games from natural-language descriptions. However, a runnable game does not guarantee an excellent gameplay experience for players. In our view, a playfu…",
+      "url": "https://huggingface.co/papers/2611.33457",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-23T19:00:00Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hf-paper:2611.33010",
@@ -311,6 +495,21 @@
       "lastSeenAt": "2026-11-25T08:25:45.931415Z"
     },
     {
+      "id": "hf-paper:2611.32002",
+      "kind": "news",
+      "title": "Change the Base, Change the Game: Rethinking Pan-sharpening",
+      "desc": "Many pan-sharpening (PS) networks reconstruct high-resolution multispectral (HRMS) images by adding learned residuals to 4times-interpolated low-resolution multispectral (LRMS) inputs, inco…",
+      "url": "https://huggingface.co/papers/2611.32002",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-23T19:00:00Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
       "id": "hf-paper:2611.30986",
       "kind": "news",
       "title": "Reinforcing Diffusion Models by Instantaneous Trajectory Distribution Matching",
@@ -326,24 +525,38 @@
       "lastSeenAt": "2026-11-25T08:25:45.931415Z"
     },
     {
+      "id": "hn:50611593",
+      "kind": "news",
+      "title": "Show HN: An agent skill that optimizes code with falsifiable hypotheses",
+      "desc": "Hacker News · 110 points · 10 comments",
+      "url": "https://chszlab.github.io/AgenticAlgorithmEngineering/",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-23T14:02:15Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
       "id": "hn:50610830",
       "kind": "news",
       "title": "Amodei reportedly suggested games could pacify masses after AI took their jobs (2015)",
-      "desc": "Hacker News · 78 points · 84 comments",
+      "desc": "Hacker News · 79 points · 85 comments",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1039745/dario-amodei-video-games-ai-joblessness",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-23T12:41:14Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hf-model:inclusionAI/Ling-3.2-air",
       "kind": "model",
       "title": "inclusionAI/Ling-3.2-air",
-      "desc": "Hugging Face · likes 189 · downloads 733",
+      "desc": "Hugging Face · likes 239 · downloads 1,467",
       "url": "https://huggingface.co/inclusionAI/Ling-3.2-air",
       "source": "Hugging Face",
       "tags": [
@@ -355,8 +568,8 @@
         "fp8"
       ],
       "publishedAt": "2026-11-23T03:55:12Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "gh-repo:PRIV-Creation/Awesome-Controllable-T2I-Diffusion-Models",
@@ -373,8 +586,8 @@
         "multi-concept"
       ],
       "publishedAt": "2026-11-23T02:00:46Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hn:50605045",
@@ -465,6 +678,21 @@
       "lastSeenAt": "2026-11-24T09:50:10.732389Z"
     },
     {
+      "id": "hf-paper:2611.30895",
+      "kind": "news",
+      "title": "Speak When You See It: Proactive Task Assistants Should Wait for Evidence, Not the Clock",
+      "desc": "Proactive assistants that guide people through physical tasks must decide, every few seconds, whether a step is complete and whether a mistake has occurred. We find that two benchmarks for…",
+      "url": "https://huggingface.co/papers/2611.30895",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-22T19:00:00Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
       "id": "hf-paper:2611.30627",
       "kind": "news",
       "title": "From Rewarding What Models Say to How They Think: Attention Process Reward Model for LLM Reinforcement Learning",
@@ -551,8 +779,8 @@
         "claude-code-plugin"
       ],
       "publishedAt": "2026-11-22T02:31:58Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hn:50594564",
@@ -629,7 +857,7 @@
       "id": "hf-model:AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "kind": "model",
       "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "desc": "Hugging Face · likes 770 · downloads 573,775 · image-text-to-text",
+      "desc": "Hugging Face · likes 859 · downloads 762,491 · image-text-to-text",
       "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
       "source": "Hugging Face",
       "tags": [
@@ -641,8 +869,8 @@
         "image-text-to-text"
       ],
       "publishedAt": "2026-11-20T20:42:23Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hf-paper:2611.28489",
@@ -688,8 +916,8 @@
         "blender"
       ],
       "publishedAt": "2026-11-20T15:20:31Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hn:50574383",
@@ -709,7 +937,7 @@
       "id": "hf-model:unsloth/Inkling-2-Mini-GGUF",
       "kind": "model",
       "title": "unsloth/Inkling-2-Mini-GGUF",
-      "desc": "Hugging Face · likes 1,288 · downloads 1,913,407 · image-text-to-text",
+      "desc": "Hugging Face · likes 1,394 · downloads 2,445,633 · image-text-to-text",
       "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
       "source": "Hugging Face",
       "tags": [
@@ -721,8 +949,8 @@
         "base_model:thinkingmachines/Inkling-2-Mini"
       ],
       "publishedAt": "2026-11-20T13:09:48Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hf-paper:2611.27915",
@@ -754,8 +982,8 @@
         "ai-short-drama"
       ],
       "publishedAt": "2026-11-20T11:01:16Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hn:50572503",
@@ -786,8 +1014,8 @@
         "education"
       ],
       "publishedAt": "2026-11-20T02:32:06Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hf-paper:2611.27973",
@@ -879,8 +1107,8 @@
         "claude"
       ],
       "publishedAt": "2026-11-19T18:53:14Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hn:50564282",
@@ -923,24 +1151,6 @@
       "publishedAt": "2026-11-19T16:34:04Z",
       "firstSeenAt": "2026-11-22T06:41:39.860106Z",
       "lastSeenAt": "2026-11-22T06:41:39.860106Z"
-    },
-    {
-      "id": "gh-repo:microsoft/generative-ai-for-beginners",
-      "kind": "prompt",
-      "title": "microsoft/generative-ai-for-beginners",
-      "desc": "21 Lessons, Get Started Building with Generative AI",
-      "url": "https://github.com/microsoft/generative-ai-for-beginners",
-      "source": "GitHub",
-      "tags": [
-        "ai",
-        "azure",
-        "chatgpt",
-        "dall-e",
-        "generative-ai"
-      ],
-      "publishedAt": "2026-11-19T03:43:07Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
     },
     {
       "id": "hn:50555093",
@@ -988,7 +1198,7 @@
       "id": "hf-space:hugging-apps/clairic",
       "kind": "art",
       "title": "hugging-apps/clairic",
-      "desc": "Hugging Face Space · gradio demo · likes 67",
+      "desc": "Hugging Face Space · gradio demo · likes 70",
       "url": "https://huggingface.co/spaces/hugging-apps/clairic",
       "source": "Hugging Face Spaces",
       "tags": [
@@ -996,8 +1206,23 @@
         "gradio"
       ],
       "publishedAt": "2026-11-18T23:16:18Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
+    },
+    {
+      "id": "hf-space:waitinghere/MINIMAX-H3-Ref2VA-Revamped",
+      "kind": "art",
+      "title": "waitinghere/MINIMAX-H3-Ref2VA-Revamped",
+      "desc": "Hugging Face Space · gradio demo · likes 51",
+      "url": "https://huggingface.co/spaces/waitinghere/MINIMAX-H3-Ref2VA-Revamped",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "gradio"
+      ],
+      "publishedAt": "2026-11-18T21:15:10Z",
+      "firstSeenAt": "2026-11-26T08:10:44.018961Z",
+      "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
       "id": "hf-paper:2611.26745",
@@ -1028,229 +1253,6 @@
       "publishedAt": "2026-11-18T19:00:00Z",
       "firstSeenAt": "2026-11-22T06:41:39.860106Z",
       "lastSeenAt": "2026-11-22T06:41:39.860106Z"
-    },
-    {
-      "id": "hf-paper:2611.26613",
-      "kind": "news",
-      "title": "AgentRoboCritic: Understanding the Capability of Frontier Agents on Direct Robot Control",
-      "desc": "Frontier multimodal language agents such as GPT-6 Astra have demonstrated strong capabilities in controlling robots directly via low-level numerical actions without high-level primitives. H…",
-      "url": "https://huggingface.co/papers/2611.26613",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-23T07:30:23.324202Z",
-      "lastSeenAt": "2026-11-23T07:30:23.324202Z"
-    },
-    {
-      "id": "hf-paper:2611.26603",
-      "kind": "news",
-      "title": "Depth Pro 2: Sharp and Temporally Consistent Metric Monocular Depth",
-      "desc": "We present Depth Pro 2, an approach to estimating dense metric depth for images and video at full resolution. By analyzing prior methods for monocular depth estimation, we find that they co…",
-      "url": "https://huggingface.co/papers/2611.26603",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "hf-paper:2611.26595",
-      "kind": "news",
-      "title": "Coda-DaVinci: Reimagining Video Generation with Code2Video",
-      "desc": "Code2Video uses agent-authored 3D proxies to guide video generation, enabling explicit control over structure and dynamics. However, how to construct proxies and prompts for optimal downstr…",
-      "url": "https://huggingface.co/papers/2611.26595",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "hf-paper:2611.26409",
-      "kind": "news",
-      "title": "WeMM-Video: Pushing the Frontiers of Open-Source Omni-Modal Video Understanding",
-      "desc": "Video understanding, particularly with accompanying audio, remains a central challenge in multimodal intelligence. In this report, we introduce WeMM-Video, a family of Chinese-English bilin…",
-      "url": "https://huggingface.co/papers/2611.26409",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "hf-paper:2611.26380",
-      "kind": "news",
-      "title": "EgoCaptioner: Towards Comprehensive and Fine-Grained Egocentric Video Captioning",
-      "desc": "Egocentric video captioning requires fine-grained detail and accurate timing, yet current multimodal large language models (MLLMs) often miss brief actions, confuse their order, or misinter…",
-      "url": "https://huggingface.co/papers/2611.26380",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "hf-paper:2611.26239",
-      "kind": "news",
-      "title": "Teaching Vision-Language-Action Models to Stop Safely",
-      "desc": "Vision-language-action (VLA) models enable robots to perform diverse tasks from visual observations and language instructions. While prior work has explored task suppression and refusal, st…",
-      "url": "https://huggingface.co/papers/2611.26239",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-22T06:41:39.860106Z",
-      "lastSeenAt": "2026-11-22T06:41:39.860106Z"
-    },
-    {
-      "id": "hf-paper:2611.26232",
-      "kind": "news",
-      "title": "Time Series Structure Learning with Local Causal Parent Discovery",
-      "desc": "Learning and inference on time series can pose significant statistical challenges, including autocorrelated observations, distribution shift over time, and the curse of dimensionality. Thes…",
-      "url": "https://huggingface.co/papers/2611.26232",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-22T06:41:39.860106Z",
-      "lastSeenAt": "2026-11-22T06:41:39.860106Z"
-    },
-    {
-      "id": "hf-paper:2611.25604",
-      "kind": "news",
-      "title": "PAD: Policy-Aware Data Valuation for Autonomous Driving",
-      "desc": "End-to-end autonomous driving increasingly depends on scaling training demonstrations, yet data growth does not guarantee proportional gains. However, additional data do not guarantee bette…",
-      "url": "https://huggingface.co/papers/2611.25604",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-22T06:41:39.860106Z",
-      "lastSeenAt": "2026-11-22T06:41:39.860106Z"
-    },
-    {
-      "id": "hf-paper:2611.25567",
-      "kind": "news",
-      "title": "Online Mistake Detection in Instruction-Conditioned Procedural Video",
-      "desc": "An assistant monitoring a person performing a procedure is most useful when it can detect mistakes while there is still time to recover. This requires judging actions against task instructi…",
-      "url": "https://huggingface.co/papers/2611.25567",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-22T06:41:39.860106Z",
-      "lastSeenAt": "2026-11-22T06:41:39.860106Z"
-    },
-    {
-      "id": "hf-paper:2611.25509",
-      "kind": "news",
-      "title": "LingSante MedGuard Technical Report",
-      "desc": "As medical AI is increasingly used for patient consultation and clinical decision support, identifying harmful, non-compliant, or ethically problematic responses is essential for responsibl…",
-      "url": "https://huggingface.co/papers/2611.25509",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-25T08:25:45.931415Z",
-      "lastSeenAt": "2026-11-25T08:25:45.931415Z"
-    },
-    {
-      "id": "hf-paper:2611.25419",
-      "kind": "news",
-      "title": "DiLE: Discrimination-Aware Latent-Space Learning for Universal Multimodal Embeddings",
-      "desc": "Multimodal large language models have greatly improved input understanding in universal multimodal embedding models. However, this understanding does not ensure that their embeddings preser…",
-      "url": "https://huggingface.co/papers/2611.25419",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-24T09:50:10.732389Z",
-      "lastSeenAt": "2026-11-24T09:50:10.732389Z"
-    },
-    {
-      "id": "hf-paper:2611.25387",
-      "kind": "news",
-      "title": "TuringSpace: Grounding Spatial Intelligence in Action with Interactive CAPTCHAs",
-      "desc": "Humans act in the visual world by inferring the 3D layout behind a 2D view, predicting how an action changes it, and correcting themselves after seeing the result. Can multimodal large lang…",
-      "url": "https://huggingface.co/papers/2611.25387",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
-    },
-    {
-      "id": "hf-paper:2611.18639",
-      "kind": "news",
-      "title": "SynthDCB: World Distillation for Scalable Device Control Benchmarking",
-      "desc": "Scaling device-control evaluation requires scaling both interactive worlds and the tasks agents must solve. We introduce SynthDCB, a benchmark for environment awareness and device control b…",
-      "url": "https://huggingface.co/papers/2611.18639",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-18T19:00:00Z",
-      "firstSeenAt": "2026-11-24T09:50:10.732389Z",
-      "lastSeenAt": "2026-11-24T09:50:10.732389Z"
-    },
-    {
-      "id": "hn:50549188",
-      "kind": "news",
-      "title": "Launch HN: Maritime (YC F26) – A managed cloud for production AI agents",
-      "desc": "Hacker News · 60 points · 65 comments",
-      "url": "https://news.ycombinator.com/item?id=50549188",
-      "source": "Hacker News",
-      "tags": [
-        "news"
-      ],
-      "publishedAt": "2026-11-18T17:26:28Z",
-      "firstSeenAt": "2026-11-21T07:00:09.969400Z",
-      "lastSeenAt": "2026-11-21T07:00:09.969400Z"
-    },
-    {
-      "id": "hn:50540836",
-      "kind": "news",
-      "title": "Bank CEOs, NSA Tell Congress That AI-Driven Patches Are Behind Outages",
-      "desc": "Hacker News · 98 points · 58 comments",
-      "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages",
-      "source": "Hacker News",
-      "tags": [
-        "news"
-      ],
-      "publishedAt": "2026-11-18T01:45:11Z",
-      "firstSeenAt": "2026-11-20T04:57:09.447698Z",
-      "lastSeenAt": "2026-11-20T04:57:09.447698Z"
     }
   ]
 }
