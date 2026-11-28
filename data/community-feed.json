@@ -1,35 +1,35 @@
 {
   "version": 1,
   "generatedBy": "scripts/update_feed.py",
-  "updatedAt": "2026-11-27T08:21:25.667742Z",
-  "updatedAtKst": "2026-11-27 17:21 KST",
+  "updatedAt": "2026-11-28T07:41:43.229572Z",
+  "updatedAtKst": "2026-11-28 16:41 KST",
   "sources": [
     "Hugging Face models (12)",
     "Hugging Face papers (10)",
     "Hugging Face Spaces (12)",
     "GitHub (16)",
-    "Hacker News (7)"
+    "Hacker News (8)"
   ],
   "failedSources": [],
   "count": 80,
   "items": [
     {
-      "id": "gh-repo:Imbad0202/academic-research-skills",
+      "id": "gh-repo:f/prompts.chat",
       "kind": "prompt",
-      "title": "Imbad0202/academic-research-skills",
-      "desc": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
-      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "title": "f/prompts.chat",
+      "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+      "url": "https://github.com/f/prompts.chat",
       "source": "GitHub",
       "tags": [
-        "academic-pipeline",
-        "academic-writing",
-        "ai-research",
-        "claude",
-        "claude-code"
+        "ai",
+        "artificial-intelligence",
+        "awesome-list",
+        "chatgpt",
+        "chatgpt-prompts"
       ],
-      "publishedAt": "2026-11-27T06:13:19Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "publishedAt": "2026-11-28T06:59:45Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "gh-repo:JuliusBrussee/caveman",
@@ -45,27 +45,73 @@
         "claude",
         "claude-code"
       ],
-      "publishedAt": "2026-11-27T05:38:24Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "publishedAt": "2026-11-28T05:11:31Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
-      "id": "gh-repo:f/prompts.chat",
-      "kind": "prompt",
-      "title": "f/prompts.chat",
-      "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-      "url": "https://github.com/f/prompts.chat",
+      "id": "gh-repo:Capsize-Games/airunner",
+      "kind": "tool",
+      "title": "Capsize-Games/airunner",
+      "desc": "Offline inference engine for art, real-time voice conversations, LLM powered chatbots and automated workflows",
+      "url": "https://github.com/Capsize-Games/airunner",
       "source": "GitHub",
       "tags": [
         "ai",
-        "artificial-intelligence",
-        "awesome-list",
-        "chatgpt",
-        "chatgpt-prompts"
+        "ai-art",
+        "art",
+        "asset-generator",
+        "chatbot"
       ],
-      "publishedAt": "2026-11-27T03:13:20Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "publishedAt": "2026-11-28T02:17:22Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
+      "id": "hn:50673521",
+      "kind": "news",
+      "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+      "desc": "Hacker News · 155 points · 119 comments",
+      "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-28T01:32:56Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
+      "id": "gh-repo:Imbad0202/academic-research-skills",
+      "kind": "prompt",
+      "title": "Imbad0202/academic-research-skills",
+      "desc": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "source": "GitHub",
+      "tags": [
+        "academic-pipeline",
+        "academic-writing",
+        "ai-research",
+        "claude",
+        "claude-code"
+      ],
+      "publishedAt": "2026-11-27T23:49:47Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
+      "id": "hn:50670855",
+      "kind": "news",
+      "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+      "desc": "Hacker News · 363 points · 208 comments",
+      "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-27T19:42:25Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "gh-repo:headroomlabs-ai/headroom",
@@ -81,9 +127,91 @@
         "claude-code",
         "compression"
       ],
-      "publishedAt": "2026-11-27T01:24:34Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "publishedAt": "2026-11-27T18:14:41Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
+      "id": "hn:50669561",
+      "kind": "news",
+      "title": "I'm Scared of AI",
+      "desc": "Hacker News · 210 points · 246 comments",
+      "url": "https://thesoapbox.email/archive/3",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-27T17:45:31Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
+      "id": "gh-repo:promptslab/Awesome-Prompt-Engineering",
+      "kind": "tool",
+      "title": "promptslab/Awesome-Prompt-Engineering",
+      "desc": "This repository contains a hand-curated resources for Prompt Engineering with a focus on Generative Pre-trained Transformer (GPT), ChatGPT, PaLM etc",
+      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
+      "source": "GitHub",
+      "tags": [
+        "chatgpt",
+        "chatgpt-api",
+        "deep-learning",
+        "few-shot-learning",
+        "gpt"
+      ],
+      "publishedAt": "2026-11-27T16:28:50Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
+      "id": "gh-repo:HBAI-Ltd/Toonflow-app",
+      "kind": "tool",
+      "title": "HBAI-Ltd/Toonflow-app",
+      "desc": "短剧、漫剧制作工具 Toonflow：开源 AI 视频创作平台，集成剧本创作、智能分镜、角色与场景资产管理、图像生成和视频生成。融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。Open-source AI short drama and motion comic creation tool with an infini…",
+      "url": "https://github.com/HBAI-Ltd/Toonflow-app",
+      "source": "GitHub",
+      "tags": [
+        "ai-agents",
+        "ai-comic",
+        "ai-content-creation",
+        "ai-filmmaking",
+        "ai-short-drama"
+      ],
+      "publishedAt": "2026-11-27T15:31:55Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
+      "id": "hn:50665488",
+      "kind": "news",
+      "title": "AI on brink of making online security useless, mathematicians fear",
+      "desc": "Hacker News · 119 points · 158 comments",
+      "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
+      "source": "Hacker News",
+      "tags": [
+        "news"
+      ],
+      "publishedAt": "2026-11-27T11:09:04Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
+      "id": "gh-repo:HisMax/RedInk",
+      "kind": "tool",
+      "title": "HisMax/RedInk",
+      "desc": "Red Ink - A one-stop Xiaohongshu image-and-text generator based on the 🍌Nano Banana Pro🍌, \"One Sentence, One Image: Generate Xiaohongshu Text and Images.\"",
+      "url": "https://github.com/HisMax/RedInk",
+      "source": "GitHub",
+      "tags": [
+        "ai",
+        "aigc",
+        "content-generator",
+        "docker",
+        "flask"
+      ],
+      "publishedAt": "2026-11-27T10:19:07Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "gh-repo:FurkanGozukara/Stable-Diffusion",
@@ -100,22 +228,22 @@
         "education"
       ],
       "publishedAt": "2026-11-26T23:32:15Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hn:50658910",
       "kind": "news",
       "title": "Top-cited AI scientists at four US companies compared",
-      "desc": "Hacker News · 41 points · 23 comments",
+      "desc": "Hacker News · 44 points · 25 comments",
       "url": "https://topcitedscientists.com/figures/ai-at-four-us-companies/",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-26T19:44:31Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hn:50657957",
@@ -132,54 +260,38 @@
       "lastSeenAt": "2026-11-27T08:21:25.667742Z"
     },
     {
-      "id": "gh-repo:Capsize-Games/airunner",
-      "kind": "tool",
-      "title": "Capsize-Games/airunner",
-      "desc": "Offline inference engine for art, real-time voice conversations, LLM powered chatbots and automated workflows",
-      "url": "https://github.com/Capsize-Games/airunner",
-      "source": "GitHub",
-      "tags": [
-        "ai",
-        "ai-art",
-        "art",
-        "asset-generator",
-        "chatbot"
-      ],
-      "publishedAt": "2026-11-26T17:26:17Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
-    },
-    {
-      "id": "gh-repo:promptslab/Awesome-Prompt-Engineering",
-      "kind": "tool",
-      "title": "promptslab/Awesome-Prompt-Engineering",
-      "desc": "This repository contains a hand-curated resources for Prompt Engineering with a focus on Generative Pre-trained Transformer (GPT), ChatGPT, PaLM etc",
-      "url": "https://github.com/promptslab/Awesome-Prompt-Engineering",
-      "source": "GitHub",
-      "tags": [
-        "chatgpt",
-        "chatgpt-api",
-        "deep-learning",
-        "few-shot-learning",
-        "gpt"
-      ],
-      "publishedAt": "2026-11-26T16:42:46Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
-    },
-    {
       "id": "hn:50656763",
       "kind": "news",
       "title": "Ask HN: Any courses/products by indie makers worth getting today?",
-      "desc": "Hacker News · 74 points · 36 comments",
+      "desc": "Hacker News · 81 points · 39 comments",
       "url": "https://news.ycombinator.com/item?id=50656763",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-26T16:16:41Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
+      "id": "hf-model:ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "kind": "model",
+      "title": "ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "desc": "Hugging Face · likes 294 · downloads 24,931 · text-generation",
+      "url": "https://huggingface.co/ISTA-DASLab/Inkling-2-Mini-GSQ-RCO-GGUF",
+      "source": "Hugging Face",
+      "tags": [
+        "text-generation",
+        "gguf",
+        "gsq",
+        "rco",
+        "quantization",
+        "mixed-precision",
+        "ist-daslab"
+      ],
+      "publishedAt": "2026-11-26T13:01:01Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "gh-repo:asgeirtj/system_prompts_leaks",
@@ -196,22 +308,22 @@
         "chatbot"
       ],
       "publishedAt": "2026-11-26T12:52:24Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hn:50653477",
       "kind": "news",
       "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
-      "desc": "Hacker News · 322 points · 281 comments",
+      "desc": "Hacker News · 420 points · 333 comments",
       "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-26T09:44:23Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "gh-repo:xhongc/ai_story",
@@ -228,8 +340,8 @@
         "ai-filmmaking"
       ],
       "publishedAt": "2026-11-26T07:10:50Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "gh-repo:microsoft/generative-ai-for-beginners",
@@ -246,22 +358,22 @@
         "generative-ai"
       ],
       "publishedAt": "2026-11-26T03:43:40Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hn:50647673",
       "kind": "news",
       "title": "The New York Times warns photographers not to update Photoshop over AI features",
-      "desc": "Hacker News · 670 points · 528 comments",
+      "desc": "Hacker News · 681 points · 545 comments",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
       "source": "Hacker News",
       "tags": [
         "news"
       ],
       "publishedAt": "2026-11-25T21:18:02Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "gh-repo:worldbench/DiffusionOPSD",
@@ -282,6 +394,21 @@
       "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
+      "id": "hf-space:dlouapre/looped-transformers",
+      "kind": "art",
+      "title": "dlouapre/looped-transformers",
+      "desc": "Hugging Face Space · docker demo · likes 63",
+      "url": "https://huggingface.co/spaces/dlouapre/looped-transformers",
+      "source": "Hugging Face Spaces",
+      "tags": [
+        "space",
+        "docker"
+      ],
+      "publishedAt": "2026-11-25T12:27:03Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
       "id": "gh-repo:Anil-matcha/Open-Generative-AI",
       "kind": "tool",
       "title": "Anil-matcha/Open-Generative-AI",
@@ -296,8 +423,8 @@
         "image-to-video"
       ],
       "publishedAt": "2026-11-25T08:33:43Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hn:50634734",
@@ -493,6 +620,21 @@
       "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
+      "id": "hf-paper:2611.33885",
+      "kind": "news",
+      "title": "LayoutRecall: Preserving Appearance in Multi-Round 3D Layout-Controlled Image Editing",
+      "desc": "3D layout-controlled image editing gives users explicit control over object placement and camera viewpoint. In a sequence of edits, however, the latest image can lose the appearance of an o…",
+      "url": "https://huggingface.co/papers/2611.33885",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-24T19:00:00Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
       "id": "hn:50630809",
       "kind": "news",
       "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
@@ -510,7 +652,7 @@
       "id": "hf-model:prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "kind": "model",
       "title": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
-      "desc": "Hugging Face · likes 557 · downloads 59,366 · text-generation",
+      "desc": "Hugging Face · likes 653 · downloads 382,546 · text-generation",
       "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
       "source": "Hugging Face",
       "tags": [
@@ -523,8 +665,8 @@
         "cuda"
       ],
       "publishedAt": "2026-11-24T16:32:20Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hf-paper:2611.33457",
@@ -753,8 +895,8 @@
         "multi-concept"
       ],
       "publishedAt": "2026-11-23T02:00:46Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hn:50605045",
@@ -796,8 +938,23 @@
         "research"
       ],
       "publishedAt": "2026-11-22T19:00:00Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
+      "id": "hf-paper:2611.31516",
+      "kind": "news",
+      "title": "InitFree-SfM: When Initialization-Free Bundle Adjustment meets Learned Structure-from-Motion",
+      "desc": "Initialization-free bundle adjustment (InitFree BA) aims to jointly recover camera poses and scene structure without requiring an initial global estimate. It is a very challenging problem,…",
+      "url": "https://huggingface.co/papers/2611.31516",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-22T19:00:00Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hf-paper:2611.31491",
@@ -811,8 +968,8 @@
         "research"
       ],
       "publishedAt": "2026-11-22T19:00:00Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hf-paper:2611.31466",
@@ -841,8 +998,8 @@
         "research"
       ],
       "publishedAt": "2026-11-22T19:00:00Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hf-paper:2611.31126",
@@ -905,6 +1062,21 @@
       "lastSeenAt": "2026-11-26T08:10:44.018961Z"
     },
     {
+      "id": "hf-paper:2611.30723",
+      "kind": "news",
+      "title": "BiSAT: Bidirectionally Aligned Semantic-Acoustic Tokenization for Speech Language Models",
+      "desc": "Speech language models (LMs) generate speech as sequences of discrete tokens. Their tokenizer must therefore preserve both acoustic detail and linguistic content at a low bitrate. Semantic-…",
+      "url": "https://huggingface.co/papers/2611.30723",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-22T19:00:00Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
       "id": "hf-paper:2611.30627",
       "kind": "news",
       "title": "From Rewarding What Models Say to How They Think: Attention Process Reward Model for LLM Reinforcement Learning",
@@ -920,6 +1092,21 @@
       "lastSeenAt": "2026-11-24T09:50:10.732389Z"
     },
     {
+      "id": "hf-paper:2611.30494",
+      "kind": "news",
+      "title": "Revisiting LLMs as Context Engineers",
+      "desc": "As large language models (LLMs) are used in more and more new tasks, context engineering becomes a fundamental method to efficiently steer LLMs by constructing instruction prompts or metada…",
+      "url": "https://huggingface.co/papers/2611.30494",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-22T19:00:00Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
+    },
+    {
       "id": "hf-paper:2611.30483",
       "kind": "news",
       "title": "When an AI agent makes a mistake in a database, what decides the damage?",
@@ -933,6 +1120,21 @@
       "publishedAt": "2026-11-22T19:00:00Z",
       "firstSeenAt": "2026-11-27T08:21:25.667742Z",
       "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+    },
+    {
+      "id": "hf-paper:2611.30025",
+      "kind": "news",
+      "title": "Damped Atomic Wave Integration Neurons (DAWIN): A Universal Primitive for Continuous-Time Spatiotemporal Learning",
+      "desc": "Conventional artificial neurons separate spatial feature aggregation from continuous physical time, limiting their ability to model irregular observations. We introduce the Damped Atomic Wa…",
+      "url": "https://huggingface.co/papers/2611.30025",
+      "source": "HF Daily Papers",
+      "tags": [
+        "paper",
+        "research"
+      ],
+      "publishedAt": "2026-11-22T19:00:00Z",
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hf-paper:2611.30011",
@@ -1006,8 +1208,8 @@
         "claude-code-plugin"
       ],
       "publishedAt": "2026-11-22T02:31:58Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     },
     {
       "id": "hn:50594564",
@@ -1042,7 +1244,7 @@
       "id": "hf-model:strata-engine/Inkling-2-Mini-Strata",
       "kind": "model",
       "title": "strata-engine/Inkling-2-Mini-Strata",
-      "desc": "Hugging Face · likes 247 · downloads 2,965 · image-text-to-text",
+      "desc": "Hugging Face · likes 309 · downloads 4,532 · image-text-to-text",
       "url": "https://huggingface.co/strata-engine/Inkling-2-Mini-Strata",
       "source": "Hugging Face",
       "tags": [
@@ -1055,211 +1257,8 @@
         "looped-transformer"
       ],
       "publishedAt": "2026-11-21T18:46:06Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
-    },
-    {
-      "id": "hn:50585962",
-      "kind": "news",
-      "title": "Tell HN: OpenRouter prompts to Minimax may have been read",
-      "desc": "Hacker News · 70 points · 11 comments",
-      "url": "https://news.ycombinator.com/item?id=50585962",
-      "source": "Hacker News",
-      "tags": [
-        "news"
-      ],
-      "publishedAt": "2026-11-21T04:31:38Z",
-      "firstSeenAt": "2026-11-23T07:30:23.324202Z",
-      "lastSeenAt": "2026-11-23T07:30:23.324202Z"
-    },
-    {
-      "id": "hn:50582794",
-      "kind": "news",
-      "title": "Leaky AI supply chain is exposing secret user data at an alarming rate",
-      "desc": "Hacker News · 64 points · 8 comments",
-      "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
-      "source": "Hacker News",
-      "tags": [
-        "news"
-      ],
-      "publishedAt": "2026-11-20T21:53:39Z",
-      "firstSeenAt": "2026-11-23T07:30:23.324202Z",
-      "lastSeenAt": "2026-11-23T07:30:23.324202Z"
-    },
-    {
-      "id": "hn:50582280",
-      "kind": "news",
-      "title": "Anthropic's IPO Bust Deepens $4T AI Wipeout on Wall Street",
-      "desc": "Hacker News · 66 points · 5 comments",
-      "url": "https://www.wsj.com/finance/stocks/anthropics-ipo-bust-punctuates-4-trillion-ai-wipeout-on-wall-street-f1f1ec90",
-      "source": "Hacker News",
-      "tags": [
-        "news"
-      ],
-      "publishedAt": "2026-11-20T21:18:46Z",
-      "firstSeenAt": "2026-11-22T06:41:39.860106Z",
-      "lastSeenAt": "2026-11-22T06:41:39.860106Z"
-    },
-    {
-      "id": "hf-model:AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "kind": "model",
-      "title": "AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "desc": "Hugging Face · likes 957 · downloads 762,491 · image-text-to-text",
-      "url": "https://huggingface.co/AtomicChat/Inkling-2-Mini-Uncensored-GGUF",
-      "source": "Hugging Face",
-      "tags": [
-        "gguf",
-        "llama.cpp",
-        "inkling2",
-        "uncensored",
-        "lora",
-        "image-text-to-text"
-      ],
-      "publishedAt": "2026-11-20T20:42:23Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
-    },
-    {
-      "id": "hf-paper:2611.28849",
-      "kind": "news",
-      "title": "Guarding with Judgment: Learning to Intervene for Multimodal Safety",
-      "desc": "When visual context makes an ordinary request unsafe to answer as asked, a blanket refusal may leave the user's need unresolved. Choosing how to help requires distinguishing an established…",
-      "url": "https://huggingface.co/papers/2611.28849",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-20T19:00:00Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
-    },
-    {
-      "id": "hf-paper:2611.28489",
-      "kind": "news",
-      "title": "Open Vision Banana: An Open Framework for Unified Visual Perception through Generation in RGB Space",
-      "desc": "Vision Banana showed that a closed image generator, instruction-tuned to paint perception outputs as RGB images, becomes a generalist vision model. Does this carry over to open generators,…",
-      "url": "https://huggingface.co/papers/2611.28489",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-20T19:00:00Z",
-      "firstSeenAt": "2026-11-24T09:50:10.732389Z",
-      "lastSeenAt": "2026-11-24T09:50:10.732389Z"
-    },
-    {
-      "id": "hn:50579331",
-      "kind": "news",
-      "title": "We promoted developers into architects without informing them",
-      "desc": "Hacker News · 615 points · 331 comments",
-      "url": "https://manidoraisamy.com/developer-to-architect.html",
-      "source": "Hacker News",
-      "tags": [
-        "news"
-      ],
-      "publishedAt": "2026-11-20T18:17:51Z",
-      "firstSeenAt": "2026-11-23T07:30:23.324202Z",
-      "lastSeenAt": "2026-11-23T07:30:23.324202Z"
-    },
-    {
-      "id": "gh-repo:scenario-labs/blender-plugin",
-      "kind": "tool",
-      "title": "scenario-labs/blender-plugin",
-      "desc": "Scenario for Blender: AI images, video, 3D and PBR materials in the viewport, plus a local MCP server for agents. Blender 5.0+ extension, GPL-3.0-or-later.",
-      "url": "https://github.com/scenario-labs/blender-plugin",
-      "source": "GitHub",
-      "tags": [
-        "3d-models",
-        "agentic-ai",
-        "ai-agents",
-        "ai-art",
-        "blender"
-      ],
-      "publishedAt": "2026-11-20T15:20:31Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
-    },
-    {
-      "id": "hn:50574383",
-      "kind": "news",
-      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
-      "desc": "Hacker News · 530 points · 922 comments",
-      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-      "source": "Hacker News",
-      "tags": [
-        "news"
-      ],
-      "publishedAt": "2026-11-20T13:29:59Z",
-      "firstSeenAt": "2026-11-23T07:30:23.324202Z",
-      "lastSeenAt": "2026-11-23T07:30:23.324202Z"
-    },
-    {
-      "id": "hf-model:unsloth/Inkling-2-Mini-GGUF",
-      "kind": "model",
-      "title": "unsloth/Inkling-2-Mini-GGUF",
-      "desc": "Hugging Face · likes 1,518 · downloads 2,445,633 · image-text-to-text",
-      "url": "https://huggingface.co/unsloth/Inkling-2-Mini-GGUF",
-      "source": "Hugging Face",
-      "tags": [
-        "gguf",
-        "conversational",
-        "image-text-to-text",
-        "moe",
-        "unsloth",
-        "base_model:thinkingmachines/Inkling-2-Mini"
-      ],
-      "publishedAt": "2026-11-20T13:09:48Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
-    },
-    {
-      "id": "hf-paper:2611.27915",
-      "kind": "news",
-      "title": "StereoVLM: Binocular Vision-Language Models for Metric 3D Spatial Reasoning",
-      "desc": "Vision-language models (VLMs) exhibit strong semantic understanding but remain limited in their ability to reason about metric 3D space in the physical world. Existing VLMs typically infer…",
-      "url": "https://huggingface.co/papers/2611.27915",
-      "source": "HF Daily Papers",
-      "tags": [
-        "paper",
-        "research"
-      ],
-      "publishedAt": "2026-11-20T12:52:02Z",
-      "firstSeenAt": "2026-11-23T07:30:23.324202Z",
-      "lastSeenAt": "2026-11-23T07:30:23.324202Z"
-    },
-    {
-      "id": "gh-repo:HBAI-Ltd/Toonflow-app",
-      "kind": "tool",
-      "title": "HBAI-Ltd/Toonflow-app",
-      "desc": "短剧、漫剧制作工具 Toonflow：开源 AI 视频创作平台，集成剧本创作、智能分镜、角色与场景资产管理、图像生成和视频生成。融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、MCP 与插件扩展。Open-source AI short drama and motion comic creation tool with an infini…",
-      "url": "https://github.com/HBAI-Ltd/Toonflow-app",
-      "source": "GitHub",
-      "tags": [
-        "ai-agents",
-        "ai-comic",
-        "ai-content-creation",
-        "ai-filmmaking",
-        "ai-short-drama"
-      ],
-      "publishedAt": "2026-11-20T11:01:16Z",
-      "firstSeenAt": "2026-11-27T08:21:25.667742Z",
-      "lastSeenAt": "2026-11-27T08:21:25.667742Z"
-    },
-    {
-      "id": "hn:50572503",
-      "kind": "news",
-      "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-      "desc": "Hacker News · 679 points · 363 comments",
-      "url": "https://architectlabs.com/blog/frostbite",
-      "source": "Hacker News",
-      "tags": [
-        "news"
-      ],
-      "publishedAt": "2026-11-20T10:01:41Z",
-      "firstSeenAt": "2026-11-23T07:30:23.324202Z",
-      "lastSeenAt": "2026-11-23T07:30:23.324202Z"
+      "firstSeenAt": "2026-11-28T07:41:43.229572Z",
+      "lastSeenAt": "2026-11-28T07:41:43.229572Z"
     }
   ]
 }
